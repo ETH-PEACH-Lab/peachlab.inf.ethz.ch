@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/aprilwang/Documents/Code/peachlab-primer/app/layout":["static/media/800a910090e25367-s.p.otf","static/media/520e1c0c160816b2-s.p.otf"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';

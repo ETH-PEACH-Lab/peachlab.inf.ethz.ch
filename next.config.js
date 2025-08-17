@@ -7,8 +7,8 @@ const nextConfig = {
       return config;
     },
     output: "export", // Required for `next export`
-    basePath: "/web-2025", // ⚠️ Must match your repo name
-    assetPrefix: "/web-2025/", // Ensures assets load correctly
+    basePath: "", // ⚠️ Must match your repo name
+    assetPrefix: "", // Ensures assets load correctly
     images: {
       unoptimized: true, // ⚠️ Required for GitHub Pages, since no Image Optimization
     },

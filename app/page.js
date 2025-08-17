@@ -1,12 +1,21 @@
+"use client"
 import ReactMarkdown from 'react-markdown';
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import introMd from '!raw-loader!./data/intro.md';
-import Teaser from '../public/assets/teaser.svg';
+import news from "@/data/news.json";
+import ResearchMini from '@/research/ResearchMini';
+import { Card } from "@geist-ui/core";
+
+import "./style.css";
+
+
 export default function Home() {
   return (
-    <div style={{ textAlign: "center", padding: "0rem 0rem" }}>
-      <Teaser style={{maxWidth: "600px" , marginTop: "-2rem"}} />
-      <h1>Welcome to PEACH Lab</h1>
+    <div className="home-container">
+      <div className="home-teaser-img">
+        <img src='/assets/landing/datar6.jpg' alt="Teaser" />
+      </div>
+
       <ReactMarkdown
         components={{
           a: ({ node, ...props }) => (
@@ -18,25 +27,40 @@ export default function Home() {
       >
         {introMd}
       </ReactMarkdown>
-      <div style={{ marginTop: "2rem" }}>
-        <a href="/research" style={buttonStyle}>
+      <div className="home-buttons">
+        <a href="/research" className="home-btn">
           Check Our Work
         </a>
-        <a href="/team" style={buttonStyle}>
+        <a href="/team" className="home-btn">
           Meet the Team
+        </a>
+      </div>
+      {/* News Section */}
+      <Card className="news-card">
+        <h3 className="news-title">News</h3>
+        <ul className="news-list">
+          {news.slice(0, 5).map((item, index) => (
+            <li key={index} className="news-list-item">
+              <strong>{item.time}: </strong>
+              <p dangerouslySetInnerHTML={{ __html: item.title }} style={{ display: "inline" }} />
+            </li>
+          ))}
+        </ul>
+        <div className="news-link">
+          <a href="/news" className="news-link-a">
+            See all news &rarr;
+          </a>
+        </div>
+      </Card>
+
+      {/* Latest Research Section */}
+      <h3 className="featured-title">Featured Research</h3>
+      <ResearchMini />
+      <div className="featured-link">
+        <a href="/research" className="featured-link-a">
+          Read more &rarr;
         </a>
       </div>
     </div>
   );
 }
-
-// Simple inline button styling
-const buttonStyle = {
-  display: "inline-block",
-  margin: "0 10px",
-  padding: "12px 24px",
-  backgroundColor: "#000",
-  color: "#fff",
-  textDecoration: "none",
-  borderRadius: "8px",
-};

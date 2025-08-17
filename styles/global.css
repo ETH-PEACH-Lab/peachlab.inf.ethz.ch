@@ -7,6 +7,11 @@ body {
 body, p, h1, h2, h3, h4, a {
     font-family: var(--font-custom), sans-serif !important;
 }
+
+h2{
+  padding-bottom: 10px;;
+  border-bottom: 1px solid rgb(234, 234, 234);
+}
   
   nav a {
     margin-right: 1rem;
@@ -44,7 +49,8 @@ body, p, h1, h2, h3, h4, a {
   .member-content {
     display: flex;
     align-items: center; /* Aligns items vertically */
-    justify-content: space-between; /* Pushes image to the right */
+    /* flex-direction: column;; */
+    justify-content: space-between; /*Pushes image to the right */
     gap: 16px; /* Space between text and image */
   }
   
@@ -77,3 +83,19 @@ body, p, h1, h2, h3, h4, a {
     margin-top: 8px;
   }
   
+a:hover {
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.active{
+  font-weight: 800 !important;
+}
+
+ul li::before {
+  content: "•" !important;
+  color: var(--geist-foreground) !important;
+  display: inline-block !important;
+  width: 1em !important;
+  margin-left: -1em !important;
+}

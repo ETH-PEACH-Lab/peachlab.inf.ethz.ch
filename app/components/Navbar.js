@@ -1,14 +1,14 @@
 "use client"; // ✅ Mark as a Client Component
 
-import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import React, { useState } from 'react'
 
 import Link from "next/link";
-import { Button, Spacer, useTheme, Tabs, Image } from "@geist-ui/core";
-import { useScale, Metadata } from "@geist-ui/core";
+import { Button, useTheme, Tabs, Image } from "@geist-ui/core";
+import { useScale } from "@geist-ui/core";
 import { Moon, Sun } from "@geist-ui/icons";
 import { useRouter, usePathname } from "next/navigation";
 import { useThemeSwitcher } from "../components/Providers"; // ✅ Import ThemeContext Hook
-
+import "./Navbar.css"; // ✅ Import custom styles
 //Convert HEX to RGBA manually
 const addColorAlpha = (hex, alpha) => {
   hex = hex.replace("#", "");
@@ -47,22 +47,22 @@ export default function Navbar() {
   return (
     <>
       <div className="menu-wrapper">
-        <nav style={navStyle} className="menu">
+        <nav className="menu">
           {/* Logo Section */}
           <div className="content">
 
             <div className="logo">
-              <Link href="/" style={logoStyle}><Image
-                    src={themeType=="custom-dark"?`/assets/logo-dark.png`:`/assets/logo-light.png`}
-                    height="30px"
-                    alt="PEACH Lab Logo"
-                    draggable={false}
-                    title="Logo"
-                  /></Link>
+              <Link href="/"><Image
+                src={themeType == "custom-dark" ? `/assets/logo-dark.png` : `/assets/logo-light.png`}
+                height="30px"
+                alt="PEACH Lab Logo"
+                draggable={false}
+                title="Logo"
+              /></Link>
             </div>
 
             {/* Navigation Links */}
-            <div style={linksContainer} className="tabs">
+            <div className="tabs">
               <Tabs
                 value={currentTab}
                 leftSpace={0}
@@ -72,149 +72,53 @@ export default function Navbar() {
                 hideBorder
                 onChange={handleTabChange}>
                 <Tabs.Item
-                    font="14px"
-                    label={"Home"}
-                    value={""}
-                  />
-                  <Tabs.Item
-                    font="14px"
-                    label={"Team"}
-                    value={"team"}
-                  />
-                  <Tabs.Item
-                    font="14px"
-                    label={"Research"}
-                    value={"research"}
-                  />
-                  <Tabs.Item
-                    font="14px"
-                    label={"Publications"}
-                    value={"publications"}
-                  />
-                  <Tabs.Item
-                    font="14px"
-                    label={"Teaching"}
-                    value={"teaching"}
-                  />
-                  <Tabs.Item
-                    font="14px"
-                    label={"Theses"}
-                    value={"theses"}
-                  />
-                  <Tabs.Item
-                    font="14px"
-                    label={"Join Us"}
-                    value={"join"}
-                  />
+                  font="14px"
+                  label={"Home"}
+                  value={""}
+                />
+                <Tabs.Item
+                  font="14px"
+                  label={"Team"}
+                  value={"team"}
+                />
+                <Tabs.Item
+                  font="14px"
+                  label={"Research"}
+                  value={"research"}
+                />
+                <Tabs.Item
+                  font="14px"
+                  label={"Publications"}
+                  value={"publications"}
+                />
+                <Tabs.Item
+                  font="14px"
+                  label={"Teaching"}
+                  value={"teaching"}
+                />
               </Tabs>
             </div>
 
             {/* Dark Mode Toggle */}
             <div className="controls">
 
-            <Button auto icon={themeType ==="dark" ? <Sun /> : <Moon />} onClick={() => setThemeType(themeType === "custom-dark" ? "custom-light" : "custom-dark")}>
-              {themeType === "custom-dark" ? "Light Mode" : "Dark Mode"}
-            </Button>
+              <Button auto icon={themeType === "custom-dark" ? <Sun /> : <Moon />} onClick={() => setThemeType(themeType === "custom-dark" ? "custom-light" : "custom-dark")}>
+              </Button>
             </div>
           </div>
         </nav>
       </div>
       <style jsx>{`
-        .menu-wrapper {
-          height: var(--geist-page-nav-height);
-        }
         .menu {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          padding-right: ${isLocked ? 'var(--geist-page-scrollbar-width)' : 0};
-          height: var(--geist-page-nav-height);
-          //width: 100%;
-          backdrop-filter: saturate(180%) blur(5px);
-          background-color: ${addColorAlpha(theme.palette.background, 0.8)};
           box-shadow: ${theme.type === 'dark'
           ? '0 0 0 1px #333'
           : '0 0 15px 0 rgba(0, 0, 0, 0.1)'};
-          z-index: 999;
+          background-color: ${addColorAlpha(theme.palette.background, 0.9)};
         }
-        nav .content {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          max-width: 1000px;
-          height: 100%;
-          margin: 0 auto;
-          gap: 20px;
-          user-select: none;
-          padding: 0 ${theme.layout.gap};
-        }
-        .logo {
-          flex: 1 1;
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          padding-right:40px;
-        }
-        .logo a {
-          display: inline-flex;
-          flex-direction: row;
-          align-items: center;
-          font-size: 1.125rem;
-          font-weight: 500;
-          color: inherit;
-          height: 28px;
-        }
-
-        .tabs {
-          flex: 1 1;
-          padding: 0 ${theme.layout.gap};
-        }
-        .tabs :global(.content) {
-          display: none;
-        }
-        @media only screen and (max-width: ${theme.breakpoints.xs.max}) {
-          .tabs {
-            display: none;
-          }
-        }
-        .controls {
-          flex: 1 1;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-        }
-        .controls :global(.menu-toggle) {
-          display: flex;
-          align-items: center;
-          min-width: 40px;
-          height: 40px;
-          padding: 0;
+        .highlight {
+          background-color: ${addColorAlpha(theme.palette.background, 0.7)};
         }
       `}</style>
     </>
   );
 }
-
-// Styles (Custom Geist UI-like)
-const navStyle = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  padding: "1rem 2rem",
-  position: "sticky",
-  top: 0,
-  zIndex: 1000,
-};
-
-const logoStyle = {
-  fontSize: "20px",
-  fontWeight: "bold",
-  color: "#000",
-  textDecoration: "none",
-};
-
-const linksContainer = {
-  display: "flex",
-  gap: "20px",
-};

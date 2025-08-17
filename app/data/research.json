@@ -1,0 +1,56 @@
+[
+    {
+        "theme": "Designing Learning and Thinking Assistants with AI",
+        "subtitle": "Conceptual scaffolding tools that turn thoughts into explorable representations.",
+        "description": "We design interactive thinking assistants that make the underlying structure of a problem both explorable and debuggable. Using alternative notations such as diagrams, sketching, storyboards, and natural language, we help students break down complex problems, visualize key concepts, and receive feedback on their reasoning before they write code. By making thinking visible, these tools surface misconceptions early and support more effective problem-solving.",
+        "projects": [
+            "math2visual",
+            "dbox"
+        ],
+        "teaser": "/assets/teaser/acl25b.png",
+        "slug": "thinking-assistant"
+    },
+    {
+        "theme": "Thinking Takes Two",
+        "subtitle": "Collaborative programming tools that leverage peer input to deepen reasoning.",
+        "description": "We design systems that bring more minds into the problem-solving process, whether through peer collaboration or real-time instructional support. Our work explores design ideas such as real-time collaborative editing in IDEs, in-class peer assessment, and chatbots that draw explicitly on community knowledge. Through these tools, we use collaboration as a deliberate design strategy to foster deeper reasoning, expose diverse perspectives, and encourage critical discussion.",
+        "projects": [
+            "spark",
+            "puzzleme"
+        ],
+        "teaser": "/assets/teaser/spark.png",
+        "slug": "thinking-takes-two"
+    },
+    {
+        "theme": "Making Complex Domains More Accessible",
+        "subtitle": "Translating complex concepts into intuitive and inclusive experiences",
+        "description": "We design interactive representations that lower the cognitive and accessibility barriers to understanding specialized domains. By transforming abstract information into forms that are easier to explore, compare, and relate to prior knowledge, we help learners and professionals alike engage more deeply with unfamiliar or technically demanding material. Our work emphasizes both clarity and inclusivity, ensuring that complex knowledge can be understood and acted upon by a broader range of people.",
+        "projects":[
+            "metaphor",
+            "datar",
+            "sign2viz"
+        ],
+        "teaser": "/assets/teaser/iticse25.png",
+        "slug": "accessible-complex-domains"
+    },
+        {
+        "theme": "Measuring Cognitive Engagement",
+        "subtitle": "Understanding, measuring, and modeling the cognitive states between learning and doing.",
+        "description": "We are exploring how to determine whether a tool truly helps learners engage with underlying concepts rather than bypassing the thinking. Our current work investigates a range of approaches including self-reported measures, behavioral logging, physiological sensing, and modeling, to better understand and measure the cognitive engagement that distinguishes learning from merely doing.",
+        "projects": [
+            "multitasking"
+        ],
+        "slug": "measuring-cognitive-engagement"
+    },
+    {
+        "theme": "Communicating and Presenting Computational Work",
+        "subtitle": "Supporting sensemaking and storytelling from computational artifacts",
+        "description": "We develop tools that help practitioners and learners explain, present, and reflect on computational work. By connecting computational narratives to conversations, creating explorable tutorials, and supporting data comparison, we help people communicate both the process and reasoning behind their work.",
+        "projects":[
+            "ditl",
+            "themisto",
+            "callisto"
+        ],
+        "slug": "communicating-and-presenting-computational-work"
+    }
+]

@@ -12,9 +12,9 @@ export function useThemeSwitcher() {
 const customLightTheme = Themes.createFromLight({
   type: "custom-light",
   palette: {
-    link: "#0073e6", // 🔵 Light mode hyperlink color
-    foreground: "#373737", // Text color
-    background: "#fff", // Background color
+    link: "#0073e6",
+    foreground: "#373737",
+    background: "#fff",
     selection: "#fcd7d7"
   },
 });
@@ -23,23 +23,33 @@ const customLightTheme = Themes.createFromLight({
 const customDarkTheme = Themes.createFromDark({
   type: "custom-dark",
   palette: {
-    link: "#66b3ff", // 🔷 Dark mode hyperlink color (slightly lighter)
-    foreground: "#fff", // Text color
-    background: "#000", // Background color
+    link: "#66b3ff",
+    foreground: "#fff",
+    background: "#000",
     selection: "#fcd7d7"
   },
 });
 
 export default function Providers({ children }) {
-  const [themeType, setThemeType] = useState(() => {
-    return typeof window !== "undefined" && localStorage.getItem("darkMode") === "true" ? "custom-dark" : "custom-light";
-  });
+  const [mounted, setMounted] = useState(false);
+  const [themeType, setThemeType] = useState("custom-light");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("darkMode", themeType === "custom-dark");
-    }
-  }, [themeType]);
+    const dark = localStorage.getItem("darkMode") === "true";
+    setThemeType(dark ? "custom-dark" : "custom-light");
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+    localStorage.setItem("darkMode", themeType === "custom-dark");
+    document.documentElement.classList.remove("custom-light", "custom-dark");
+    document.documentElement.classList.add(themeType);
+  }, [themeType, mounted]);
+
+  if (!mounted) {
+    return null; // Prevent Hydration Mismatch
+  }
 
   return (
     <ThemeContext.Provider value={{ themeType, setThemeType }}>
