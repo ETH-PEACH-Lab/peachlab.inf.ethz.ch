@@ -44,7 +44,7 @@ deploy_staging:
     - git clone --single-branch --branch release-v2 --depth 1 git@${CI_SERVER_HOST}:/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}.git build-release
     - rsync -av --delete out/ build-release/
     - cd build-release
-    - git checkout release-v2    # ensure we’re on the branch
+    - git checkout release-v2 
     - git add -A
     - git commit --allow-empty -m "Staging deploy from ${CI_COMMIT_SHA}"
     - git push
