@@ -46,4 +46,4 @@ deploy_prod:
     - cd build-release
     - git add --all
     - git commit --allow-empty --message "GitLab Runner Push from ${CI_PROJECT_URL}, commit ${CI_COMMIT_SHA}"
-    - git push
+    - git push origin HEAD:release-v2
