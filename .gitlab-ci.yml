@@ -19,7 +19,6 @@ build:
     - npm ci
   script:
     - npm run build
-    - npx next export   # drop this if next.config.js has output:'export'
 
 deploy_staging:
   stage: deploy
