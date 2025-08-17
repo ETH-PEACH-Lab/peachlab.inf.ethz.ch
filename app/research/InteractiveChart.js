@@ -83,7 +83,7 @@ const InteractiveChart = () => {
 
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+  }, [effortY, innerWidth, usabilityY, x]);
 
   return (
     <svg ref={svgRef} width={width} height={height}>

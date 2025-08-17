@@ -1,6 +1,5 @@
 "use client"
-import { Grid, Card, Text, Link, Image, Tag, Collapse } from "@geist-ui/core";
-import { Home } from '@geist-ui/icons'
+import { Grid, Card, Text, Link, Image, Tag } from "@geist-ui/core";
 
 export default function MemberCard({ member }) {
     return <Grid xs={24} md={12}>

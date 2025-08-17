@@ -1,5 +1,5 @@
 "use client"
-import { Grid, Card, Text, Link, Image, Tag, Collapse } from "@geist-ui/core";
+import { Grid } from "@geist-ui/core";
 import members from "@/data/team.json"
 import MemberCard from "./MemberCard";
 import ImageCarousel from "@/components/ImageCarousel";

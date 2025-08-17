@@ -1,10 +1,9 @@
 "use client"; // ✅ Mark as a Client Component
 
-import React, { useState } from 'react'
+import React from 'react'
 
 import Link from "next/link";
 import { Button, useTheme, Tabs, Image } from "@geist-ui/core";
-import { useScale } from "@geist-ui/core";
 import { Moon, Sun } from "@geist-ui/icons";
 import { useRouter, usePathname } from "next/navigation";
 import { useThemeSwitcher } from "../components/Providers"; // ✅ Import ThemeContext Hook
@@ -31,9 +30,6 @@ const addColorAlpha = (hex, alpha) => {
 
 export default function Navbar() {
   const { themeType, setThemeType } = useThemeSwitcher(); // ✅ Use theme state from context
-
-  const [isLocked, setIsLocked] = useState(false)
-  const { tabbar: currentUrlTabValue, locale } = useScale()
   const theme = useTheme()
   const router = useRouter();
   const pathname = usePathname(); // ✅ Get current route

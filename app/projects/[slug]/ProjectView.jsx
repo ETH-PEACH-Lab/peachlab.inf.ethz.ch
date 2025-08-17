@@ -1,6 +1,6 @@
 "use client";
 
-import { Description, Button, Link } from "@geist-ui/core";
+import { Button, Link } from "@geist-ui/core";
 
 export default function ProjectView({ pub }) {
   return (

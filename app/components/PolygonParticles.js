@@ -127,14 +127,3 @@ const particlesStyle = {
   top: 0,
   left: 0,
 };
-
-const contentStyle = {
-  position: "relative",
-  zIndex: 1,
-  height: "100%",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  color: "#333",
-  fontSize: "2rem",
-};

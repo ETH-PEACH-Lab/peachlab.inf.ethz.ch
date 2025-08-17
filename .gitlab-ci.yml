@@ -45,6 +45,6 @@ deploy_staging:
     - rsync -av --delete out/ build-release/
     - cd build-release
     - git checkout release-v2 
-    - git add -A
-    - git commit --allow-empty -m "Staging deploy from ${CI_COMMIT_SHA}"
+    - git add --all
+    - git commit --allow-empty --message "GitLab Runner Push from ${CI_PROJECT_URL}, commit ${CI_COMMIT_SHA}"
     - git push

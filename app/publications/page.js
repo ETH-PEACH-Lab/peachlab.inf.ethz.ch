@@ -1,7 +1,7 @@
 "use client"
 
 import pubs from "@/data/pubs.json";
-import { Checkbox, Collapse, Card, Grid, Text, Button, Tooltip } from "@geist-ui/core";
+import { Collapse, Grid } from "@geist-ui/core";
 import PubCard from "./PubCard";
 
 export default function Publications() {

@@ -2,7 +2,7 @@
 import ReactMarkdown from 'react-markdown';
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import teachingMd from '!raw-loader!@/data/teaching.md';
-import { Note, Card, Text, Link, Image, Tag, Collapse } from "@geist-ui/core";
+import { Note } from "@geist-ui/core";
 
 export default function Teaching() {
   return (

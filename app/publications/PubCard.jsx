@@ -1,6 +1,5 @@
 import pubs from '@/data/pubs.json';
-import { Home, FileText, PlayCircle, GitHub, Quote, Star } from "@geist-ui/icons";
-import { Checkbox, Collapse, Card, Grid, Text, Button, Tooltip } from "@geist-ui/core";
+import { Card, Text } from "@geist-ui/core";
 import { PubLinks } from "./PubLinks";
 import Link from 'next/link';
 import "./PubCard.css"

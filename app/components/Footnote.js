@@ -1,6 +1,6 @@
 "use client"; // ✅ Mark as a Client Component
 
-import { Text, Divider } from "@geist-ui/core";
+import { Text } from "@geist-ui/core";
 
 export default function Footnote() {
     return (
