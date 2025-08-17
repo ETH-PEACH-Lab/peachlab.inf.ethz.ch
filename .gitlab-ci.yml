@@ -1,13 +1,20 @@
-stages: [build, deploy]
+stages:
+  - build
+  - deploy
+
+default:
+  image: registry.inf.ethz.ch/isg/rhel8-ci:latest
 
 workflow:
   rules:
     - if: $CI_COMMIT_BRANCH =~ /^v2$/
+    - if: $FORCE_DEPLOY
+      when: always
     - when: never
 
 build:
   stage: build
-  image: node:20-alpine
+  image: node:21-alpine3.18
   cache:
     key: ${CI_COMMIT_REF_SLUG}
     paths: [node_modules/]
