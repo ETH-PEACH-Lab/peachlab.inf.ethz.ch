@@ -31,19 +31,22 @@ deploy_prod:
   stage: deploy
   rules:
     - if: $CI_COMMIT_BRANCH == 'v2'
-  needs: ["build"]
   before_script:
-    - mkdir -pm 700 ~/.ssh
-    - base64 -d "${CI_KNOWN_HOSTS}" > ~/.ssh/known_hosts
-    - eval $(ssh-agent -s)
-    - base64 -d "${CI_KEY}" | ssh-add -
-    - git config --global user.name "${GITLAB_USER_NAME}"
-    - git config --global user.email "${GITLAB_USER_EMAIL}"
-    - git config --global safe.directory '*'
+    - |-
+      mkdir -pm 700 ~/.ssh
+      base64 -d "${CI_KNOWN_HOSTS}" >~/.ssh/known_hosts
+      eval $(ssh-agent -s)
+      base64 -d "${CI_KEY}" | ssh-add -
+      git config --global user.name "${GITLAB_USER_NAME}"
+      git config --global user.email "${GITLAB_USER_EMAIL}"
+      git config --global safe.directory '*'
   script:
-    - git clone --single-branch --branch release --depth 1 git@${CI_SERVER_HOST}:/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}.git build-release
-    - rsync -av --delete out/ build-release/
-    - cd build-release
-    - git add --all
-    - git commit --allow-empty --message "GitLab Runner Push from ${CI_PROJECT_URL}, commit ${CI_COMMIT_SHA}"
-    - git push origin HEAD:release
+    - |-
+      git clone --single-branch --branch release --depth 1 git@${CI_SERVER_HOST}:/${CI_PROJECT_NAMESPACE}/${CI_PROJECT_NAME}.git build-release
+      rsync -av --delete dist/ build-release/dist/
+      rsync -av --delete assets/ build-release/assets/
+      rsync -av index.html build-release/
+      cd build-release
+      git add --all
+      git commit --allow-empty --message "GitLab Runner Push from ${CI_PROJECT_URL}, commit ${CI_COMMIT_SHA}"
+      git push
