@@ -1,12 +1,10 @@
 import NextImage from "next/image";
-import getConfig from "next/config";
 
-const { publicRuntimeConfig } = getConfig();
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const Image = ({ src, width, height, ...rest }) => {
-  // Prefix asset paths with basePath
-  const prefix = publicRuntimeConfig.basePath || "";
-  const finalSrc = src.startsWith("/") ? `${prefix}${src}` : src;
+  // Prefix asset paths with NEXT_PUBLIC_BASE_PATH (e.g. "/primer" on GitHub Pages)
+  const finalSrc = src.startsWith("/") ? `${basePath}${src}` : src;
 
   return (
     <NextImage
