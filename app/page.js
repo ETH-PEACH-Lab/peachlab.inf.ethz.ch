@@ -5,6 +5,8 @@ import introMd from '!raw-loader!./data/intro.md';
 import news from "@/data/news.json";
 import ResearchMini from '@/research/ResearchMini';
 import { Card } from "@geist-ui/core";
+import Image from "@/components/Image";
+
 
 import "./style.css";
 
@@ -13,7 +15,7 @@ export default function Home() {
   return (
     <div className="home-container">
       <div className="home-teaser-img">
-        <img src='/assets/landing/datar6.jpg' alt="Teaser" />
+        <Image src='/assets/landing/datar6.jpg' alt="Teaser" />
       </div>
 
       <ReactMarkdown

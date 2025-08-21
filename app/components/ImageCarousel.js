@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import gallery from "@/data/gallery.json";
+import Image from "@/components/Image";
 
 export default function ImageCarousel() {
   const [current, setCurrent] = useState(0);
@@ -19,7 +20,7 @@ export default function ImageCarousel() {
       boxShadow: "0 2px 16px rgba(0,0,0,0.08)",
       background: "#fff"
     }}>
-      <img
+      <Image
         src={gallery[current].src}
         alt={gallery[current].alt || `Gallery image ${current + 1}`}
         style={{ width: "100%", height: "350px", objectFit: "cover", display: "block" }}

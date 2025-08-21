@@ -1,6 +1,8 @@
 "use client";
 
 import { Button, Link } from "@geist-ui/core";
+import Image from "@/components/Image";
+
 
 export default function ProjectView({ pub }) {
   return (
@@ -15,7 +17,7 @@ export default function ProjectView({ pub }) {
       </p>
 
       <div style={{ textAlign: "center", marginTop: "24px" }}>
-        <img
+        <Image
           src={pub.teaser}
           alt="teaser"
           style={{ maxWidth: "500px", width: "100%", height: "auto" }}

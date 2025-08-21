@@ -1,6 +1,8 @@
 import pubs from '@/data/pubs.json';
 import { Card, Text } from "@geist-ui/core";
 import Link from 'next/link';
+import Image from "@/components/Image";
+
 
 export default function PubCardMini({ pub, slug }) {
     const publication = pub || pubs.find(p => p.slug === slug);
@@ -9,7 +11,7 @@ export default function PubCardMini({ pub, slug }) {
     return (
         <Card width="100%" style={{ marginTop: "20px", padding: "12px" }}>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
-                <img
+                <Image
                     src={publication.teaser}
                     alt="teaser"
                     style={{

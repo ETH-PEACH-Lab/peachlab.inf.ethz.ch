@@ -1,6 +1,8 @@
 import researchData from '@/data/research.json';
 import { Card, Text } from "@geist-ui/core";
 import Link from 'next/link';
+import Image from "@/components/Image";
+
 
 export default function ResearchMini() {
   const featured = [0, 1, 2];
@@ -25,7 +27,7 @@ export default function ResearchMini() {
               }}
               hoverable
             >
-              <img
+              <Image
                 src={item.teaser}
                 alt={item.theme}
                 style={{
