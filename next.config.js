@@ -1,3 +1,4 @@
+const repoName='peachlab.inf.ethz.ch'
 const nextConfig = {
     webpack(config) {
       config.module.rules.push({
@@ -11,8 +12,11 @@ const nextConfig = {
     images: {
       unoptimized: true, // ⚠️ Required for GitHub Pages, since no Image Optimization
     },
-    basePath: process.env.GITHUB_PAGES ? "/peachlab.inf.ethz.ch" : "",
-    assetPrefix: process.env.GITHUB_PAGES ? "/peachlab.inf.ethz.ch/" : "",
+    basePath: process.env.GITHUB_PAGES ? `/${repoName}` : "",
+    assetPrefix: process.env.GITHUB_PAGES ? `/${repoName}/` : "",
+    publicRuntimeConfig: {
+      basePath: process.env.GITHUB_PAGES ? `/${repoName}` : "",
+    },
   };
   
   module.exports = nextConfig;
