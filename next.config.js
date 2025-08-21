@@ -7,6 +7,7 @@ const nextConfig = {
       return config;
     },
     output: "export", // Required for `next export`
+    trailingSlash: true,    // so /team becomes /team/index.html
     basePath: "", // ⚠️ Must match your repo name
     assetPrefix: "", // Ensures assets load correctly
     images: {
