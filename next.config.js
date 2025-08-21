@@ -13,10 +13,7 @@ const nextConfig = {
       unoptimized: true, // ⚠️ Required for GitHub Pages, since no Image Optimization
     },
     basePath: process.env.GITHUB_PAGES ? `/${repoName}` : "",
-    assetPrefix: process.env.GITHUB_PAGES ? `/${repoName}/` : "",
-    publicRuntimeConfig: {
-      basePath: process.env.GITHUB_PAGES ? `/${repoName}` : "",
-    },
+    assetPrefix: process.env.GITHUB_PAGES ? `/${repoName}/` : ""
   };
   
   module.exports = nextConfig;
