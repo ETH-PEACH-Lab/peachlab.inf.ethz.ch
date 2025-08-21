@@ -9,7 +9,7 @@ import { myCustomFont } from "./fonts"; // ✅ Import the custom font
 
 export const metadata = {
   title: "PEACH Lab",
-  description: "Experiential Programming Education Research Lab",
+  description: "Programming, Education, and Computer-Human Interaction Lab, ETH Zurich",
 };
 
 export default function RootLayout({ children }) {
