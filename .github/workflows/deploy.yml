@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Deploy when changes are pushed to `main`
+      - main
 
 permissions:
   contents: write
@@ -19,13 +19,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18  # Adjust Node.js version if needed
+          node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build the Next.js App
-        run: npm run build  # ✅ `next build` automatically exports static files
+      - name: Build Next.js (Static Export)
+        env:
+          GITHUB_PAGES: true   # Pass env var for basePath
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

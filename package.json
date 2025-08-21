@@ -1,6 +1,6 @@
 {
-  "name": "peachlab-primer",
-  "version": "0.1.0",
+  "name": "peachlab.inf.ethz.ch",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@geist-ui/core": "^2.3.8",
