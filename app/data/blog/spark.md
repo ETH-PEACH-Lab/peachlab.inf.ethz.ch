@@ -6,7 +6,7 @@ Instead of streaming raw code (overwhelming) or waiting for final submissions (t
 A server runs these tests periodically, and the dashboard shows where each student stands per checkpoint, over time.
 In parallel, instructors can inspect intermediate outputs (DOM properties, clustered screenshots) to understand how students implemented a step, not just whether it passed.
 
-#### Design Highlight #1 — Progress Visualization
+#### Design Highlight #1: Progress Visualization
 
 <figure style="margin:0 auto; width:fit-content; text-align:center; padding: 20px 0px;">
   <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
@@ -27,7 +27,7 @@ The Progress Visualization summarizes class state at a glance:
 
 **Why this matters**: Prior tools either cluster code states or show raw streams, but don’t map non-linear workflows to meaningful steps you control. Checkpoints visualize structured progress without constraining student paths.
 
-#### Design Highlight #2 - Components Inspector
+#### Design Highlight #2: Components Inspector
 <figure style="margin:0 auto; width:fit-content; text-align:center; padding: 20px 0px;">
   <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
     <img src="/assets/blog/spark/spark3.png" alt="left" style="max-width:800px; width:100%; border-radius:8px;">
