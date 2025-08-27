@@ -154,9 +154,9 @@
   },
   {
     "name": "Bhada Yun",
-    "status": "hidden",
+    "status": "current",
     "title": "Direct Doctoral Student",
-    "topics": "Visual-based Tutoring System",
+    "topics": "Human AI Interaction",
     "affiliation": "ETH Zürich",
     "office": "CAB F66",
     "avatar": "/assets/bhada.jpeg",
@@ -187,7 +187,7 @@
   },
   {
     "name": "Zihan Li",
-    "status": "current",
+    "status": "left",
     "topics": "Tangible Educational Game",
     "title": "Student Research Assistant",
     "affiliation": "ETH Zürich",
