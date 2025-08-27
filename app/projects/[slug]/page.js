@@ -1,16 +1,64 @@
-import pubs from '@/data/pubs.json';
-import ProjectView from './ProjectView';
+import pubs from "@/data/pubs.json";
+import { blogImports } from "./blogImports";
+import ProjectView from "./ProjectView";
+import Image from "@/components/Image";
 
+
+export const dynamicParams = false;
 export async function generateStaticParams() {
-  return pubs.map((pub) => ({ slug: pub.slug }));
+  return pubs.map((p) => ({ slug: p.slug }));
 }
 
 export default async function ProjectPage({ params }) {
-  // Await params.slug in case it's a Promise
-  const { slug } = await params;
-  const pub = pubs.find(p => p.slug === slug);
-
+  const { slug } = await params; // Do NOT destructure with { slug } in async
+  const pub = pubs.find((p) => p.slug === slug);
   if (!pub) return <div>Not found</div>;
 
-  return <ProjectView pub={pub} />;
+  let blogRaw = null;
+  const loader = blogImports[slug];
+  if (typeof loader === "function") {
+    const mod = await loader();
+    blogRaw = typeof mod === "string" ? mod : mod?.default ?? null;
+  }
+
+  let ReactMarkdown, remarkGfm, rehypeRaw;
+  if (blogRaw) {
+    ReactMarkdown = (await import("react-markdown")).default;
+    remarkGfm = (await import("remark-gfm")).default;
+    rehypeRaw = (await import("rehype-raw")).default;
+  }
+
+  return (
+    <div className="mx-auto max-w-3xl px-5 py-8">
+
+      <div style={{ maxWidth: "800px", margin: "0 auto", padding: "40px 20px" }}>
+        <h2 style={{ fontSize: "1.75rem", fontWeight: 700 }}>{pub.title}</h2>
+
+        <p>
+          <strong>Authors:</strong> {pub.authors}
+        </p>
+        <p>
+          <strong>Venue:</strong> {pub.venue_full}
+        </p>
+        <div style={{ textAlign: "center", marginTop: "24px" }}>
+          <Image
+            src={pub.teaser}
+            alt="teaser"
+            style={{ maxWidth: "500px", width: "100%", height: "auto" }}
+          />
+        </div>
+        {blogRaw && ReactMarkdown ? (
+          <article className="prose prose-neutral max-w-none mb-10">
+            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{blogRaw}</ReactMarkdown>
+          </article>
+        ) : (<div style={{ marginTop: "36px" }}>
+          <p style={{ fontWeight: 600, marginBottom: "8px", fontSize: "1.1rem" }}>Abstract</p>
+          <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "#444" }}>
+            {pub.abstract}
+          </p>
+        </div>)}
+        <ProjectView pub={pub} />
+      </div>
+    </div>
+  );
 }
