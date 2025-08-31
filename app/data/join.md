@@ -28,7 +28,7 @@ We encourage outstanding candidates to explore the following doctoral opportunit
 - [Direct Doctorate in CS (for bachelor graduates)](https://inf.ethz.ch/doctorate/direct-doctorate-computer-science.html)
 - [ETH Zurich - EPFL Joint Doctoral Program in the Learning Sciences](https://lse.ethz.ch/doctoral-program-in-learning-sciences.html)
 - [Max Planck ETH Center for Learning Systems Doctoral Fellowship](https://learning-systems.org/)
-- [ETH AI Center Doctoral Fellowship](https://ai.ethz.ch/education/phd-and-postdoc-programs/phd-fellowships.html)
+- [ETH AI Center Doctoral Fellowship](https://ai.ethz.ch/research/phd-and-postdoc-programs/phd-fellowships.html)
 
 #### Doctoral Positions (for master graduates)
 If you have completed or are about to complete a master's degree and have a strong academic record, we invite you to contact us directly before applying through the [central application system](https://www.lehrbetrieb.ethz.ch/BewDokFrontend/login.view?lang=en). 
@@ -42,9 +42,9 @@ ETH Zürich's Department of Computer Science offers a [Direct Doctorate Program]
 We welcome applications from highly qualified postdoctoral candidates with a focus on developing collaborative and educational programming tools. Successful candidates are expected to publish in top-tier venues such as CHI, UIST, CSCW, L@S, AIED, or similar. 
 Please reach out to us directly and consider applying for the following fellowships:
 
-- [ETH Zürich Postdoctoral Fellowship](https://ethz.ch/en/research/research-promotion/eth-fellowships.html) (Deadlines: March 1 and September 1)
+- [ETH Zürich Postdoctoral Fellowship](https://grantsoffice.ethz.ch/funding-opportunities/internal/eth-fellowships.html) (Deadlines: March 1 and September 1)
 - [SNSF Swiss Postdoctoral Fellowship](https://www.snf.ch/en/m1NtWp4nTELQixlu/funding/horizon-europe-swiss-postdoctoral-fellowships) (Deadline: December 1)
-- [ETH AI Center Postdoctoral Fellowship](https://ai.ethz.ch/education/phd-and-postdoc-programs/postdoc-fellowships.html)
+- [ETH AI Center Postdoctoral Fellowship](https://ai.ethz.ch/research/phd-and-postdoc-programs/postdoc-fellowships.html)
 - [MSCA Postdoctoral Fellowship](https://marie-sklodowska-curie-actions.ec.europa.eu/calls/msca-postdoctoral-fellowships-2025)
 
 ### Visiting Students Outside of ETH Zürich
