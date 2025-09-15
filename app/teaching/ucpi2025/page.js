@@ -25,11 +25,9 @@ export default function UCPI2025() {
 
     if (!unlocked) {
         return (
-            <div
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '40vh' }}
             >
-                <h2>Seminar on User-Centered Programming Interfaces</h2>
-
-                <Input placeholder="Enter Password" width="80%" marginBottom={1} onChange={e => setInput(e.target.value)} />
+                <Input placeholder="Enter Password" width="100%" marginBottom={1} onChange={e => setInput(e.target.value)} />
                 <Button onClick={handleSubmit} type="secondary" >
                     Unlock
                 </Button>
