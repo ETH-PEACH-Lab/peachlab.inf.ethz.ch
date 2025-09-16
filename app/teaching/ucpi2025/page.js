@@ -14,8 +14,9 @@ import Toc from './Toc.js'
 const PASSWORD = "d-infk"; // Change this to your password
 
 export default function UCPI2025() {
-    const [input, setInput] = useState("CHI2026Barcelona");
+    const [input, setInput] = useState("d-infk");
     const [unlocked, setUnlocked] = useState(false);
+    const [tocOpen, setTocOpen] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -27,7 +28,7 @@ export default function UCPI2025() {
         return (
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '40vh' }}
             >
-                <Input placeholder="Enter Password" width="100%" marginBottom={1} onChange={e => setInput(e.target.value)} />
+                <Input placeholder="Enter Password" width="300px" marginBottom={1} onChange={e => setInput(e.target.value)} />
                 <Button onClick={handleSubmit} type="secondary" >
                     Unlock
                 </Button>
@@ -37,7 +38,19 @@ export default function UCPI2025() {
 
     return (
         <div className="ucpi-layout">
-            <Toc markdownText={teachingMd}/>
+            <div className="ucpi-sidebar">
+            {/* TOC Drawer Button (visible on mobile) */}
+            <button
+                className="toc-drawer-btn"
+                onClick={() => setTocOpen(!tocOpen)}
+            >
+               {tocOpen? "×" : "☰"} 
+            </button>
+            {/* TOC Sidebar/Drawer */}
+            <nav className={`toc${tocOpen ? " toc-drawer-open" : ""}`} onClick={() => setTocOpen(false)}>
+                <Toc markdownText={teachingMd} />
+            </nav>
+            </div>
             <main className="ucpi-main">
                 <ReactMarkdown
                     rehypePlugins={[rehypeSlug, rehypeRaw]}

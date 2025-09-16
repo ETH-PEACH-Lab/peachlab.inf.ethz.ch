@@ -20,7 +20,6 @@ export default function Toc({ markdownText }) {
   const headings = useMemo(() => extractSecondLevelHeadings(markdownText), [markdownText]);
 
   return (
-    <nav className="toc">
       <ul>
         {headings.map((heading) => (
           <li key={heading.id}>
@@ -28,6 +27,5 @@ export default function Toc({ markdownText }) {
           </li>
         ))}
       </ul>
-    </nav>
   );
 }
