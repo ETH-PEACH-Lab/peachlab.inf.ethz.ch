@@ -28,7 +28,7 @@ export default function UCPI2025() {
         return (
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '40vh' }}
             >
-                <Input placeholder="Enter Password" width="300px" marginBottom={1} onChange={e => setInput(e.target.value)} />
+                <Input placeholder="Enter Password" fontSize="16px" width="300px" marginBottom={1} onChange={e => setInput(e.target.value)} />
                 <Button onClick={handleSubmit} type="secondary" >
                     Unlock
                 </Button>
