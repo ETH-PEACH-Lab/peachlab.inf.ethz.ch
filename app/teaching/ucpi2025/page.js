@@ -11,10 +11,10 @@ import "./style.css"
 import Toc from './Toc.js'
 
 
-const PASSWORD = "d-infk"; // Change this to your password
+const PASSWORD = "d-infk"; 
 
 export default function UCPI2025() {
-    const [input, setInput] = useState("d-infk");
+    const [input, setInput] = useState("");
     const [unlocked, setUnlocked] = useState(false);
     const [tocOpen, setTocOpen] = useState(false);
 
