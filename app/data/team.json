@@ -81,19 +81,19 @@
   },
   {
     "name": "Irene Hou",
-    "status": "collaborator",
+    "status": "left",
     "title": "Academic Guest from UCSD",
     "link": "https://houirene.github.io/"
   },
   {
     "name": "Ziming Wang",
-    "status": "collaborator",
+    "status": "left",
     "title": "Academic Guest from Chalmers University",
     "link": "https://research.chalmers.se/person/ziming"
   },
   {
     "name": "Renn Su",
-    "status": "collaborator",
+    "status": "left",
     "title": "Remote Student Collaborator from Stanford",
     "email": "rrsu@stanford.edu"
   },
@@ -105,7 +105,7 @@
   },
   {
     "name": "Evan Stonestreet",
-    "status": "collaborator",
+    "status": "left",
     "title": "Remote Student Collaborator from Purdue University",
     "link": "https://www.linkedin.com/in/evanstonestreet/"
   },
@@ -118,7 +118,7 @@
   },
   {
     "name": "Zeyu Xiong",
-    "status": "current",
+    "status": "hidden",
     "title": "Doctoral Student",
     "affiliation": "ETH Zürich",
     "topics": "Agent-based Simulation",
@@ -176,7 +176,7 @@
   },
   {
     "name": "Kristijan Zafirovski",
-    "status": "current",
+    "status": "hidden",
     "topics": "Agent-based Simulation",
     "title": "Student Research Assistant",
     "affiliation": "ETH Zürich",
