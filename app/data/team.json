@@ -209,13 +209,14 @@
   },
   {
     "name": "Aaron Zeller",
-    "status": "hidden",
+    "status": "current",
     "title": "Student Research Assistant",
     "affiliation": "ETH Zürich",
+    "topics": "Live Coding",
     "hobby": "⛰️",
     "office": "CAB F66",
     "email": "zelleraa@student.ethz.ch",
-    "avatar": "/assets/kris.jpg"
+    "avatar": "/assets/aaron.jpeg"
   },
   {
     "name": "Jiawen Zhu",
