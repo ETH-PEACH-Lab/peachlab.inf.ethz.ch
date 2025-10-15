@@ -11,6 +11,11 @@ export default function ProjectView({ pub }) {
             <Button auto size="small">Read the paper →</Button>
           </Link>
         )}
+        {!pub.paper_link && pub.preprint_link && (
+          <Link href={pub.preprint_link} target="_blank" rel="noopener noreferrer">
+            <Button auto size="small">Read the preprint →</Button>
+          </Link>
+        )}
         {pub.project_link && (
           <Link href={pub.project_link} target="_blank" rel="noopener noreferrer">
             <Button auto size="small">View project →</Button>

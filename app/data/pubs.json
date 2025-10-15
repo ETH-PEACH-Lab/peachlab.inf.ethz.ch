@@ -13,6 +13,21 @@
     "is_journal": false,
     "is_featured": false
   },
+    {
+    "venue": "CSCW 2025",
+    "id": "CSCW2025",
+    "slug": "emotion",
+    "year": "2025",
+    "title": "Emotionally Aware Moderation: The Potential of Emotion Monitoring in Shaping Healthier Social Media Conversations",
+    "authors": "Xiaotian Su, Naim Zierau, Soomin Kim, April Yi Wang, Thiemo Wambsganss",
+    "venue_full": "In Proceedings of the ACM : Human-Computer Interaction, Computer-Supported Cooperative Work and Social Computing (CSCW 2025)",
+    "links": "<a>To Appear</a>",
+    "abstract": "Proactive moderation on social media platforms can face criticism for fostering censorship and ignoring the root causes of incivility. We propose and evaluate emotion monitoring mechanisms that enhance users' emotional awareness and mitigate hate speech.",
+    "teaser": "/assets/teaser/cscw2025.png",
+    "preprint_link":"https://arxiv.org/abs/2507.21089",
+    "is_journal": true,
+    "is_featured": true
+  },
   {
     "venue": "VL/HCC 2025",
     "id": "vlhcc2025",
@@ -104,21 +119,6 @@
     "pdf_link": "/assets/paper/ITiCSE25_DATAR.pdf",
     "paper_link": "https://dl.acm.org/doi/10.1145/3724363.3729047",
     "is_journal": false,
-    "is_featured": true
-  },
-  {
-    "venue": "CSCW 2025",
-    "id": "CSCW2025",
-    "slug": "emotion",
-    "year": "2025",
-    "title": "Emotionally Aware Moderation: The Potential of Emotion Monitoring in Shaping Healthier Social Media Conversations",
-    "authors": "Xiaotian Su, Naim Zierau, Soomin Kim, April Yi Wang, Thiemo Wambsganss",
-    "venue_full": "In Proceedings of the ACM : Human-Computer Interaction, Computer-Supported Cooperative Work and Social Computing (CSCW 2025)",
-    "links": "<a>To Appear</a>",
-    "abstract": "Proactive moderation on social media platforms can face criticism for fostering censorship and ignoring the root causes of incivility. We propose and evaluate emotion monitoring mechanisms that enhance users' emotional awareness and mitigate hate speech.",
-    "teaser": "/assets/teaser/cscw2025.png",
-    "preprint_link":"https://arxiv.org/abs/2507.21089",
-    "is_journal": true,
     "is_featured": true
   },
   {
