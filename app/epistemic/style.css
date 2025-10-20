@@ -1,0 +1,163 @@
+/* ============================================
+   Epistemic Page Styles - Modern & Cohesive
+   ============================================ */
+
+.epistemic-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.epistemic-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
+  letter-spacing: -0.02em;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid;
+}
+
+.custom-light .epistemic-title {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-dark .epistemic-title {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.epistemic-content {
+  line-height: 1.7;
+  font-size: 1.0625rem;
+}
+
+.epistemic-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+.epistemic-paragraph {
+  margin: 0 0 1.25rem 0;
+  line-height: 1.7;
+}
+
+.epistemic-emphasis {
+  font-weight: 600;
+}
+
+.custom-light .epistemic-emphasis {
+  color: #000;
+}
+
+.custom-dark .epistemic-emphasis {
+  color: #fff;
+}
+
+.epistemic-link {
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  transition: opacity 0.2s ease;
+}
+
+.custom-light .epistemic-link {
+  color: #ff6b6b;
+  border-bottom-color: rgba(255, 107, 107, 0.3);
+}
+
+.custom-dark .epistemic-link {
+  color: #ff8787;
+  border-bottom-color: rgba(255, 135, 135, 0.3);
+}
+
+.epistemic-link:hover {
+  opacity: 0.7;
+}
+
+.epistemic-list {
+  margin: 1.25rem 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.epistemic-list-item {
+  margin: 0.75rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.epistemic-list-item::before {
+  content: "→" !important;
+  position: absolute;
+  left: 0;
+  font-weight: 500;
+  display: inline-block !important;
+  width: auto !important;
+  margin-left: 0 !important;
+}
+
+.custom-light .epistemic-list-item::before {
+  color: #ff6b6b !important;
+}
+
+.custom-dark .epistemic-list-item::before {
+  color: #ff8787 !important;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 900px) {
+  .epistemic-title {
+    font-size: 1.75rem;
+  }
+
+  .epistemic-content {
+    font-size: 1rem;
+  }
+
+  .epistemic-section-title {
+    font-size: 1.375rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .epistemic-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .epistemic-content {
+    font-size: 0.9375rem;
+  }
+
+  .epistemic-section-title {
+    font-size: 1.25rem;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .epistemic-list {
+    padding-left: 1rem;
+  }
+
+  .epistemic-list-item {
+    padding-left: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .epistemic-title {
+    font-size: 1.375rem;
+  }
+
+  .epistemic-content {
+    font-size: 0.875rem;
+  }
+
+  .epistemic-section-title {
+    font-size: 1.125rem;
+  }
+}
+

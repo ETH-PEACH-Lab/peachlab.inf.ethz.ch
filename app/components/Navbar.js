@@ -1,120 +1,177 @@
-"use client"; // ✅ Mark as a Client Component
+"use client";
 
-import React from 'react'
-
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Button, useTheme, Tabs, Image } from "@geist-ui/core";
-import { Moon, Sun } from "@geist-ui/icons";
-import { useRouter, usePathname } from "next/navigation";
-import { useThemeSwitcher } from "../components/Providers"; // ✅ Import ThemeContext Hook
-import "./Navbar.css"; // ✅ Import custom styles
-//Convert HEX to RGBA manually
-const addColorAlpha = (hex, alpha) => {
-  hex = hex.replace("#", "");
-  let r, g, b;
-
-  if (hex.length === 3) {
-    // Convert shorthand hex (#fff → #ffffff)
-    r = parseInt(hex[0] + hex[0], 16);
-    g = parseInt(hex[1] + hex[1], 16);
-    b = parseInt(hex[2] + hex[2], 16);
-  } else {
-    r = parseInt(hex.substring(0, 2), 16);
-    g = parseInt(hex.substring(2, 4), 16);
-    b = parseInt(hex.substring(4, 6), 16);
-  }
-
-  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-};
-
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { Moon, Sun, Menu, X } from "lucide-react";
+import { useThemeSwitcher } from "../components/Providers";
+import "./Navbar.css";
 
 export default function Navbar() {
-  const { themeType, setThemeType } = useThemeSwitcher(); // ✅ Use theme state from context
-  const theme = useTheme()
-  const router = useRouter();
-  const pathname = usePathname(); // ✅ Get current route
+  const { themeType, setThemeType } = useThemeSwitcher();
+  const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [researchInView, setResearchInView] = useState(false);
 
-  const currentTab = pathname === "/" ? "" : pathname.split("/")[1];
+  const navLinks = [
+    { label: "Home", href: "/" },
+    { label: "Research", href: "/#research" },
+    { label: "Team", href: "/team" },
+    { label: "Publications", href: "/publications" },
+    { label: "Teaching", href: "/teaching" },
+  ];
 
-  const handleTabChange = (tab) => {
-    router.push(`/${tab}`);
+  // Detect if research section is in view
+  useEffect(() => {
+    if (pathname !== "/") {
+      setResearchInView(false);
+      return;
+    }
+
+    const handleScroll = () => {
+      const researchSection = document.getElementById("research");
+      if (researchSection) {
+        const rect = researchSection.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        // Consider in view if section is in the viewport
+        const inView = rect.top < windowHeight / 2 && rect.bottom > windowHeight / 2;
+        setResearchInView(inView);
+      }
+    };
+
+    handleScroll(); // Check on mount
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [pathname]);
+
+  const isActive = (href) => {
+    if (href === "/") return pathname === "/" && !researchInView;
+    if (href === "/#research") return pathname === "/" && researchInView;
+    return pathname.startsWith(href);
   };
 
+  const handleNavClick = (e, href) => {
+    if (href === "/#research") {
+      e.preventDefault();
+      closeMobileMenu();
+      
+      // If already on homepage, just scroll
+      if (pathname === "/") {
+        const element = document.getElementById("research");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      } else {
+        // Navigate to homepage then scroll
+        window.location.href = "/#research";
+      }
+    }
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
+
   return (
-    <>
-      <div className="menu-wrapper">
-        <nav className="menu">
-          {/* Logo Section */}
-          <div className="content">
+    <nav className="navbar">
+      <div className="navbar-container">
+        {/* Logo */}
+        <Link href="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Image
+            src={themeType === "custom-dark" ? "/assets/logo-dark.png" : "/assets/logo-light.png"}
+            width={105}
+            height={26}
+            alt="PEACH Lab"
+            priority
+            style={{ objectFit: "contain" }}
+          />
+        </Link>
 
-            <div className="logo">
-              <Link href="/"><Image
-                src={themeType == "custom-dark" ? `/assets/logo-dark.png` : `/assets/logo-light.png`}
-                height="30px"
-                alt="PEACH Lab Logo"
-                draggable={false}
-                title="Logo"
-              /></Link>
-            </div>
+        {/* Desktop Navigation */}
+        <div className="navbar-links">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`navbar-link ${isActive(link.href) ? "active" : ""}`}
+              onClick={(e) => handleNavClick(e, link.href)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
 
-            {/* Navigation Links */}
-            <div className="tabs">
-              <Tabs
-                value={currentTab}
-                leftSpace={0}
-                activeClassName="current"
-                align="center"
-                hideDivider
-                hideBorder
-                onChange={handleTabChange}>
-                <Tabs.Item
-                  font="14px"
-                  label={"Home"}
-                  value={""}
-                />
-                <Tabs.Item
-                  font="14px"
-                  label={"Team"}
-                  value={"team"}
-                />
-                <Tabs.Item
-                  font="14px"
-                  label={"Research"}
-                  value={"research"}
-                />
-                <Tabs.Item
-                  font="14px"
-                  label={"Publications"}
-                  value={"publications"}
-                />
-                <Tabs.Item
-                  font="14px"
-                  label={"Teaching"}
-                  value={"teaching"}
-                />
-              </Tabs>
-            </div>
+        {/* Theme Toggle & Mobile Menu Button */}
+        <div className="navbar-controls">
+          <button
+            className="theme-toggle"
+            onClick={() => setThemeType(themeType === "custom-dark" ? "custom-light" : "custom-dark")}
+            aria-label="Toggle theme"
+          >
+            {themeType === "custom-dark" ? <Sun size={18} strokeWidth={2} /> : <Moon size={18} strokeWidth={2} />}
+          </button>
 
-            {/* Dark Mode Toggle */}
-            <div className="controls">
-
-              <Button auto icon={themeType === "custom-dark" ? <Sun /> : <Moon />} onClick={() => setThemeType(themeType === "custom-dark" ? "custom-light" : "custom-dark")}>
-              </Button>
-            </div>
-          </div>
-        </nav>
+          <button
+            className="mobile-menu-toggle"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X size={20} strokeWidth={2} /> : <Menu size={20} strokeWidth={2} />}
+          </button>
+        </div>
       </div>
-      <style jsx>{`
-        .menu {
-          box-shadow: ${theme.type === 'dark'
-          ? '0 0 0 1px #333'
-          : '0 0 15px 0 rgba(0, 0, 0, 0.1)'};
-          background-color: ${addColorAlpha(theme.palette.background, 0.9)};
-        }
-        .highlight {
-          background-color: ${addColorAlpha(theme.palette.background, 0.7)};
-        }
-      `}</style>
-    </>
+
+      {/* Mobile Menu */}
+      <div className={`mobile-menu ${mobileMenuOpen ? "open" : ""}`}>
+        <div className="mobile-menu-links">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`mobile-menu-link ${isActive(link.href) ? "active" : ""}`}
+              onClick={(e) => {
+                handleNavClick(e, link.href);
+                if (link.href !== "/#research") {
+                  closeMobileMenu();
+                }
+              }}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
+        <div 
+          className="mobile-menu-overlay" 
+          onClick={closeMobileMenu}
+          onTouchEnd={closeMobileMenu}
+        ></div>
+      )}
+    </nav>
   );
 }

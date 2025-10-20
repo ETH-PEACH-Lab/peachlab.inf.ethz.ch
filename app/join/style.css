@@ -1,0 +1,231 @@
+/* ============================================
+   Join Page Styles - Modern & Cohesive
+   ============================================ */
+
+.join-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.join-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
+  letter-spacing: -0.02em;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid;
+}
+
+.custom-light .join-title {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-dark .join-title {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-content {
+  line-height: 1.7;
+  font-size: 1.0625rem;
+}
+
+.join-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+.join-section-title:first-child {
+  margin-top: 0;
+}
+
+.join-subsection-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  letter-spacing: -0.01em;
+}
+
+.join-category-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem 0;
+  letter-spacing: -0.01em;
+}
+
+.join-paragraph {
+  margin: 0 0 1.25rem 0;
+  line-height: 1.7;
+}
+
+.join-emphasis {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.custom-light .join-emphasis {
+  color: #666;
+}
+
+.custom-dark .join-emphasis {
+  color: #aaa;
+}
+
+.join-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.join-list-item {
+  margin: 0.75rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.join-list-item::before {
+  content: "→" !important;
+  position: absolute;
+  left: 0;
+  font-weight: 500;
+  display: inline-block !important;
+  width: auto !important;
+  margin-left: 0 !important;
+}
+
+.custom-light .join-list-item::before {
+  color: #ff6b6b !important;
+}
+
+.custom-dark .join-list-item::before {
+  color: #ff8787 !important;
+}
+
+.join-link {
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  transition: opacity 0.2s ease;
+}
+
+.custom-light .join-link {
+  color: #ff6b6b;
+  border-bottom-color: rgba(255, 107, 107, 0.3);
+}
+
+.custom-dark .join-link {
+  color: #ff8787;
+  border-bottom-color: rgba(255, 135, 135, 0.3);
+}
+
+.join-link:hover {
+  opacity: 0.7;
+}
+
+/* Zurich Image */
+.join-content img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  margin: 3rem auto;
+  display: block;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 900px) {
+  .join-title {
+    font-size: 1.75rem;
+  }
+
+  .join-content {
+    font-size: 1rem;
+  }
+
+  .join-section-title {
+    font-size: 1.375rem;
+  }
+
+  .join-subsection-title {
+    font-size: 1.125rem;
+  }
+
+  .join-category-title {
+    font-size: 1rem;
+  }
+
+  .join-content img {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .join-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .join-content {
+    font-size: 0.9375rem;
+  }
+
+  .join-section-title {
+    font-size: 1.25rem;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .join-subsection-title {
+    font-size: 1.0625rem;
+    margin: 1.5rem 0 0.75rem 0;
+  }
+
+  .join-category-title {
+    font-size: 0.9375rem;
+  }
+
+  .join-list {
+    padding-left: 1rem;
+  }
+
+  .join-list-item {
+    padding-left: 1.25rem;
+  }
+
+  .join-content img {
+    border-radius: 8px;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .join-title {
+    font-size: 1.375rem;
+  }
+
+  .join-content {
+    font-size: 0.875rem;
+  }
+
+  .join-section-title {
+    font-size: 1.125rem;
+  }
+
+  .join-subsection-title {
+    font-size: 1rem;
+  }
+
+  .join-category-title {
+    font-size: 0.875rem;
+  }
+
+  .join-content img {
+    border-radius: 6px;
+  }
+}
+

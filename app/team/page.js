@@ -1,51 +1,78 @@
 "use client"
-import { Grid } from "@geist-ui/core";
 import members from "@/data/team.json"
 import MemberCard from "./MemberCard";
 import ImageCarousel from "@/components/ImageCarousel";
-
+import Link from "next/link";
+import "./style.css";
 
 export default function Team() {
+    const currentMembers = members.filter(m => m.status === "current");
+    const collaborators = members.filter(m => m.status === "collaborator");
+    const alumni = members.filter(m => m.status === "left");
+
     return (
-        <div style={{ maxWidth: "55rem", margin: "auto" }}>
-            <h2>Team</h2>
-            <h3>Core Members</h3>
-            <Grid.Container gap={2} style={{ marginBottom: "20px", borderBottom: "1px solid #eaeaea" }}>
-                {members.map((member, index) => {
-                    if (member.status === "current")
-                        return <MemberCard member={member} key={index}></MemberCard>
-                })}
-            </Grid.Container>
-            <h3>Affiliated Members</h3>
-            <ul style={{ marginBottom: "20px", borderBottom: "1px solid #eaeaea" }}>
-                {members.map((member, index) => {
-                    if (member.status === "collaborator")
-                        return <li key={index}><a href={member.link} target="_blank" rel="noopener noreferrer">{member.name}</a>, <span dangerouslySetInnerHTML={{ __html: member.title }} />
-                        </li>
-                })}
-            </ul>
-            {/* <h3>Alumni and Past Visitors</h3>
-            <ul style={{ marginBottom: "20px", borderBottom: "1px solid #eaeaea" }}>
-                {members.map((member, index) => {
-                    if (member.status === "left")
-                        return <li key={index}><p><a href={member.link} target="_blank" rel="noopener noreferrer">{member.name}</a>, <span dangerouslySetInnerHTML={{ __html: member.title }} />
-                        </p></li>
-                })}
-            </ul> */}
-            <h3>Join Us</h3>
-            <ul>
-                <li>We are always excited to work with motivated and talented students. Please check <a href="/join">join us page</a> for more details.</li>
-                <li>If you are an ETH Zurich student looking for a BSc or MSc thesis, please check <a href="/theses">theses page</a> for more details.</li>
-            </ul>
-            <div style={{ marginTop: "4rem" }}></div>
+        <div className="team-container">
+            {/* <h1 className="team-title">Team</h1> */}
 
-            <ImageCarousel />
+            {/* Core Members */}
+            <section className="team-section">
+                <h2 className="team-section-title">Core Members</h2>
+                <div className="team-grid">
+                    {currentMembers.map((member, index) => (
+                        <MemberCard member={member} key={index} />
+                    ))}
+                </div>
+            </section>
 
-            {/* <hr />
-            <h3>Collaborations and Sponsorship</h3>
-            <ul>
-                <li>If you are interested in collaborating with us or sponsoring our research, please reach out to the PI directly.</li>
-            </ul> */}
-            </div>
-        );  
+            {/* Collaborators */}
+            {collaborators.length > 0 && (
+                <section className="team-section">
+                    <h2 className="team-section-title">Affiliated Members</h2>
+                    <ul className="team-simple-list">
+                        {collaborators.map((member, index) => (
+                            <li key={index} className="team-simple-item">
+                                {member.link ? (
+                                    <a href={member.link} target="_blank" rel="noopener noreferrer" className="team-simple-link">
+                                        {member.name}
+                                    </a>
+                                ) : (
+                                    <span className="team-simple-name">{member.name}</span>
+                                )}
+                                {member.title && (
+                                    <span className="team-simple-title" dangerouslySetInnerHTML={{ __html: `, ${member.title}` }} />
+                                )}
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+            )}
+
+            {/* Join Section */}
+            <section className="team-join-section">
+                <h2 className="team-section-title">Join Us</h2>
+                <div className="team-join-cards">
+                    <div className="team-join-card">
+                        <h3 className="team-join-card-title">Students & Researchers</h3>
+                        <p>We are always excited to work with motivated and talented students.</p>
+                        <Link href="/join" className="team-join-link">
+                            Learn more about joining →
+                        </Link>
+                    </div>
+                    <div className="team-join-card">
+                        <h3 className="team-join-card-title">Thesis Projects</h3>
+                        <p>ETH Zürich students looking for BSc or MSc thesis opportunities.</p>
+                        <Link href="/theses" className="team-join-link">
+                            View thesis topics →
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            {/* Photo Gallery */}
+            <section className="team-gallery-section">
+                <h2 className="team-section-title">Lab Photos</h2>
+                <ImageCarousel />
+            </section>
+        </div>
+    );
 }

@@ -1,22 +1,22 @@
 "use client"
 import news from "@/data/news.json"
 import "./style.css"
-import { Card } from   "@geist-ui/core";
 
 export default function News() {
     return (
-        <div className="news-container">
-            <h2 className="news-title">News</h2>
-            <ul className="news-list">
-                {news.map((item, index) => (
-                    <li key={index} className="news-item">
-                        <Card>
-                            <p className="news-time" style={{fontWeight: "bold"}}>{item.time}</p>
-                            <p className="news-text" dangerouslySetInnerHTML={{ __html: item.title }} />
-                        </Card>
-                    </li>
-                ))}
-            </ul>
+        <div className="news-page-container">
+            <h1 className="news-page-title">News</h1>
+            
+            <div className="news-page-content">
+                <ul className="news-page-list">
+                    {news.map((item, index) => (
+                        <li key={index} className="news-page-item">
+                            <span className="news-page-date">{item.time}</span>
+                            <div className="news-page-text" dangerouslySetInnerHTML={{ __html: item.title }} />
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }

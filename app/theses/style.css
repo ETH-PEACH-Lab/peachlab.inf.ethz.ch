@@ -1,0 +1,195 @@
+/* ============================================
+   Theses Page Styles - Modern & Cohesive
+   ============================================ */
+
+.theses-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.theses-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
+  letter-spacing: -0.02em;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid;
+}
+
+.custom-light .theses-title {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-dark .theses-title {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.theses-content {
+  line-height: 1.7;
+  font-size: 1.0625rem;
+}
+
+.theses-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+.theses-section-title:first-child {
+  margin-top: 0;
+}
+
+.theses-subsection-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  letter-spacing: -0.01em;
+}
+
+.theses-category-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem 0;
+  letter-spacing: -0.01em;
+}
+
+.theses-paragraph {
+  margin: 0 0 1.25rem 0;
+  line-height: 1.7;
+}
+
+.theses-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.theses-list-item {
+  margin: 0.75rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.theses-list-item::before {
+  content: "→" !important;
+  position: absolute;
+  left: 0;
+  font-weight: 500;
+  display: inline-block !important;
+  width: auto !important;
+  margin-left: 0 !important;
+}
+
+.custom-light .theses-list-item::before {
+  color: #ff6b6b !important;
+}
+
+.custom-dark .theses-list-item::before {
+  color: #ff8787 !important;
+}
+
+.theses-link {
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  transition: opacity 0.2s ease;
+}
+
+.custom-light .theses-link {
+  color: #ff6b6b;
+  border-bottom-color: rgba(255, 107, 107, 0.3);
+}
+
+.custom-dark .theses-link {
+  color: #ff8787;
+  border-bottom-color: rgba(255, 135, 135, 0.3);
+}
+
+.theses-link:hover {
+  opacity: 0.7;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 900px) {
+  .theses-title {
+    font-size: 1.75rem;
+  }
+
+  .theses-content {
+    font-size: 1rem;
+  }
+
+  .theses-section-title {
+    font-size: 1.375rem;
+  }
+
+  .theses-subsection-title {
+    font-size: 1.125rem;
+  }
+
+  .theses-category-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .theses-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .theses-content {
+    font-size: 0.9375rem;
+  }
+
+  .theses-section-title {
+    font-size: 1.25rem;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .theses-subsection-title {
+    font-size: 1.0625rem;
+    margin: 1.5rem 0 0.75rem 0;
+  }
+
+  .theses-category-title {
+    font-size: 0.9375rem;
+  }
+
+  .theses-list {
+    padding-left: 1rem;
+  }
+
+  .theses-list-item {
+    padding-left: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .theses-title {
+    font-size: 1.375rem;
+  }
+
+  .theses-content {
+    font-size: 0.875rem;
+  }
+
+  .theses-section-title {
+    font-size: 1.125rem;
+  }
+
+  .theses-subsection-title {
+    font-size: 1rem;
+  }
+
+  .theses-category-title {
+    font-size: 0.875rem;
+  }
+}
+

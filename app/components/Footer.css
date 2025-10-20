@@ -1,0 +1,293 @@
+/* ============================================
+   Footer Styles - Modern & Cohesive
+   ============================================ */
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+  border-top: 1px solid;
+  transition: all 0.3s ease;
+}
+
+.custom-light .footer {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.custom-dark .footer {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Container */
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem 4rem;
+}
+
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+/* Brand Section */
+.footer-brand {
+  gap: 0;
+  text-align: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.footer-lab-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* Section Titles */
+.footer-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+/* Contact Section */
+.footer-contact-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.footer-contact-item svg {
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.custom-light .footer-contact-item svg {
+  color: #666;
+}
+
+.custom-dark .footer-contact-item svg {
+  color: #999;
+}
+
+.footer-contact-item p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.custom-light .footer-contact-item p {
+  color: #666;
+}
+
+.custom-dark .footer-contact-item p {
+  color: #999;
+}
+
+.footer-contact-item a {
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  font-weight: 500;
+}
+
+.custom-light .footer-contact-item a {
+  color: #ff6b6b;
+}
+
+.custom-dark .footer-contact-item a {
+  color: #ff8787;
+}
+
+.footer-contact-item a:hover {
+  opacity: 0.7;
+}
+
+/* Navigation Links */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.footer-nav a {
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.custom-light .footer-nav a {
+  color: #666;
+}
+
+.custom-dark .footer-nav a {
+  color: #999;
+}
+
+.footer-nav a:hover {
+  transform: translateX(4px);
+}
+
+.custom-light .footer-nav a:hover {
+  color: #000;
+}
+
+.custom-dark .footer-nav a:hover {
+  color: #fff;
+}
+
+/* Copyright Bar */
+.footer-bottom {
+  border-top: 1px solid;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.custom-light .footer-bottom {
+  border-top-color: rgba(0, 0, 0, 0.06);
+}
+
+.custom-dark .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.06);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.8125rem;
+}
+
+.custom-light .footer-bottom p {
+  color: #999;
+}
+
+.custom-dark .footer-bottom p {
+  color: #666;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .footer-container {
+    gap: 2.5rem 3rem;
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  .footer-brand {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Hide affiliations on tablet */
+  .footer-affiliations {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.5rem 1rem 1rem;
+    align-items: center;
+  }
+
+  .footer-brand {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-lab-title {
+    font-size: 0.875rem;
+  }
+
+  .footer-section {
+    gap: 0.75rem;
+  }
+
+  .footer-title {
+    font-size: 0.875rem;
+  }
+
+  /* Hide quick links and affiliations on mobile - keep it simple */
+  .footer-links,
+  .footer-affiliations {
+    display: none;
+  }
+
+  /* Simplify contact section */
+  .footer-contact-item {
+    font-size: 0.8125rem;
+  }
+
+  .footer-contact-item svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .footer-bottom {
+    padding: 1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Extra Small */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 1.25rem 0.75rem 0.75rem;
+    gap: 1rem;
+  }
+
+  .footer-brand {
+    margin-bottom: 0.25rem;
+  }
+
+  .footer-lab-title {
+    font-size: 0.8125rem;
+  }
+
+  .footer-contact {
+    gap: 0.625rem;
+  }
+
+  .footer-contact-item {
+    font-size: 0.75rem;
+  }
+
+  .footer-contact-item p {
+    font-size: 0.75rem;
+  }
+
+  .footer-contact-item a {
+    font-size: 0.75rem;
+  }
+
+  .footer-bottom {
+    padding: 0.875rem 0.75rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.6875rem;
+  }
+}
+

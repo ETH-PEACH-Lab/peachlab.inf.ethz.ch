@@ -2,7 +2,7 @@ import pubs from "@/data/pubs.json";
 import { blogImports } from "./blogImports";
 import ProjectView from "./ProjectView";
 import Image from "@/components/Image";
-
+import "./style.css";
 
 export const dynamicParams = false;
 export async function generateStaticParams() {
@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 }
 
 export default async function ProjectPage({ params }) {
-  const { slug } = await params; // Do NOT destructure with { slug } in async
+  const { slug } = await params;
   const pub = pubs.find((p) => p.slug === slug);
   if (!pub) return <div>Not found</div>;
 
@@ -29,35 +29,45 @@ export default async function ProjectPage({ params }) {
   }
 
   return (
-    <div className="mx-auto max-w-3xl px-5 py-8">
+    <div className="project-container">
+      <div className="project-header">
+        <h1 className="project-title">{pub.title}</h1>
+        
+        <div className="project-meta">
+          <div className="project-meta-item">
+            <span className="project-meta-label">Authors</span>
+            <span className="project-meta-value">{pub.authors}</span>
+          </div>
+          <div className="project-meta-item">
+            <span className="project-meta-label">Venue</span>
+            <span className="project-meta-value">{pub.venue_full}</span>
+          </div>
+        </div>
 
-      <div style={{ maxWidth: "800px", margin: "0 auto", padding: "40px 20px" }}>
-        <h2 style={{ fontSize: "1.75rem", fontWeight: 700 }}>{pub.title}</h2>
+        {/* Resource Buttons at Top */}
+        <ProjectView pub={pub} />
 
-        <p>
-          <strong>Authors:</strong> {pub.authors}
-        </p>
-        <p>
-          <strong>Venue:</strong> {pub.venue_full}
-        </p>
-        <div style={{ textAlign: "center", marginTop: "24px" }}>
+        <div className="project-teaser">
           <Image
             src={pub.teaser}
-            alt="teaser"
-            style={{ maxWidth: "500px", width: "100%", height: "auto" }}
+            alt={pub.title}
           />
         </div>
+      </div>
+
+      <div className="project-content">
         {blogRaw && ReactMarkdown ? (
-          <article className="prose prose-neutral max-w-none mb-10">
-            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{blogRaw}</ReactMarkdown>
+          <article className="project-article">
+            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+              {blogRaw}
+            </ReactMarkdown>
           </article>
-        ) : (<div style={{ marginTop: "36px" }}>
-          <p style={{ fontWeight: 600, marginBottom: "8px", fontSize: "1.1rem" }}>Abstract</p>
-          <p style={{ fontSize: "1rem", lineHeight: "1.6", color: "#444" }}>
-            {pub.abstract}
-          </p>
-        </div>)}
-        <ProjectView pub={pub} />
+        ) : (
+          <div className="project-abstract">
+            <h2 className="project-abstract-title">Abstract</h2>
+            <p className="project-abstract-text">{pub.abstract}</p>
+          </div>
+        )}
       </div>
     </div>
   );

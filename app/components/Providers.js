@@ -47,10 +47,7 @@ export default function Providers({ children }) {
     document.documentElement.classList.add(themeType);
   }, [themeType, mounted]);
 
-  if (!mounted) {
-    return null; // Prevent Hydration Mismatch
-  }
-
+  // Always render to avoid hydration mismatch
   return (
     <ThemeContext.Provider value={{ themeType, setThemeType }}>
       <GeistProvider themeType={themeType} themes={[customLightTheme, customDarkTheme]}>

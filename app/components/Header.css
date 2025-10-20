@@ -1,14 +1,21 @@
 .breadcrumbs-container .geist-ui-breadcrumbs {
   display: flex;
-  max-width: 700px;
+  max-width: 1400px;
   row-gap: 0.5rem;
   column-gap: 1.5rem;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  padding: 0 2rem;
 }
 
-@media (max-width: 700px) {
-    .breadcrumbs-container{
-        display:none !important;
-    }
+@media (max-width: 900px) {
+  .breadcrumbs-container .geist-ui-breadcrumbs {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .breadcrumbs-container {
+    display: none !important;
+  }
 }

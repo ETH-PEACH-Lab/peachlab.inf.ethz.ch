@@ -30,7 +30,9 @@
     "topics": "Social Learning",
     "office": "CAB F66",
     "avatar": "/assets/lahari.jpg",
-    "link": "https://laharigoswami.com/"
+    "link": "https://laharigoswami.com/",
+    "email": "lahari.goswami@inf.ethz.ch",
+    "linkedin": "ch.linkedin.com/in/lahari-goswami-b89bb4a3"
   },
   {
     "name": "Dr. Heejin Do",
@@ -40,6 +42,8 @@
     "affiliation": "ETH AI Center",
     "office": "CAB F66",
     "avatar": "/assets/heejin.jpg",
+    "email": "heejindo@postech.ac.kr",
+    "linkedin": "https://www.linkedin.com/in/heejin-do-969bb3231/",
     "link": "https://doheejin.github.io/about_me/"
   },
   {
@@ -155,11 +159,13 @@
   {
     "name": "Bhada Yun",
     "status": "current",
-    "title": "Direct Doctoral Student",
+    "title": "Direct Doctorate Student",
     "topics": "Human AI Interaction",
     "affiliation": "ETH Zürich",
     "office": "CAB F66",
     "avatar": "/assets/bhada.jpeg",
+    "email": "bhayun@ethz.ch",
+    "linkedin": "https://www.linkedin.com/in/bhadayun/",
     "link": "https://www.bhadayun.com/"
   },
   {
