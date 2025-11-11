@@ -4,21 +4,9 @@ We are seeking highly motivated and exceptionally qualified students to join our
 We especially welcome candidates with a strong engineering background who are passionate about educational technology, creative in their thinking, and self-motivated in their work.
 Experience in human–computer interaction, educational technology, or related field is strongly preferred.
 
-### Application Materials
+### Shall I contact ahead of time?
 
-Before reaching out, please carefully review the research projects listed on our website to ensure your interests align with our lab's focus. 
-Prospective candidates should email [peachlab@inf.ethz.ch](mailto:peachlab@inf.ethz.ch?subject=Prospective-Student-POSITION) with the following:
-
-- Your CV
-- The specific position you are applying for
-- A concise paragraph outlining your background, research interests, and how your skills align with our lab's mission
-
-Please note that due to the high volume of inquiries, we will only respond to candidates whose profiles closely match our current needs.
-
-*Please do not contact us if*:
-
-- You are sending bulk or mass emails
-- Your interests and experience have no clear connection to our research
+We’ve received a large number of inquiries, so we’re unfortunately unable to respond to individual requests before reviewing applications. Please check this page for the latest updates on open positions.
 
 ### Doctoral Positions
 
@@ -31,8 +19,17 @@ We encourage outstanding candidates to explore the following doctoral opportunit
 - [ETH AI Center Doctoral Fellowship](https://ai.ethz.ch/research/phd-and-postdoc-programs/phd-fellowships.html)
 
 #### Doctoral Positions (for master graduates)
-If you have completed or are about to complete a master's degree and have a strong academic record, we invite you to contact us directly before applying through the [central application system](https://www.lehrbetrieb.ethz.ch/BewDokFrontend/login.view?lang=en). 
-Please include "Educational Technology" and "Human-Computer Interaction" as your interests in the system to help us locate your application.
+<div style="border: 1px solid #9fc5f4; background-color: #f2f6ff; padding: 5px 30px; border-radius: 4px; margin-bottom: 20px">
+  <p><strong>Updated November 2025</strong></p>
+  <p>
+    Our lab currently has multiple openings for doctoral positions.
+    Please refer to the details in the following link and submit your application through this page:
+    <a href="https://jobs.ethz.ch/job/view/JOPG_ethz_OqnIo9oIOhdv38BDHq" target="_blank" rel="noopener noreferrer">
+      https://jobs.ethz.ch/job/view/JOPG_ethz_OqnIo9oIOhdv38BDHq
+    </a>.
+  </p>
+</div>
+
 
 #### Direct Doctorate in CS (for bachelor graduates)
 ETH Zürich's Department of Computer Science offers a [Direct Doctorate Program](https://inf.ethz.ch/doctorate/direct-doctorate-computer-science.html) for exceptional undergraduate applicants. If you are interested, please apply directly.
