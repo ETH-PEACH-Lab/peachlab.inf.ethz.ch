@@ -144,12 +144,12 @@
   },
   {
     "name": "Yang Wu",
-    "status": "hidden",
+    "status": "current",
     "title": "Doctoral Student",
     "topics": "Visual-based Tutoring System",
     "affiliation": "ETH EPFL JDPLS",
     "office": "CAB F66",
-    "avatar": "https://yang-emily.github.io/images/profile.png",
+    "avatar": "/assets/yang.jpg",
     "link": "https://yang-emily.github.io/"
   },
   {
