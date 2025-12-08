@@ -42,9 +42,9 @@ export default async function ProjectPage({ params }) {
         </p>
         <div style={{ textAlign: "center", marginTop: "24px" }}>
           <Image
-            src={pub.teaser}
+            src={pub.teaser_full ? pub.teaser_full : pub.teaser}
             alt="teaser"
-            style={{ maxWidth: "500px", width: "100%", height: "auto" }}
+            style={{ maxHeight: "500px", width: "auto", height: "100%" }}
           />
         </div>
         {blogRaw && ReactMarkdown ? (

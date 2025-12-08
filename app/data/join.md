@@ -49,4 +49,15 @@ Please reach out to us directly and consider applying for the following fellowsh
 Due to limited capacity, we prioritize ETH Zürich students for project opportunities, often integrated into their bachelor's or master's theses. 
 However, we welcome exceptionally motivated visiting students who have secured external fellowships (e.g., [ETH SSRF](https://inf.ethz.ch/studies/summer-research-fellowship.html), [ETH Project Mobility](https://ethz.ch/en/studies/non-degree-courses/project.html)).
 
+<div style="border: 1px solid #9fc5f4; background-color: #f2f6ff; padding: 5px 30px; border-radius: 4px; margin-bottom: 20px">
+  <p><strong>Updated November 2025</strong></p>
+  <p>
+    Our lab currently has an opening for a full-time research internship.
+    Please refer to the details in the following link and submit your application through this page:
+    <a href="https://www.jobs.ethz.ch/job/view/JOPG_ethz_CjHblrAcNQKO6Q9pBI" target="_blank" rel="noopener noreferrer">
+      https://www.jobs.ethz.ch/job/view/JOPG_ethz_CjHblrAcNQKO6Q9pBI
+    </a>.
+  </p>
+</div>
+
 ![zurich](/assets/zurich.jpg)
