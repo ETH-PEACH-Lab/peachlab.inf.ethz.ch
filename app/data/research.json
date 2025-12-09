@@ -15,7 +15,7 @@
         "subtitle": "Collaborative programming tools that leverage peer input to deepen reasoning.",
         "description": "We design systems that bring more minds into the problem-solving process, whether through peer collaboration or real-time instructional support. Our work explores design ideas such as real-time collaborative editing in IDEs, in-class peer assessment, and chatbots that draw explicitly on community knowledge. Through these tools, we use collaboration as a deliberate design strategy to foster deeper reasoning, expose diverse perspectives, and encourage critical discussion.",
         "projects": [
-            "spark",
+            "chatcommunity",
             "puzzleme"
         ],
         "teaser": "/assets/teaser/spark.png",

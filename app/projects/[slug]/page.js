@@ -44,7 +44,12 @@ export default async function ProjectPage({ params }) {
           <Image
             src={pub.teaser_full ? pub.teaser_full : pub.teaser}
             alt="teaser"
-            style={{ maxHeight: "500px", width: "auto", height: "100%" }}
+            style={{
+              maxWidth: "100%",   // don’t overflow horizontally
+              height: "auto",     // keep aspect ratio
+              maxHeight: "500px", // optional cap for very tall images
+              objectFit: "contain"
+            }}
           />
         </div>
         {blogRaw && ReactMarkdown ? (
