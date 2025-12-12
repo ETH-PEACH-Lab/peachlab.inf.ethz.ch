@@ -1,5 +1,31 @@
 [
   {
+    "venue": "IUI 2026",
+    "id": "iui2026a",
+    "slug": "stepmind",
+    "year": "2026",
+    "title": "StepMIND: A Visual Framework for Stepwise, Multimodal, and Bidirectional Explanations of AI-Generated Data Analysis Pipeline",
+    "authors": "Yang Wu, Yao Wan, Mennatallah El-Assady, April Yi Wang",
+    "venue_full": "In Proceedings of the 31th International Conference on Intelligent User Interfaces (IUI 2026)",
+    "abstract": "Artificial intelligence (AI) enables users to generate data visualizations from natural language descriptions, lowering the barrier to data exploration. However, AI-generated visualizations often present only the final output, lacking transparency and limiting users’ ability to verify, interpret, or refine the results. To address this, we introduce STEPMIND, a generalizable visual framework that enhances explainability and interactivity in AI-generated data analysis pipelines. STEPMIND integrates four dimensions: (1) Stepwise Refinement, allowing users to engage in the AI decision process; (2) Multimodal Explanations, combining natural language, structured notation, direct manipulation, and content visualization for accessible interpretation; (3) Bidirectional Editing, enabling seamless updates across modalities; and (4) Familiar Interaction Models, such as code editor and spreadsheet-based manipulations, to support both technical and non-technical users. To demonstrate its utility, we apply STEPMIND in STAGE, a case study system for AI-assisted data visualization. A within-subject user study (N=20) shows that STAGE significantly improves user confidence and trust, reduces cognitive load, and facilitates both exploratory and corrective refinements. Our findings further suggest that STEPMIND can generalize to broader AI-assisted workflows, offering a visible and interactive approach to explainable AI.",
+    "teaser": "/assets/teaser/stepmind.jpg",
+    "is_journal": false,
+    "is_featured": false
+  },
+  {
+    "venue": "IUI 2026",
+    "id": "iui2026a",
+    "slug": "uiremix",
+    "year": "2026",
+    "title": "UI Remix: Supporting UI Design Through Interactive Example Retrieval and Remixing",
+    "authors": "Junling Wang, Hongyi Lan, Xiaotian Su, Mustafa Doga Dogan, April Yi Wang",
+    "venue_full": "In Proceedings of the 31th International Conference on Intelligent User Interfaces (IUI 2026)",
+    "abstract": "Designing user interfaces (UIs) is a critical step when launching products, building portfolios, or personalizing projects, yet end users without design expertise often struggle to articulate their intent and to trust design choices. Existing example-based tools either promote broad exploration, which can cause overwhelm and design drift, or require adapting a single example, risking design fixation. We present UI Remix, an interactive system that supports mobile UI design through example-driven exploration. Powered by a multimodal retrieval-augmented generation (MMRAG) model, UI Remix enables iterative search, selection, and adaptation of examples at both the global (whole interface) and local (component) level. To foster trust, it presents source transparency cues such as ratings, downloads, and developer information. In an empirical study with 24 end users, UI Remix significantly improved participants’ ability to achieve their design goals, facilitated effective iteration, and encouraged exploration of alternative designs. Participants also reported that source transparency cues enhanced their confidence in adapting examples. Our findings suggest new directions for AI-assisted, example-driven systems that empower end users to design with greater control, trust, and openness to exploration.",
+    "teaser": "/assets/teaser/uiremix.jpg",
+    "is_journal": false,
+    "is_featured": false
+  },
+  {
     "venue": "CSCW 2026",
     "id": "cscw2026",
     "slug": "chatcommunity",
