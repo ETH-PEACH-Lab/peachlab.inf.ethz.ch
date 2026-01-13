@@ -1,0 +1,370 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.meta {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+.link {
+    color: #0073e6 !important;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline !important;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.abstract {
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+
+.abstract-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
+
+/* Quest Section */
+.quest-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.quest-image {
+    flex: 1;
+    text-align: center;
+}
+
+.board-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quest-text {
+    flex: 1;
+}
+
+.quest-text p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* Bots Section */
+.bots-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.bot-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bot-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bot-icon img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.bot-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bot-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.bot-card ul {
+    list-style-type: disc !important;
+    list-style-position: outside !important;
+    padding-left: 25px !important;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.bot-card ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    display: list-item !important;
+}
+
+.bot-card ul li::before {
+    content: none !important;
+}
+
+.bot-card ul li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+}
+
+/* Lab Section */
+.lab-subsection {
+    margin-bottom: 50px;
+}
+
+.lab-subsection h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lab-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.lab-text {
+    flex: 1;
+}
+
+.lab-text p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.lab-text ul {
+    list-style-type: disc !important;
+    list-style-position: outside !important;
+    padding-left: 25px !important;
+    margin: 10px 0;
+    margin-left: 0;
+}
+
+.lab-text ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    display: list-item !important;
+}
+
+.lab-text ul li::before {
+    content: none !important;
+}
+
+.lab-text ul li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+}
+
+.lab-image {
+    flex: 1;
+    text-align: center;
+}
+
+.cards-image,
+.lightboard-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Play Section */
+.play-subsection {
+    margin-bottom: 50px;
+}
+
+.play-subsection h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.play-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.play-text {
+    flex: 1;
+}
+
+.play-text p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.play-text ul {
+    list-style-type: disc !important;
+    list-style-position: outside !important;
+    padding-left: 25px !important;
+    margin: 10px 0;
+    margin-left: 0;
+}
+
+.play-text ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    display: list-item !important;
+}
+
+.play-text ul li::before {
+    content: none !important;
+}
+
+.play-text ul li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+}
+
+.play-image {
+    flex: 1;
+    text-align: center;
+}
+
+.encounter-image,
+.results-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .meta {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .abstract {
+        padding: 25px;
+    }
+    
+    .quest-content,
+    .lab-content,
+    .play-content {
+        flex-direction: column;
+    }
+    
+    .bots-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .board-image,
+    .cards-image,
+    .lightboard-image,
+    .encounter-image,
+    .results-image {
+        max-width: 100%;
+    }
+}
+
+/* Dark Mode Styles */
+.container.dark-mode {
+    color: #e0e0e0;
+}
+
+.dark-mode .meta {
+    color: #aaa;
+}
+
+.dark-mode .abstract {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+}
+
+.dark-mode .abstract-text {
+    color: #d0d0d0;
+}
+
+.dark-mode .bot-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+}
+
+.dark-mode .bot-card p,
+.dark-mode .bot-card ul li,
+.dark-mode .quest-text p,
+.dark-mode .lab-text p,
+.dark-mode .lab-text ul li,
+.dark-mode .play-text p,
+.dark-mode .play-text ul li {
+    color: #d0d0d0;
+}
+
+.dark-mode .board-image,
+.dark-mode .cards-image,
+.dark-mode .lightboard-image,
+.dark-mode .encounter-image,
+.dark-mode .results-image {
+    border: 1px solid #444;
+}
+
