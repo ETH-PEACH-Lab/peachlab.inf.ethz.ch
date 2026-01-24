@@ -34,7 +34,7 @@ export default function ToioPage() {
                     <Link href="/path/to/thesis.pdf" target="_blank">
                         <Button auto>📄 Thesis</Button>
                     </Link>
-                    <Link href="/path/to/demo" target="_blank">
+                    <Link href="https://youtu.be/b4aeyXHE_G8" target="_blank">
                         <Button auto>🔗 Demo</Button>
                     </Link>
                 </div>
