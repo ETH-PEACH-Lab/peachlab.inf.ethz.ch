@@ -15,7 +15,7 @@ StepMIND addresses these gaps by combining four ideas: <span style="color:#60a5f
 
 ##### Stepwise Refinement 
 <div style="float:right; width:25%; max-width:220px; margin:4px 0 8px 24px; text-align:center;">
-  <img src="/assets/blog/stepmind/stepwise.png" alt="Stepwise Execution Interface" style="width:100%; height:auto; border-radius:8px;" />
+  <img src="/peachlab.inf.ethz.ch/assets/blog/stepmind/stepwise.png" alt="Stepwise Execution Interface" style="width:100%; height:auto; border-radius:8px;" />
 </div>
 This stepwise approach enables users to verify, modify, and understand visualizations at a granular level by breaking the process into discrete stages such as <span style="color:#60a5fa; font-weight:600;">data selection</span>, <span style="color:#60a5fa; font-weight:600;">filtering</span>, <span style="color:#60a5fa; font-weight:600;">aggregation</span>, and <span style="color:#60a5fa; font-weight:600;">rendering</span>. In our setup, LLMs generate an initial instruction sequence from natural language and data (<strong>T→I</strong>). To improve control and transparency, StepMIND decomposes this instruction into ordered sub-steps (<strong>I1, I2, …, In</strong>) and executes them sequentially, producing intermediate data content states (<strong>C1, C2, …, Cn</strong>). Users can refine the visual output by inspecting and editing a specific step (e.g., adjusting a <span style="color:#60a5fa; font-weight:600;">filter</span> or a threshold slider), and the system updates the corresponding intermediate and final states accordingly.
 <div style="clear:both;"></div>
@@ -23,14 +23,14 @@ This stepwise approach enables users to verify, modify, and understand visualiza
 
 <h5 style="clear:both; margin:12px 0;">Multimodal Grounding</h5>
 <div style="float:right; width:25%; max-width:220px; margin:4px 0 8px 24px; text-align:center;">
-  <img src="/assets/blog/stepmind/multimodel.png" alt="Multimodal Synchronization" style="width:100%; height:auto; border-radius:8px;" />
+  <img src="/peachlab.inf.ethz.ch/assets/blog/stepmind/multimodel.png" alt="Multimodal Synchronization" style="width:100%; height:auto; border-radius:8px;" />
 </div>
 To support users of varying expertise, StepMIND provides <span style="color:#60a5fa; font-weight:600;">multimodal explanations</span> at each step. From every instruction <span style="color:#60a5fa; font-weight:600;">In</span>, the system prompts the LLM to generate a self-explanation in <span style="color:#60a5fa; font-weight:600;">natural language</span> <strong>Tn</strong> (<strong>In→Tn</strong>). The textual explanation at each step, combined with the current data content, yields <span style="color:#60a5fa; font-weight:600;">direct manipulation elements</span> <strong>Dn</strong> (e.g., sliders, selectors), enabling spreadsheet-style interactions that act on the underlying content (<strong>Dn→Cn</strong>). Novice users benefit from these grounded, interactive explanations without needing technical knowledge, while expert users can read and edit <span style="color:#60a5fa; font-weight:600;">structured notations</span> (e.g., SQL-/VQL-like clauses) alongside visual outputs to enable fine-grained control, verification, and debugging of complex operations.
 <div style="clear:both;"></div>
 
 <h5 style="clear:both; margin:12px 0;">Bidirectional Editing</h5>
 <div style="float:right; width:15%; max-width:120px; margin:4px 0 8px 24px; text-align:center;">
-  <img src="/assets/blog/stepmind/bid.png" alt="Bidirectional Architecture" style="width:100%; height:auto; border-radius:8px;" />
+  <img src="/peachlab.inf.ethz.ch/assets/blog/stepmind/bid.png" alt="Bidirectional Architecture" style="width:100%; height:auto; border-radius:8px;" />
 </div>
 
 Unlike traditional unidirectional refinement, StepMIND supports seamless <span style="color:#60a5fa; font-weight:600;">bidirectional editing</span> between textual descriptions and visual interfaces. Users move between instruction and explanation (<strong>I↔T</strong>), explanation and direct manipulation (<strong>T↔D</strong>), and ultimately across all components (<strong>I↔T↔D↔C</strong>). For example, clicking on a chart element can trigger related query changes, and updating a textual clause immediately reflects in the visualization. This tight binding creates an efficient, intuitive loop for data exploration and correction.
@@ -38,7 +38,7 @@ Unlike traditional unidirectional refinement, StepMIND supports seamless <span s
 
 ##### Familiar Interaction Models
 <div style="float:right; width:15%; max-width:120px; margin:4px 0 8px 24px; text-align:center;">
-  <img src="/assets/blog/stepmind/sheet.png" alt="Spreadsheet View" style="width:100%; height:auto; border-radius:8px;" />
+  <img src="/peachlab.inf.ethz.ch/assets/blog/stepmind/sheet.png" alt="Spreadsheet View" style="width:100%; height:auto; border-radius:8px;" />
 </div>
 StepMIND draws from familiar paradigms like <span style="color:#60a5fa; font-weight:600;">spreadsheet-based manipulation</span> and <span style="color:#60a5fa; font-weight:600;">block-structured pipelines</span> to lower the barrier for non-experts. Users who prefer <span style="color:#60a5fa; font-weight:600;">tabular interfaces</span> can interact directly with data (<strong>T↔D↔C</strong>), while those with programming backgrounds can refine workflows via <span style="color:#60a5fa; font-weight:600;">code</span> and <span style="color:#60a5fa; font-weight:600;">instruction</span> (<strong>T↔I↔C</strong>). By combining <span style="color:#60a5fa; font-weight:600;">text</span>, <span style="color:#60a5fa; font-weight:600;">GUI</span>, and <span style="color:#60a5fa; font-weight:600;">structured instructions</span>, StepMIND forms a closed refinement loop (<strong>T↔D↔C↔I↔T</strong>) that supports a broad spectrum of users in exploring and interpreting data effectively.
 <div style="clear:both;"></div>
@@ -49,7 +49,7 @@ StepMIND draws from familiar paradigms like <span style="color:#60a5fa; font-wei
 To demonstrate the framework, we built STAGE, an AI-assisted data visualization system based on StepMIND. In STAGE, users can enter a natural language question, view a step-by-step explanation of how the visualization was generated, interactively adjust filters, aggregations, and chart types, and switch seamlessly between explanations, visual controls, and query code. For example, if a user asks for “popular product categories” but later realizes the chart should show total sales instead of counts, they can modify the SELECT/GROUP BY step—without rewriting the entire prompt. <strong>Try STAGE:</strong> <a href="https://stage.peachlab-cntr1.inf.ethz.ch/" style="color:#60a5fa; text-decoration:underline;" target="_blank" rel="noopener noreferrer">Open demo ↗</a>
 <figure style="margin:0 auto; width:fit-content; text-align:center; padding: 12px 0;">
   <div style="display:flex; justify-content:center;">
-    <img src="/assets/blog/stepmind/screenshot4.png" alt="STAGE interface overview" style="max-width:900px; width:100%; border-radius:10px; border:1px solid #e5e7eb; box-shadow:0 6px 18px rgba(0,0,0,0.08);" />
+    <img src="/peachlab.inf.ethz.ch/assets/blog/stepmind/screenshot4.png" alt="STAGE interface overview" style="max-width:900px; width:100%; border-radius:10px; border:1px solid #e5e7eb; box-shadow:0 6px 18px rgba(0,0,0,0.08);" />
   </div>
   <figcaption style="margin-top:8px; font-size:0.9rem; color:#6b7280;">STAGE overview: switch between Explanations, Visual Controls, and VQL to inspect and refine results step by step.</figcaption>
 </figure>
