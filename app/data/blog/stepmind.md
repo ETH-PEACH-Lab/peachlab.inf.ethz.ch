@@ -49,7 +49,7 @@ StepMIND draws from familiar paradigms like spreadsheet-based manipulation and b
 To demonstrate the framework, we built STAGE, an AI-assisted data visualization system based on StepMIND. In STAGE, users can enter a natural language question, view a step-by-step explanation of how the visualization was generated, interactively adjust filters, aggregations, and chart types, and switch seamlessly between explanations, visual controls, and query code. For example, if a user asks for “popular product categories” but later realizes the chart should show total sales instead of counts, they can modify the SELECT/GROUP BY step—without rewriting the entire prompt.
 
 <div style="text-align:center; border:1px solid #e5e7eb; padding:12px; border-radius:8px; width:fit-content; margin:20px auto;">
-   <a href="https://stage.peachlab-cntr1.inf.ethz.ch/" style="color:#60a5fa; text-decoration:underline;" target="_blank" rel="noopener noreferrer"><strong>Try STAGE</strong></a>
+   <a href="https://stage.peachlab-cntr1.inf.ethz.ch/" style="color:#0073e6; text-decoration:underline;" target="_blank" rel="noopener noreferrer"><strong>Try STAGE</strong></a>
 </div>
 <figure style="margin:0 auto; width:fit-content; text-align:center; padding: 12px 0;">
   <div style="display:flex; justify-content:center;">
@@ -67,8 +67,8 @@ While STAGE serves as a concrete instantiation of StepMIND, the framework itself
 
 <div style="background:#f3f4f6;border-radius:10px;padding:8px 30px; margin-top:20px;">
   <p style="margin:6px 0;">
-    📄 <a href="https://doi.org/10.1145/3742413.3789070" style="color:#60a5fa; text-decoration:underline;" target="_blank" rel="noopener noreferrer">Paper (DOI)</a>
-    ｜ 📹 <a href="#" style="color:#60a5fa; text-decoration:underline; pointer-events:none; opacity:0.7;" aria-disabled="true">Video (coming soon)</a>
+    📄 <a href="https://doi.org/10.1145/3742413.3789070" style="color:#0073e6; text-decoration:underline;" target="_blank" rel="noopener noreferrer">Paper (DOI)</a>
+    ｜ 📹 <a href="#" style="color:#0073e6; text-decoration:underline; pointer-events:none; opacity:0.7;" aria-disabled="true">Video (coming soon)</a>
   </p>
   <p style="margin:6px 0;">
     <strong>Citation</strong>: Wu, Y., Wan, Y., El‑Assady, M., &amp; Wang, A. Y. (2026). StepMIND: A Visual Framework for Stepwise, Multimodal, and Bidirectional Explanations of AI‑Generated Data Analysis Pipeline. In Proceedings of the 31th International Conference on Intelligent User Interfaces (IUI 2026).
