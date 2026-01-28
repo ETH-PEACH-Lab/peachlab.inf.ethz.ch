@@ -7,8 +7,8 @@
     "title": "Git Takes Two: Split-View Awareness for Collaborative Learning of Distributed Workflows in Git",
     "authors": "Joel Bucher*, Lahari Goswami*, Sverrir Thorgeirsson, April Yi Wang",
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
-    "abstract": "Will update soon",
-    "teaser": "/assets/teaser/placeholder.png",
+    "abstract": "Git is widely used for collaborative software development, but it can be challenging for newcomers. While most learning tools focus on individual workflows, Git is inherently collaborative. We present GitAcademy, a browser-based learning platform that embeds a full Git environment with a split-view collaborative mode: learners work on their own local repositories connected to a shared remote repository, while simultaneously seeing their partner's actions mirrored in real time. This design is not intended for everyday software development, but rather as a training simulator to build awareness of distributed states, coordination, and collaborative troubleshooting. In a within-subjects study with 13 pairs of learners, we found that the split-view interface enhanced social presence, supported peer teaching, and was consistently preferred over a single-view baseline, even though performance gains were mixed. We further discuss how split-view awareness can serve as a training-only scaffold for collaborative learning of Git and other distributed technical systems.",
+    "teaser": "/assets/teaser/git_two.png",
     "is_journal": false,
     "is_featured": false
   },
