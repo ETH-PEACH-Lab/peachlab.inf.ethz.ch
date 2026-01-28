@@ -18,35 +18,42 @@ export default function ToioPage() {
                 </h1>
                 
                 <div className="meta">
-                    <p>Author:
+                    <p>Project Leader: 
                         <Link href="#" target="_blank" className="link">Zihan Li</Link>
                     </p>
-                    <p>Supervised by:
+                    {/* <p>Supervised by: 
                         <Link href="https://aprilwang.me" target="_blank" className="link">Prof. Dr. April Yi Wang</Link>
-                    </p>
-                    <p>ETH Zürich</p>
-                    <p>2026</p>
+                    </p> */}
+                    {/* <p>ETH Zürich</p>
+                    <p>2026</p> */}
                 </div>
 
                 {/* Buttons */}
                 {/* TBD, either add document in the repo or add a link for it */}
-                <div className="buttons">
+                {/* <div className="buttons">
                     <Link href="/path/to/thesis.pdf" target="_blank">
                         <Button auto>📄 Thesis</Button>
                     </Link>
-                    <Link href="https://youtu.be/b4aeyXHE_G8" target="_blank">
-                        <Button auto>🔗 Demo</Button>
-                    </Link>
-                </div>
-            </header>
-
+                </div> */}
             {/* Abstract */}
             <section className="section abstract">
-                <h2 className="section-title">Abstract</h2>
                 <p className="abstract-text">
                     Pokémon AI Adventure is a tangible toolkit that teaches foundational AI literacy to children aged 9-15. Our primary research goal is to bridge the conceptual gap between rule-based logic and data-driven machine learning. Through a playful, hands-on journey, children act the role as a "Pokémon Trainer," using physical components to build, test, and compare different AI models. This process allows them to experientially learn how different AIs "think" and make decisions to solve challenges in the world of Pokémon.
                 </p>
             </section>
+                <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'center', width: '100%' }}>
+                    <iframe 
+                        width="900" 
+                        height="600" 
+                        src="https://www.youtube.com/embed/b4aeyXHE_G8" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            </header>
+
 
             {/* A Quest on Rules and Data */}
             <section className="section">
