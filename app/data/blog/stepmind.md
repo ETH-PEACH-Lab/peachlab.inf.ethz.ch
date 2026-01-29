@@ -3,7 +3,7 @@
 <div style="margin-top:20px;"></div>
 
 #### AI as a Black Box in Data Visualization
-As AI-powered tools increasingly generate data visualizations from natural language (NL2Vis), they <em>lower the barrier to data exploration</em>. With a simple prompt like “Show me sales trends by year”, users can quickly obtain charts that once required SQL, scripting, or visualization expertise. However, most AI-generated visualizations are <em>black boxes</em>: users see only the final chart—<em>without insight into how data was transformed</em>, whether the interpretation is correct, or how to fix mistakes when the output is wrong. This limits trust, learning, and meaningful control.
+As AI-powered tools increasingly generate data visualizations from natural language (NL2Vis), they lower the barrier to data exploration. With a simple prompt like <em>“Show me sales trends by year”</em>, users can quickly obtain charts that once required SQL, scripting, or visualization expertise. However, most AI-generated visualizations are black boxes: users see only the final chart—without insight into how data was transformed, whether the interpretation is correct, or how to fix mistakes when the output is wrong. This limits trust, learning, and meaningful control.
 We observe three gaps in current AI-driven data analysis workflows through the lens of the Gulf of Envisioning:
 <br/>
 <u>Capability Gap</u>: NL2Vis tools rarely provide modifiable, stepwise explanations, limiting users’ ability to inspect or adjust the AI’s reasoning.<br/>
@@ -13,7 +13,7 @@ We observe three gaps in current AI-driven data analysis workflows through the l
 #### StepMIND Framework and Design Principles
 StepMIND addresses these gaps by combining four ideas: multimodal explanations (visual, textual, instructional), real-time bidirectional editing, a familiar spreadsheet/code interface, and stepwise refinement. Together, these enable a flexible interaction cycle (<strong>T↔D↔C↔I↔T</strong>) that supports inspection, correction, and learning across levels of abstraction.
 
-##### Stepwise Refinement 
+##### Stepwise Refinement
 <div style="float:right; width:25%; max-width:220px; margin:4px 0 8px 24px; text-align:center;">
   <img src="/assets/blog/stepmind/stepwise.png" alt="Stepwise Execution Interface" style="width:100%; height:auto; border-radius:8px;" />
 </div>
