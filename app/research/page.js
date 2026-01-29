@@ -35,6 +35,7 @@ export default function Research() {
       </div>
         <div style={{marginBottom: "64px"}}>
       {researchData.map((item, index) => (
+        index !==3 &&
         <div key={index}>
           <Collapse id={item.slug} title={item.theme} subtitle={item.subtitle} initialVisible>
             <Text>{item.description}</Text>
