@@ -36,6 +36,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "Juniors enter as AI-natives, seniors adapted mid-career. AI is not just changing how engineers code—it is reshaping who holds agency across work and professional growth. We contribute junior–senior accounts on their usage of agentic AI through a three-phase mixed-methods study: ACTA combined with a Delphi process with 5 seniors, an AI-assisted debugging task with 10 juniors, and blind reviews of junior prompt histories by 5 more seniors. We found that agency in software engineering is primarily constrained by organizational policies rather than individual preferences, with experienced developers maintaining control through detailed delegation while novices struggle between over-reliance and cautious avoidance. Seniors leverage pre-AI foundational instincts to steer modern tools and possess valuable perspectives for mentoring juniors in their early AI-encouraged career development. From synthesis of results, we suggest three practices that focus on preserving agency in software engineering for coding, learning, and mentorship, especially as AI grows increasingly autonomous.",
     "teaser": "/assets/teaser/yun_chi26_swe.png",
+    "preprint_link": "https://arxiv.org/abs/2602.00496",
     "is_journal": false,
     "is_featured": false
   },
@@ -49,6 +50,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "AI chatbots are shifting from tools to companions. This raises critical questions about agency: who drives conversations and sets boundaries in human-AI chatrooms? We report a month-long longitudinal study with 22 adults who chatted with Day, an LLM companion we built, followed by a semi-structured interview with post-hoc elicitation of notable moments, cross-participant chat reviews, and a 'strategy reveal' disclosing Day's vertical (depth-seeking) vs. horizontal (breadth-seeking) modes. We discover that agency in human-AI chatrooms is an emergent, shared experience: as participants claimed agency by setting boundaries and providing feedback, and the AI was perceived to steer intentions and drive execution, control shifted and was co-constructed turn-by-turn. We introduce a 3-by-5 framework mapping who (human, AI, hybrid) x agency action (Intention, Execution, Adaptation, Delimitation, Negotiation), modulated by individual and environmental factors. Ultimately, we argue for translucent design (i.e. transparency-on-demand), spaces for agency negotiation, and guidelines toward agency-aware conversational AI.",
     "teaser": "/assets/teaser/yun_chi26_agency.png",
+    "preprint_link": "https://arxiv.org/abs/2601.22452",
     "is_journal": false,
     "is_featured": false
   },
@@ -62,6 +64,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "Does AI understand human values? While this remains an open philosophical question, we take a pragmatic stance by introducing VAPT, the Value-Alignment Perception Toolkit, for studying how LLMs reflect people's values and how people judge those reflections. 20 participants texted a human-like chatbot over a month, then completed a 2-hour interview with our toolkit evaluating AI's ability to extract (pull details regarding), embody (make decisions guided by), and explain (provide proof of) human values. 13 participants left our study convinced that AI can understand human values. Participants found the experience insightful for self-reflection and found themselves getting persuaded by the AI's reasoning. Thus, we warn about \"weaponized empathy\": a potentially dangerous design pattern that may arise in value-aligned, yet welfare-misaligned AI. VAPT offers concrete artifacts and design implications to evaluate and responsibly build value-aligned conversational agents with transparency, consent, and safeguards as AI grows more capable and human-like into the future.",
     "teaser": "/assets/teaser/yun_chi26_values.png",
+    "preprint_link": "https://arxiv.org/abs/2601.22440",
     "is_journal": false,
     "is_featured": false
   },
@@ -210,6 +213,7 @@
     "abstract": "Monitoring in-class programming exercises can help instructors identify struggling students and common challenges. However, understanding students’ progress can be prohibitively difficult, particularly for multi-faceted problems that include multiple steps with complex interdependencies, have no predictable completion order, or involve evaluation criteria that are difficult to summarize across many students (e.g., exercises building interactive web-based user interfaces). We introduce SPARK, a coding exercise monitoring dashboard designed to address these challenges. SPARK allows instructors to flexibly group substeps into checkpoints based on exercise requirements, suggests automated tests for these checkpoints, and generates visualizations to track progress across steps. SPARK also allows instructors to inspect intermediate outputs, providing deeper insights into solution variations. We also construct a dataset of 40-minute keystroke coding data from N=22 learners solving two web programming exercises and provide empirical insights into the perceived usefulness of SPARK through a within-subjects evaluation with 16 programming instructors.",
     "teaser": "/assets/teaser/spark.png",
     "project_link": "https://inonnno.github.io/Academic-project-page-Spark/",
+    "preprint_link": "https://arxiv.org/abs/2601.22256",
     "is_journal": false,
     "is_featured": true
   },
