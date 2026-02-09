@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={myCustomFont.variable}>
+    <html lang="en" className={myCustomFont.variable} suppressHydrationWarning>
       <body style={{ display: "flex", flexDirection: "column", minHeight: "100vh", margin: 0 }}>
         <Providers>
           <Header />
