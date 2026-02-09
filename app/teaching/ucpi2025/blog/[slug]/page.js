@@ -74,7 +74,7 @@ export default async function BlogPostPage({ params }) {
                   }
                 }
                 return (
-                  <img {...props} src={src} style={{maxWidth: '100%', height: 'auto', borderRadius: '8px', margin: '20px auto', display: 'block'}} />
+                  <img {...props} src={src} alt={props.alt || ""} style={{maxWidth: '100%', height: 'auto', borderRadius: '8px', margin: '20px auto', display: 'block'}} />
                 );
               }
             }}

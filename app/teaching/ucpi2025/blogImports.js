@@ -1,3 +1,4 @@
+/* eslint-disable import/no-webpack-loader-syntax */
 
 export const blogImports = {
   "visual-debugging": () => import("!raw-loader!@/data/teaching/ucpi2025-blogs/w4-visual-debugging.md"),
