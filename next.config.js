@@ -1,4 +1,7 @@
 const repoName='peachlab.inf.ethz.ch'
+// Use basePath only for GitHub Pages, not for GitLab Pages (which uses custom domain)
+const useBasePath = process.env.GITHUB_PAGES === "true" && process.env.NODE_ENV === "production";
+
 const nextConfig = {
     webpack(config) {
       config.module.rules.push({
@@ -8,14 +11,14 @@ const nextConfig = {
       return config;
     },
     output: "export", // Required for `next export`
-    trailingSlash: true,    // so /team becomes /team/index.html
+    trailingSlash: true,    
     images: {
-      unoptimized: true, // ⚠️ Required for GitHub Pages, since no Image Optimization
+      unoptimized: true, // Required for GitHub Pages, since no Image Optimization
     },
-    basePath: process.env.NODE_ENV === "production" ? `/${repoName}` : "",
-    assetPrefix: process.env.NODE_ENV === "production" ? `/${repoName}/` : "",
+    basePath: useBasePath ? `/${repoName}` : "",
+    assetPrefix: useBasePath ? `/${repoName}/` : "",
     env: {
-      NEXT_PUBLIC_BASE_PATH: process.env.NODE_ENV === "production" ? `/${repoName}` : "",
+      NEXT_PUBLIC_BASE_PATH: useBasePath ? `/${repoName}` : "",
     },
   };
   
