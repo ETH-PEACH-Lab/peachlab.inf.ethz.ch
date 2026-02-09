@@ -33,6 +33,7 @@ export default function Navbar() {
   const theme = useTheme()
   const router = useRouter();
   const pathname = usePathname(); // ✅ Get current route
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const currentTab = pathname === "/" ? "" : pathname.split("/")[1];
 
@@ -49,7 +50,7 @@ export default function Navbar() {
 
             <div className="logo">
               <Link href="/"><Image
-                src={themeType == "custom-dark" ? `/assets/logo-dark.png` : `/assets/logo-light.png`}
+                src={themeType == "custom-dark" ? `${basePath}/assets/logo-dark.png` : `${basePath}/assets/logo-light.png`}
                 height="30px"
                 alt="PEACH Lab Logo"
                 draggable={false}

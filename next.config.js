@@ -12,10 +12,10 @@ const nextConfig = {
     images: {
       unoptimized: true, // ⚠️ Required for GitHub Pages, since no Image Optimization
     },
-    basePath: process.env.GITHUB_PAGES ? `/${repoName}` : "",
-    assetPrefix: process.env.GITHUB_PAGES ? `/${repoName}/` : "",
+    basePath: process.env.NODE_ENV === "production" ? `/${repoName}` : "",
+    assetPrefix: process.env.NODE_ENV === "production" ? `/${repoName}/` : "",
     env: {
-      NEXT_PUBLIC_BASE_PATH: process.env.GITHUB_PAGES ? `/${repoName}` : "",
+      NEXT_PUBLIC_BASE_PATH: process.env.NODE_ENV === "production" ? `/${repoName}` : "",
     },
   };
   

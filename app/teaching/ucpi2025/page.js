@@ -9,6 +9,7 @@ import rehypeRaw from "rehype-raw";
 import teachingMd from '!raw-loader!@/data/teaching/ucpi2025.md';
 import "./style.css"
 import Toc from './Toc.js'
+import { blogData } from "./blogData";
 
 
 const PASSWORD = "d-infk"; 
@@ -17,6 +18,7 @@ export default function UCPI2025() {
     const [input, setInput] = useState("");
     const [unlocked, setUnlocked] = useState(false);
     const [tocOpen, setTocOpen] = useState(false);
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -55,9 +57,38 @@ export default function UCPI2025() {
                 <ReactMarkdown
                     rehypePlugins={[rehypeSlug, rehypeRaw]}
                     remarkPlugins={[remarkGfm]}
+                    components={{
+                        a: ({node, href, children, ...props}) => {
+                            // Check if it's a relative link to a blog post
+                            if (href && href.startsWith("blog/")) {
+                                return (
+                                    <a href={`${basePath}/teaching/ucpi2025/${href}/`} {...props} className={props.className}>
+                                        {children}
+                                    </a>
+                                );
+                            }
+                            return <a href={href} {...props}>{children}</a>;
+                        }
+                    }}
                 >
                     {teachingMd}
                 </ReactMarkdown>
+
+                {/* Student Blogs Grid */}
+                <h3 id="student-blogs">Student Blogs</h3>
+                <div className="blog-grid">
+                    {blogData.map((blog) => (
+                        <a 
+                            key={blog.slug} 
+                            href={`${basePath}/teaching/ucpi2025/blog/${blog.slug}/`} 
+                            className="blog-card"
+                        >
+                            <h4>{blog.week}: {blog.title}</h4>
+                            <div className="author">{blog.author}</div>
+                            <div className="desc">{blog.desc}</div>
+                        </a>
+                    ))}
+                </div>
             </main>
         </div>
     );

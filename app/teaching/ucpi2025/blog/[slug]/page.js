@@ -25,13 +25,14 @@ export default async function BlogPostPage({ params }) {
   // Find metadata for the current blog
   const currentBlog = blogData.find(b => b.slug === slug);
   const authorName = currentBlog ? currentBlog.author : "a student";
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   return (
     <div className="blog-container">
       {/* Sidebar Navigation */}
       <aside className="blog-sidebar">
         <div style={{ marginBottom: "20px" }}>
-          <a href="/teaching/ucpi2025" style={{ color: "#666", textDecoration: "none", fontSize: "0.9rem", display: "flex", alignItems: "center" }}>
+          <a href={`${basePath}/teaching/ucpi2025/`} style={{ color: "#666", textDecoration: "none", fontSize: "0.9rem", display: "flex", alignItems: "center" }}>
             <span style={{ marginRight: "6px" }}>←</span> Back to Seminar
           </a>
         </div>
@@ -39,7 +40,7 @@ export default async function BlogPostPage({ params }) {
           {blogData.map((blog) => (
             <li key={blog.slug} className="blog-nav-item">
               <a 
-                href={`/teaching/ucpi2025/blog/${blog.slug}`} 
+                href={`${basePath}/teaching/ucpi2025/blog/${blog.slug}/`} 
                 className={`blog-nav-link ${slug === blog.slug ? "active" : ""}`}
               >
                 <span className="blog-nav-week">{blog.week}</span>
