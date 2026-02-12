@@ -1,4 +1,4 @@
-# W4 - In Situ Visualization
+## W4 - In Situ Visualization
 
 ### Seeing Programs While They Run: In Situ Visualizations for Program Understanding
 
@@ -8,7 +8,7 @@ This tension between *writing code* and *understanding what it actually does* is
 
 In this post, I explore the idea of in situ visualizations through the lens of *Augmenting Code with In Situ Visualizations to Aid Program Understanding*, a CHI 2018 paper by Hoffswell, Satyanarayan, and Heer [1]. I’ll explain what in situ visualizations are, why they matter, how this paper structures their design space, and what this line of research suggests for the future of programming interfaces, especially in an era shaped by AI.
 
----
+
 
 ### Why Program Understanding Is So Hard
 
@@ -18,7 +18,7 @@ This is particularly problematic during exploratory programming, when developers
 
 The core insight behind in situ visualization is simple but powerful: **if runtime behavior is what programmers need to reason about, why not show it right next to the code that produces it?**
 
----
+
 
 ### What Are In Situ Visualizations?
 
@@ -33,7 +33,7 @@ Crucially, these visualizations are *contextual* and *lightweight*. They are not
 
 The CHI 2018 paper explores this idea concretely by embedding visualizations into a code editor for **Vega**, a declarative visualization language. As the program runs, histograms, line charts, and change indicators appear alongside variable definitions, updating live as the user interacts with the output visualization.
 
----
+
 
 ### Designing Embedded Visualizations: A Design Space
 
@@ -55,7 +55,7 @@ From these dimensions, the authors derive a set of visual encodings, exact value
 
 What’s notable is that the paper does not argue for a single “best” visualization. Instead, it frames design as a matter of **task-dependent trade-offs**, emphasizing that what works for quick debugging may differ from what works for learning or performance analysis.
 
----
+
 
 ### Placement Matters More Than You Think
 
@@ -71,7 +71,7 @@ For example, placing visualizations in the margin improves alignment and compari
 
 This attention to placement highlights a broader lesson in user-centered interface design: *small UI decisions can dramatically shape how people think.*
 
----
+
 
 ### Does It Actually Help?
 
@@ -84,7 +84,7 @@ The results were modest but meaningful:
 
 Interestingly, participants could often solve tasks even without the visualizations, but doing so required more probing, more interaction, and more cognitive effort. In situ visualizations didn’t replace reasoning; they **reduced friction**.
 
----
+
 
 ### Connections to Broader Research
 
@@ -92,7 +92,7 @@ This work builds on a long tradition of research in program visualization and le
 
 What distinguishes in situ visualization is its *integration*. Instead of teaching programming through separate visual explanations, it treats runtime behavior as a first-class annotation of code, much like comments, but dynamic and data-driven. Always-on visualizations have also been explored as a way to address misconceptions while programming [4].
 
----
+
 
 ### Looking Forward: In Situ Visualization in the Age of AI
 
@@ -106,7 +106,7 @@ Imagine an AI assistant that not only writes code, but automatically chooses and
 
 In that future, understanding code may feel less like detective work and more like a conversation with the program itself.
 
----
+
 
 ### Final Thoughts
 
@@ -116,7 +116,7 @@ The CHI 2018 paper does not claim to solve all debugging or comprehension proble
 
 As programming becomes more accessible and more automated, designing interfaces that help humans *stay in the loop* will only grow in importance.
 
----
+
 
 ### References
 

@@ -1,14 +1,14 @@
-# Interactive Articles
+## Interactive Articles
 
 **When reading turns into exploration and exploration turns into understanding**
 
-![drawing](/assets/teaching/ucpi2025-blogs/w9-images/drawing.jpg)
+<img src="/assets/teaching/ucpi2025-blogs/w9-images/drawing.jpg" alt="drawing" height="300">
 
 Society started with storytelling. Then came paintings, then mass-printable text. Today we publish on a web that is effectively *infinitely* and *instantaneously* copyable. Accessibility is no longer the core bottleneck. Attention is. As low-signal content (AI slop) grows and our attention shrinks, we need formats that help us digest and *understand* information more deeply and more quickly.
 
 Consider the difference between a description of bubble sort and an animation that shows each swap. Both can teach, but together they teach better, because the learner can connect explanation (“why”) to behavior (“what happens”) in real time.
 
-## **What is an interactive article?**
+### **What is an interactive article?**
 
 An interactive article is not “a blog post with a chart.” It is a document where:
 
@@ -22,7 +22,7 @@ A static article tells you *what happened*, an interactive article lets you step
 
 This matters especially in computer science. Many CS concepts are fundamentally about behavior across cases, performance under different distributions, failure modes, trade-offs, edge cases. Static images can show one slice but cannot show the landscape.
 
-## **Why interactive articles are hard to do well**
+### **Why interactive articles are hard to do well**
 
 High-quality interactivity is currently expensive. 
 
@@ -36,11 +36,11 @@ With static writing, you mesh an argument and its figures. With interactive writ
 This overhead can make an article high-quality and high-signal but the cost is most likely double in each way.
 
 
-## **Tooling that tried to reduce the overhead**
+### **Tooling that tried to reduce the overhead**
 
 An attempt to reduce overhead is **Idyll**, which uses Markdown as the default authoring surface while supporting reactive components for interactivity. Conlen & Heer describe the central idea as treating interactivity as part of the document’s structure rather than an afterthought (Conlen & Heer, 2018).
 
-![idyll](/assets/teaching/ucpi2025-blogs/w9-images/idyll.png)
+<img src="/assets/teaching/ucpi2025-blogs/w9-images/idyll.png" alt="idyll" height="200">
 
 In principle, this lets authors write normally and “drop in” sliders and components without building a brand new web app.
 
@@ -56,7 +56,7 @@ Interactive pieces in research also introduce frictions:
 
 Interactive articles are often most feasible when explaining algorithms, conceptual models, or carefully curated datasets, cases where the “state space” is meaningful but still small enough to run smoothly. Yet distill went into hiatus in 2021 after most volunteers couldn't keep up with the workload introduced.
 
-## **Where interactive articles are going**
+### **Where interactive articles are going**
 
 As AI Slop is increasing and the world needs more trustworthy high-signal news and information I can see that interactive articles are one way to go. LLMs can help with the code generation for the visualisations and more focus can be applied to the content and teaching the new concepts rather than writing and coding. As the research community continues to use more LLMs to rewrite and generate content it will be good to have more trust in the work done. As writing code and text is no longer an indicator for quality but understandability, visualisations and explanations are. There will be a new demand for visualisations.
 
@@ -70,11 +70,11 @@ Meanwhile, newsrooms have shown that reusable interactive components can scale. 
 
 If this trend continues, the “next web format” may be less about infinite publishing and more about *structured exploration*: narrative that helps you ask the right questions, plus interfaces that let you test them.
 
-## **Short bio**
+### **Short bio**
 
 **Dominique Buob** is a computer science student focus on making complex data understandable, getting insights and acting on new knowledge gained.
 
-## **References**
+### **References**
 
 Conlen, M., & Heer, J. (2018). Idyll: A markup language for authoring and publishing interactive articles on the web. In *Proceedings of the 31st Annual ACM Symposium on User Interface Software and Technology (UIST ’18)*. [https://doi.org/10.1145/3242587.3242600]
 

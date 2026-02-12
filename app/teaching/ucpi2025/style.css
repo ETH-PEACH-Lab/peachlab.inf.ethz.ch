@@ -181,6 +181,7 @@
   flex-direction: column;
   height: 100%;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .blog-card:hover {

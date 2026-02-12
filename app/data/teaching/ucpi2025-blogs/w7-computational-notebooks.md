@@ -1,5 +1,4 @@
-# W7 Computational Notebooks
-#### Author: R. Chilukuri
+## W7 Computational Notebooks
 
 ### Blending Prose and Code
 Standalone code can be messy and uncouth, a wall of text without explanation or understanding. The original programmer can have difficulty deciphering minimalist function and variable names as time passes. The problem compounds the more complex the program grows, and modifying and debugging become near impossible.
@@ -18,24 +17,21 @@ Notebooks are used extensively by scientific researchers, data workers, software
 
 One notable limitation of Jupyter is the static outputs. Mage seeks to remedy this by acting as a reactive intermediary layer between the output GUI and code (Kery et al., 2020). Mage lets tool builders use its API to pass cell variables to-and-from the GUI via templates. For example, the authors show filtering a table in the GUI that propagates code into the cell. In the other direction, they show that modifying the bounds of a picture in code updates the displayed region in the GUI. Some applications to the machine learning workflow include dataset splitting with a slider that also visualizes the distributions in each split, and creating a confusion matrix to display misclassifications. Hence, mage helps to blend code and output.
 
-![mage](/assets/teaching/ucpi2025-blogs/w7-computational-notebooks-imgs/mage.png)
+<img src="/assets/teaching/ucpi2025-blogs/w7-computational-notebooks-imgs/mage.png" alt="mage" height="200">
 
 One difficulty working with Jupyter notebooks is managing its state. Unlike standard programming, notebooks employ global variables that operate across cells, and users sparingly use functions so they can individually dissect code lines. Notebook users often have issues overwriting variables and executing cells out-of-order, making these globally scoped variables hazardous in large notebooks. Pagebreaks introduces scopes around groups of notebook cells for state management (Rawn & Chasins, 2025). A group's variables can only interact with a group later in the notebook if they are explicitly exported, thus solving the issue of conflicting names and the propagation of global variables.
 
-![pagebreaks](/assets/teaching/ucpi2025-blogs/w7-computational-notebooks-imgs/pagebreaks.png)
+<img src="/assets/teaching/ucpi2025-blogs/w7-computational-notebooks-imgs/pagebreaks.png" alt="pagebreaks" height="500">
 
 Looking to delivering notebooks in forms for non-notebook users, Zheng et al. introduced NB2Slides in 2022 to generate data science presentations from computational notebooks. The user specifies the audience background and level of detail, and AI summarizes code and produces bullet points. After, the user manually refines the slides through the provided interface. This, however, relies on a notebook with non-excess code cells, documentation, and sections for each slide. Thus, while an effective and convenient system for standard data science tasks, it could be more useful with customization on the presentation outline and manual matching of slides to code.
 
-![nb2slides](/assets/teaching/ucpi2025-blogs/w7-computational-notebooks-imgs/nb2slides.png)
+<img src="/assets/teaching/ucpi2025-blogs/w7-computational-notebooks-imgs/nb2slides.png" alt="nb2slides" height="300">
 
 ### Computational Notebooks: Oh, the Places You'll Go!
 We have discussed the gap between computational notebooks and the ideal of literate programming. Most developments have focused on improving the functionality of just the notebooks themselves. In the age of AI, even those without the flair or proclivity for literature can generate the prose of a notebook by analyzing the code cells and output, and collect the prose into documentation. As well, AI can translate the documentation and generate levels of complexity. The gap between notebooks as prototypes and final code remains, but we can envision tighter integration. It is common for programmers to copy code into notebooks to test and develop methods and then copy the result back. A fluid move between codebase and notebook, and between markdown cells and documentation, would promote notebooks to an eminent place in production code development.
 
 ### Conclusion
 We have seen that code without prose can be a tangled mess. Knuth envisioned programs as works of literature that treat the natural language describing code as tantamount to the code itself. While computational notebooks do not quite fulfill this vision, they provide a convenient form for the masses. Notebooks can be used to develop sophisticated applications and documentation, and we can marry this process to production-level systems. AI can contribute to summarizing and preparing documentation, and if we integrate notebooks more tightly with our codebases, we can smoothly move between the two.
-
-#### Author
-Rohan Chilukuri is a Master's student in Computer Science at ETH Zürich focused on Machine Intelligence and Theoretical Computer Science. He has substantial experience working with computational notebooks for research and engineering in both academic and industry contexts.
 
 ### References
 
@@ -48,3 +44,7 @@ Rohan Chilukuri is a Master's student in Computer Science at ETH Zürich focused
 \[4] Rawn, E., & Chasins, S. E. (2025). Pagebreaks: Multi-cell scopes in computational notebooks. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (Article 53, pp. 1–16). ACM.
 
 \[5] Zheng, C., Wang, D., Wang, Y., & Ma, X. (2022). Telling stories from computational notebooks: AI-assisted presentation slides creation for presenting data science work. In Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (Article 53, pp. 1–20). ACM.
+
+### About the Author
+
+Rohan Chilukuri is a Master's student in Computer Science at ETH Zürich focused on Machine Intelligence and Theoretical Computer Science. He has substantial experience working with computational notebooks for research and engineering in both academic and industry contexts.

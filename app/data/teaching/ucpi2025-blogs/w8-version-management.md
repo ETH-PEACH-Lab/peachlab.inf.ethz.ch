@@ -1,8 +1,8 @@
-# Why Can't Data Scientists Remember What They Tried?
+## Why Can't Data Scientists Remember What They Tried?
 
 *Hunting for answers in 300 versions of a Jupyter notebook*
 
----
+
 
 Imagine you've spent the afternoon building a machine learning model to predict house prices. You've tried dozens of features, tweaked hyperparameters, and finally landed on something that works. Then your manager asks the simple question "Why did you discard the garage size feature?"
 
@@ -10,7 +10,7 @@ You know you tested it and you remember the results weren't great. But where? Wh
 
 This scenario happens all the time in data science. In one study, a researcher working on a beginner machine learning tutorial generated **302 versions** of their code in just one hour (Kery et al., 2019). That's five versions per minute, which pushes traditional version control to its limits.
 
-## Exploratory Programming is Messy
+### Exploratory Programming is Messy
 
 Data science is less straight forward than building a web app for example. It's exploratory, iterative, and full of dead ends. You try something, check the output, tweak a parameter, try again. Traditional version control tools like Git were designed for software engineers who make deliberate commits with meaningful messages. Not for data scientists who are experimenting.
 
@@ -50,7 +50,7 @@ index 8f3d4e2..9a2b5f3 100644
 
 Good luck finding what actually changed in your analysis.
 
-## Hunting for Information
+### Hunting for Information
 
 To solve this problem, researchers explored **Information Foraging Theory (IFT)**. Developed by Pirolli and Card (1999) it applies principles from how animals hunt for food to how humans search for information.
 
@@ -58,7 +58,7 @@ Programmers are "predators" hunting for "prey" (the information they need) acros
 
 If foraging becomes too costly (too much scrolling, too many clicks, too little payoff) people give up. They will either redo the experiment or simply guess the outcome. Neither is acceptable.
 
-## Verdant: A New Approach to Notebook History
+### Verdant: A New Approach to Notebook History
 
 Armed with these insights, researchers at Carnegie Mellon developed **Verdant**, a JupyterLab extension that rethinks how data scientists interact with their history (Kery et al., 2019).
 
@@ -94,11 +94,11 @@ flowchart LR
     C --> G
 ```
 
-### The 3 Foraging Strategies
+#### The 3 Foraging Strategies
 
 The **Activity tab** shows history by time. Each version displays a minimap showing where in the notebook changes occured, leveraging spatial memory. The minimap uses different colors. Blue for edits, green for additions, red for deletions, and grey for cells that were run without changes.
 
-<img src="w8-version-management-img/fig3-activity-tab.png" alt="Notebook events." height="300">
+<img src="w8-version-management-img/fig3-activity-tab.png" alt="Notebook events." height="420">
 
 *Figure 2: The Activity tab with timeline and minimap visualization. Each vertical line in the minimap represents a cell; colored lines indicate activity.*
 
@@ -120,7 +120,7 @@ In order to get the full context Verdant opens a **Ghost Book**. This is a read-
 
 *Figure 5: A ghost book displays a past notebook version with diff highlighting. The toggle lets users show only cells that changed in that version.*
 
-## Does It Actually Work?
+### Does It Actually Work?
 
 The researchers tested Verdant with 15 data scientists at JupyterCon 2018. All participants were complete novices to the tool and were asked to answer questions about a 300-version notebook they had never seen before.
 
@@ -128,7 +128,7 @@ They scored **80% median success rate** across realistic foraging tasks (Kery et
 
 The failures were also instructive. Users struggled most with questions requiring them to relate multiple artifacts across time. This led to redesigns that grouped related results and added better navigation cues.
 
-## Where Do We Go From Here?
+### Where Do We Go From Here?
 
 Verdant was just the beginning. Recent work like **Kishuboard** (Fang et al., 2025) extends these ideas to track not just code history but also data state, letting users branch their exploration without losing progress or reloading datasets.
 
@@ -136,9 +136,9 @@ In the future notebooks could automaticaly generate narratives explaining why ch
 
 With data science evolving faster than ever, the tools must also evolve beyond "save early, save often" toward genuine support for the exploratory, iterative work that data scientists actually do. The goal isn't just to remember what you tried, it's to understand why you made the choices you did.
 
----
 
-## References
+
+### References
 
 Fang, H., Chockchowwat, S., Sundaram, H., & Park, Y. (2025). Enhancing computational notebooks with code+data space versioning. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*. ACM.
 
@@ -150,6 +150,6 @@ Kery, M. B., Radensky, M., Arya, M., John, B. E., & Myers, B. A. (2018). The sto
 
 Pirolli, P., & Card, S. (1999). Information foraging. *Psychological Review, 106*(4), 643–675.
 
----
+### About the Author
 
 I am a Master's student in Computer Science. Aside from playing volleyball and chess, I like to build web apps for friends and familiy and explore simple and user driven UX.

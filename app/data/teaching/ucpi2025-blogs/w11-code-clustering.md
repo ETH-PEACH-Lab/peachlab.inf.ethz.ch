@@ -1,4 +1,4 @@
-# W11 - Code Clustering
+## W11 - Code Clustering
 
 Programming is becoming explosively more popular, with new tools and rapid advances in AI enabling more people than ever to build software. As a result, introductory programming courses have spread beyond computer science programs into many other disciplines and even earlier levels of education. As demand grows and classes become larger, it has become increasingly more difficult for instructors to have a good overview of students' progress, both individually and as a whole. Traditional teaching strategies, such as live coding demonstrations or in-class problem-solving, offer only limited insight. Some students actively participate and receive feedback, while others remain unnoticed, despite actually facing difficulties. 
 
@@ -14,7 +14,7 @@ Beyond purely code-based approaches, CPVis [5] integrates multimodal learning an
 
 **VizProg:**
 
-![User Interface of VizProg[3]](/assets/teaching/ucpi2025-blogs/VizProg.jpg)
+<img src="/assets/teaching/ucpi2025-blogs/VizProg.jpg" alt="User Interface of VizProg[3]" height="300">
 
 There are several challenges when thinking about a system which lets instructors understand and observe students' progress at scale. One difficulty is understanding student's progress at different granularity, such as figuring out if a whole class is struggling with a certain concept, or even noticing that an individual is having difficulties with another topic. Tied to this, is the challenge to validate the progress of students at scale. Often in practice, instructors are often only able to tell whether students managed to solve a specific problem or not. They do not notice when students found a solution, but actually struggled a lot to reach it. while it is good that they did find it in the end, their way of problem solving might still have room for improvement, or they may have only found the solution through countless trial and error without fully understanding why it worked in the end. Last but not least, it is important that instructors are able to give scalable but tailored feedback to students. 
 
@@ -51,7 +51,6 @@ Overall, VizProg demonstrates how combining code clustering, real-time visualiza
 
 [7]: Zhangyin Feng, Daya Guo, Duyu Tang, Nan Duan, Xiaocheng Feng, Ming Gong, Linjun Shou, Bing Qin, Ting Liu, Daxin Jiang, et al . 2020. Codebert: A pre-trained model for programming and natural languages. arXiv preprint arXiv:2002.08155 (2020).
 
----
+### About the Author
 
-**Author: Melanie Woon**
-A computer science master's student at ETH Zurich, majoring in Visual and Interactive Computing with an interest in graphics, user experience, and programming education.
+Melanie Woon is a computer science master's student at ETH Zurich, majoring in Visual and Interactive Computing with an interest in graphics, user experience, and programming education.

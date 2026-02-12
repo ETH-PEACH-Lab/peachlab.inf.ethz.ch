@@ -1,6 +1,4 @@
-# W4 Visual Debugging
-
-Author: Junzhe Tai
+## W4 Visual Debugging
 
 Debugging is a very common and unavoidable task for programmers. We typically use logging when dealing with software runtime analysis, explaining failures and crashes, and investigating user behaviors.In everyday development, we often face this situation: the program runs without errors, but the results are not what we expected. So we start adding print statements, setting breakpoints, tracking variables and so on. These methods are simple and effective, but interpreting the log output displayed in the console or terminal is often challenging. For example, log statements within loops can generate massive amounts of log information. Furthermore, log output is organized linearly based on the order of program execution, making it difficult to connect log statements in different locations. Programmers often adopt strategies, such as using spacing and special characters, give logs timestamps and contexts and so on. However, in order to better solve the pain points in debugging, more and more papers point to visual debugging.
 
@@ -43,15 +41,15 @@ _Log-it_ also redesigns how logs are represented. For example, a stream of value
 
 Furthermore, _Log-it_ has context. Each log statement is assigned a color, which is shared across the code editor and visual flow, allowing users to easily associate what's on the screen with its source in the code. The log flow can also be physically attached to page elements, so the log moves along with the UI it describes. When a problem occurs, the log not only tells you where the problem is, but also where the problem originates.
 
-###Result
+### Result
 
 Although _Log-it_ has not stated in user studies how much efficiency did visual debugging improve, many related papers indicate that visual debugging can improve the efficiency of completing tasks by ~ 30% - 200%, and can shorten debugging time by ~ 2 - 8 times [4][5][6][7].
 
-###Future Work
+### Future Work
 
 In the future, we can combine artificial intelligence to achieve more functions, such as log filtering and automatically highlighting relevant events. Furthermore, user personalization is also a significant way to enhance the user experience. Finally, visual debugging can be extended to new fields such as virtual reality and game design, where the need for visual debugging is even more urgent.
 
-###References
+### References
 
 [1] Shahnabati F, Sabourifard A, Amiri SH, Bosaghzadeh A, Ebrahimpour R. Cognitive load and visual attention assessment using physiological eye tracking measures in multimedia learning. PLoS One. 2025 Dec 1;20(12):e0337195. doi: 10.1371/journal.pone.0337195. PMID: 41325323; PMCID: PMC12668483.
 

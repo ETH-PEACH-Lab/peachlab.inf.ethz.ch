@@ -1,5 +1,5 @@
 
-# CoPrompt — The Next Step in (Collaborative) Programming?
+## CoPrompt — The Next Step in (Collaborative) Programming?
 
 ### Setting the Stage
 
@@ -60,13 +60,13 @@ So far, when using IDEs with LLM integration or ML-model based code prediction/c
 
 What does inspire some (cautious) confidence in CoPrompt is that it boasts features like a prompt wiki and native communication options with collaborators. I do feel suspicious about its context-aware cascading update features, but then again, many IDEs are capable of natively but manually refactoring code without any issues. The key takeaway is that CoPrompt is a new evolution of a tool, and tools typically require a certain skill floor to wield properly, especially if they're powerful.
 
-###### About the Author
-
-Hi, my name is Mark Sosman. I'm a computer science student with an immense passion for programming, math, and teaching.
-
 ### Further Reading and References
 
 Feng, L., Yen, R., You, Y., Fan, M., Zhao, J., & Lu, Z. (2024). [CoPrompt: Supporting Prompt Sharing and Referring in Collaborative Natural Language Programming](https://dl.acm.org/doi/10.1145/3613904.3642212).
+
+### About the Author
+
+Hi, my name is Mark Sosman. I'm a computer science student with an immense passion for programming, math, and teaching.
 
 Liu, M. X., Sarkar, A., Negreanu, C., Zorn, B., Williams, J., Toronto, N., & Gordon, A. D. (2023). ["What It Wants Me To Say": Bridging the Abstraction Gap Between End-User Programmers and Code-Generating Large Language Models](https://dl.acm.org/doi/10.1145/3544548.3580817). 
 

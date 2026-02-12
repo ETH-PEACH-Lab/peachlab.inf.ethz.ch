@@ -1,9 +1,9 @@
-# TangibleGrid and Accessibility
+## TangibleGrid and Accessibility
 
   
   
 
-## But what is "Accessibility"?
+### But what is "Accessibility"?
 
 You design things to be "accessible" primarily to be usable by disabled people and to reduce barriers (Microsoft, n.d.). This can be both direct, for example writing in very large letters that can be seen easily by people who can't see well and indirect. Indirect here means that whatever you are designing is compatible with the person's assistive technology. A common example you might have seen before (indicated by a symbol) are audio induction loops which can connect to hearing aids to transmit sound. These can be found in places such as trains or universities.
 
@@ -11,7 +11,7 @@ Something you might have noticed is that I said primarily at the start of this s
 
   
 
-## Interacting with a computer you can't see
+### Interacting with a computer you can't see
 
 Now that we've established what accessibility means, I want you, the reader, to try something yourself. I assume you are already sitting at a computer or laptop (though phone works too). Close your eyes, open the first book on Project Gutenberg and read the first paragraph of the first book that appears. If you struggle, open your eyes again and switch back to this blog post. You might find this exercise very hard. Luckily for blind people (and you in this situation) however, there are ways to solve this such as with screen readers (American Foundation for the Blind, n.d.).
 
@@ -20,7 +20,7 @@ These are programs that read text displayed on the screen and spell it out to th
   
   
 
-## An introduction to TangibleGrid
+### An introduction to TangibleGrid
 
 TangibleGrid aims to solve that problem (Li et al., 2022). It's kind of like building a website with physical Lego bricks except instead of bricks you place down fences. The system detects the location using a key switch matrix circuit. Each bracket has specific resistors in its corners that connect via pogo pins, allowing the board to distinguish the bracket type based on resistance values. It also both gives audio feedback on the location and updates the HTML on the connected computer screen. The brackets themselves have tactile patterns on top so that the user can distinguish between the content type (text, video, image) and are connected with a scissored linking mechanism. The cool part about this type of linking is that it makes it much easier to feel the shape and size of an element.
 
@@ -32,7 +32,7 @@ The brackets are put onto a physical baseboard that represents the web layout ca
 
   
 
-## Of studies and their results
+### Of studies and their results
 
 The researchers tested TangibleGrid with 10 blind participants (six totally blind, four legally blind) through two tasks: understanding an existing layout and designing one from scratch.
 
@@ -44,7 +44,7 @@ One can definitely say that TangibleGrid works. Through both tasks, blind users 
 
   
 
-## What lies beyond websites
+### What lies beyond websites
 
   
 
@@ -53,7 +53,7 @@ TangibleGrid's approach using tangible brackets for visual elements, similar to 
   
   
 
-## Back to (talking about) the future
+### Back to (talking about) the future
 
 Although TangibleGrid works well for what it is, there are still quite a few large limitations. You might have noticed that I've never talked about how you can actually put content into the layout you created with TangibleGrid. This is because the device does not currently support content input or any further customization at all. This is a huge issue as if you design the layout of a website, you probably also want to work with it more than that. Another issue is that the layout is not adaptive to browser size and only has the layout of the board. On an ultrawide monitor like the one I'm sitting at right now, the vertical layout the board is stuck to would look quite bad for example. A final issue is that users might prefer different magnet strengths for individual reasons but the current design does not support adjusting that.
 
@@ -61,17 +61,15 @@ However, both of these issues can be fixed. To fix content input, one could add 
 To go even further, it could be a very good idea to develop an AI integration similar to Gemini Live. Imagine a blind user being able to speak to the board and the LLM generates the content to fit the constraints of the physical bracket.
   
 
-## Conclusion
+### Conclusion
 
 Overall, TangibleGrid can't yet fully support independent website design and is restricted to layouts. However, it and similar innovations such as shapeCAD (Siu et al., 2019) are proof that physical interfaces can make visual tasks more accessible. By making website layouts tangible, TangibleGrid makes web design and potentially even more tasks that currently require sight possible. That's worth building on.
 
-  
 
----
 
   
 
-## References
+### References
 
   
 
@@ -107,10 +105,9 @@ Siu, A. F., Kim, S., Miele, J. A., & Follmer, S. (2019). shapeCAD: An accessible
 
   
 
----
 
   
 
-# About the author
+### About the author
 
 I'm Jan Blum, a hard of hearing CS student at ETH Zurich. If I'm not studying, I'm usually found playing card games or Pathfinder.

@@ -113,3 +113,26 @@
 .custom-blog-styles h1 {
   margin-bottom: 1rem;
 }
+
+.custom-blog-styles h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.custom-blog-styles h2 + p em {
+  display: block;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.custom-blog-styles h2 + p + hr {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-top: 1px solid #eaeaea;
+}

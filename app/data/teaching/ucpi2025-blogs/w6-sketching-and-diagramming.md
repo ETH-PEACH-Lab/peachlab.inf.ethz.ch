@@ -1,6 +1,6 @@
-# W6: Sketching and Diagramming - Chisel
+## W6: Sketching and Diagramming - Chisel
 
-## Diagramming data structures, now made simple, structured and dynamic
+### Diagramming data structures, now made simple, structured and dynamic
 
 Imagine you are teaching an intro level algorithm course to a class of first year undergraduate students. On iPad, you draw by hand a diagram to show a core step in the algorithm. Then you switch to computer to run a sample implementation of the algorithm. It finished in 0.01s with results popping up on the screen immediately. This is a typical way to teach algorithm, but students may wonder why not combining two procedures into one. As beginners, students want to see how inputs "evolve" into answer throughout the algorithm, namely, a visualization of datas during execution of program in a way consistent with hand-draw diagrams.
 
@@ -33,7 +33,7 @@ Since chisel visualize real program runtime possibly on large datasets (instead 
 - Annotation.
 This is the very last step of visualization. After selection, revisualization, and simplification, the structure of diagram has been fixed. User can label an object, draw a line between two, circle a set of object, etc.
 
-![typical chisel pipeline (figure 1 in [3])](/assets/teaching/ucpi2025-blogs/chisel.png)
+<img src="/assets/teaching/ucpi2025-blogs/chisel.png" alt="typical chisel pipeline (figure 1 in [3])" height="1000">
 
 Thanks to abstraction moves, visualization procedures now does not need to entangle with algorithm. An essential design choice of chisel is MVC (model view controller) architecture, where algorithm is model, chisel code is controller, and chisel background is view. This resulted in complete separation of logic and visualization, enabling maximum flexibility in modifying either algorithm or diagram.
 
@@ -70,8 +70,6 @@ Chisel successfully build a framework of Abstraction moves. It made visualizatio
 
 [5] Mike Bostock. 2012. D3.js - Data-Driven Documents. http://d3js.org/
 
-
-### About me
+### About the Author
 
 Yuchen Zhong is a master student at ETH Zurich. He majors theoretical computer science. Outside school, he enjoys hackathon, innovative products, and human-computer interaction philosophies behind.
-

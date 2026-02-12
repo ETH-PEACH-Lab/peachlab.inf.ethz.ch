@@ -1,4 +1,4 @@
-# Scratch: Programming for All
+## Scratch: Programming for All
 
 For decades, learning to program meant wrestling with syntax errors, cryptic compiler messages, and abstract problems far removed from everyday experience. For many learners, especially children, this could be very discouraging. In 2007, the MIT Media Lab released Scratch, a visual programming environment designed to make programming feel more like playing, creating, and sharing.
 
@@ -12,8 +12,8 @@ More than fifteen years later, millions of learners around the world use Scratch
     <a href="https://scratch.mit.edu/statistics" target="_blank">MIT Scratch Statistics</a>
 </p>
 
----
-## Why Scratch?
+
+### Why Scratch?
 
 Traditional programming languages are built for professionals. They require precision before creativity and correctness before exploration. For beginners, especially children, this often leads to frustration before understanding.
 
@@ -21,8 +21,8 @@ Scratch was designed to flip that experience. Drawing on constructionist learnin
 
 This idea is still relevant today. As computational thinking becomes a core educational goal, the question isn’t whether people should learn programming, but how we can design interfaces that welcome everyone, not just those drawn to text-based coding.
 
----
-## How Scratch Works: Expressiveness Through Constraints
+
+### How Scratch Works: Expressiveness Through Constraints
 
 Scratch replaces text-based syntax with blocks. This simple change removes many types of errors: blocks only snap together in ways that make sense. Learners can concentrate on logic and behavior instead of worrying about grammar.
 
@@ -36,8 +36,8 @@ The blocks in Scratch are surprisingly powerful. They include variables, lists, 
     <a href="https://scratch.mit.edu/projects/1182167528/editor/" target="_blank">Hide and Seek Minigame: Round 1</a>
 </p>
 
----
-## Programming as a Social Practice
+
+### Programming as a Social Practice
 
 One of Scratch’s most important contributions is its focus on community. The online platform allows users to share projects, view each other’s code, and remix work collaboratively.
 
@@ -45,8 +45,8 @@ Resnick et al. (2009) frame remixing not as cheating, but as a way to learn. By 
 
 This approach transforms programming from a solitary activity into a shared, cultural practice.
 
----
-## Scratch Today: Extensions, Curriculum, and Research
+
+### Scratch Today: Extensions, Curriculum, and Research
 
 Scratch has grown a lot since 2009. Scratch 3.0 introduced a modern web-based architecture and an extension system that integrates hardware like micro:bit, LEGO robotics, and sensors.
 
@@ -54,8 +54,8 @@ Research on Scratch shows that block-based environments can expand without losin
 
 Recent curriculum efforts, like the Creative Computing Curriculum Guide: <a href="https://scratched.gse.harvard.edu/guide/curriculum.html" target="_blank">Creative Computing Curriculum Guide</a>, emphasize exploration, reflection, and collaboration instead of rigid instruction.
 
----
-## Blockly: The Engine Beneath the Blocks
+
+### Blockly: The Engine Beneath the Blocks
 
 Scratch is a complete programming environment, while Blockly serves a different purpose. Created by Google, Blockly is an open-source library for building block-based editors. It handles dragging, snapping, and validation, while leaving runtime behavior to the host application.
 
@@ -71,8 +71,8 @@ In the Scratch ecosystem, Blockly provides the infrastructure, while Scratch off
     <a href="https://developers.google.com/blockly#build-with-blockly" target="_blank">Developer Google Blockly</a>
 </p>
 
----
-## (X)Logo: A Historical and Pedagogical Ancestor
+
+### (X)Logo: A Historical and Pedagogical Ancestor
 
 Long before Scratch or Blockly, there was Logo. Developed in the late 1960s by Seymour Papert, Logo let learners explore math and computing through turtle graphics—moving a turtle that draws shapes on the screen.
 
@@ -88,8 +88,8 @@ Scratch can be seen as a descendant of Logo: where Logo focused on thinking thro
     <a href="https://xlogo.inf.ethz.ch/release/latest/#/mini" target="_blank">ETH Zurich XLogo</a>
 </p>
 
----
-## Looking Forward: The Future of Block-Based Programming
+
+### Looking Forward: The Future of Block-Based Programming
 
 Scratch’s influence reaches far beyond its own platform. Alongside Blockly and XLogo, it raises questions about the future of programming interfaces.
 
@@ -99,15 +99,15 @@ Scratch’s influence reaches far beyond its own platform. Alongside Blockly and
 
 If programming is a new form of literacy, Scratch demonstrates that interfaces shape not just what people learn, but who gets to learn.
 
----
-## Conclusion
+
+### Conclusion
 
 “Programming for all” is an ambitious goal. Scratch doesn’t fully achieve it, but it comes closer than most systems. By combining thoughtful design, constructionist pedagogy, and a global community, Scratch has reshaped how millions first encounter computing.
 
 Alongside Blockly and XLogo, Scratch stands out as a strong example that programming can be creative, social, and deeply human.
 
----
-## References
+
+### References
 
 Resnick, M., Maloney, J., Monroy-Hernández, A., Rusk, N., Eastmond, E., Brennan, K., ... & Kafai, Y. (2009). *Scratch: Programming for all*. **Communications of the ACM, 52**(11), 60–67. [https://doi.org/10.1145/1592761.1592779](https://doi.org/10.1145/1592761.1592779)
 
@@ -121,7 +121,8 @@ Vourletsis, I., & Politis, P. (2022). *Exploring the effect of remixing stories 
 
 Wen, C., Ghosh, A., & Singla, A. (2024). *Task synthesis for elementary visual programming in XLogoOnline environment*.  [https://link.springer.com/chapter/10.1007/978-3-031-64312-5_37](https://link.springer.com/chapter/10.1007/978-3-031-64312-5_37)
 
----
+### About the Author
+
 <p align=center>
 <img src="img/tim.png">
 </p>

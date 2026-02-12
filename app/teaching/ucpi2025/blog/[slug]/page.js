@@ -74,8 +74,21 @@ export default async function BlogPostPage({ params }) {
                     src = `${basePath}/assets/teaching/ucpi2025-blogs${relativePath}`;
                   }
                 }
+                
+                // Build custom style object, respecting height/width attributes if provided
+                const widthStr = props.width ? String(props.width) : null;
+                const heightStr = props.height ? String(props.height) : null;
+                
+                const customStyle = {
+                  maxWidth: widthStr ? (widthStr.includes('%') || widthStr.includes('px') ? widthStr : `${widthStr}px`) : '100%',
+                  height: heightStr ? (heightStr.includes('%') || heightStr.includes('px') ? heightStr : `${heightStr}px`) : 'auto',
+                  borderRadius: '8px',
+                  margin: '20px auto',
+                  display: 'block'
+                };
+                
                 return (
-                  <img {...props} src={src} alt={props.alt || ""} style={{maxWidth: '100%', height: 'auto', borderRadius: '8px', margin: '20px auto', display: 'block'}} />
+                  <img {...props} src={src} alt={props.alt || ""} style={customStyle} />
                 );
               }
             }}
