@@ -152,4 +152,4 @@ Pirolli, P., & Card, S. (1999). Information foraging. *Psychological Review, 106
 
 ### About the Author
 
-I am a Master's student in Computer Science. Aside from playing volleyball and chess, I like to build web apps for friends and familiy and explore simple and user driven UX.
+Veit Billinger is a Master's student in Computer Science. Aside from playing volleyball and chess, they enjoy building web apps for friends and family and exploring simple and user-driven UX.

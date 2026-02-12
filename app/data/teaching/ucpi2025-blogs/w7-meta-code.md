@@ -126,4 +126,4 @@ Jeremiah W. Johnson. 2020. *Benefits and Pitfalls of Jupyter Notebooks in the Cl
 
 ### About the Author
 
-O. Furrer is a computer science master's student at ETH Zürich, majoring in Secure and Reliable Systems, with an interest in programming languages, intuitive user interfaces, and clear programming teaching materials. 
+O. Furrer is a computer science Master's student at ETH Zürich, majoring in Secure and Reliable Systems, with an interest in programming languages, intuitive user interfaces, and clear programming teaching materials. 

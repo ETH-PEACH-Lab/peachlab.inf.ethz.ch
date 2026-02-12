@@ -82,4 +82,4 @@ If you've ever struggled to turn a vague idea into a concrete visual, WorldSmith
 
 ### About the Author
 
-My name is Omar and I'm a computer science student specializing in database technologies and systems security. I love what I do and I hope you do too!
+Omar is a computer science student specializing in database technologies and systems security.

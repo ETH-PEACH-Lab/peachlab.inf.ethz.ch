@@ -66,7 +66,7 @@ Feng, L., Yen, R., You, Y., Fan, M., Zhao, J., & Lu, Z. (2024). [CoPrompt: Suppo
 
 ### About the Author
 
-Hi, my name is Mark Sosman. I'm a computer science student with an immense passion for programming, math, and teaching.
+Mark Sosman is a computer science student with an immense passion for programming, math, and teaching.
 
 Liu, M. X., Sarkar, A., Negreanu, C., Zorn, B., Williams, J., Toronto, N., & Gordon, A. D. (2023). ["What It Wants Me To Say": Bridging the Abstraction Gap Between End-User Programmers and Code-Generating Large Language Models](https://dl.acm.org/doi/10.1145/3544548.3580817). 
 

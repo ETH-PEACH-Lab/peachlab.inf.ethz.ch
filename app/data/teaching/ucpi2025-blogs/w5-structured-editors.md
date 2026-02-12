@@ -105,4 +105,4 @@ With the rise of language models, structured editing may become a more natural f
 
 ### About the Author
 
-I am a Master's student in Computer Science at ETH Zurich focused on Algorithm Design and Theoretical Computer Science. During my Bachelor's degree at TU Munich, I worked on language design, creating a domain-specific language for programming FPGAs.
+Julian Kalitzke is a Master's student in Computer Science at ETH Zurich focused on Algorithm Design and Theoretical Computer Science. During his Bachelor's degree at TU Munich, he worked on language design, creating a domain-specific language for programming FPGAs.
