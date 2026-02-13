@@ -1,4 +1,4 @@
-## W6: Sketching and Diagramming - Chisel
+## W6 - Sketching and Diagramming: Chisel
 
 ### Diagramming data structures, now made simple, structured and dynamic
 

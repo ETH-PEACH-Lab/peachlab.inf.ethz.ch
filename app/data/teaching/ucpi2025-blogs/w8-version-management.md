@@ -1,4 +1,4 @@
-## Why Can't Data Scientists Remember What They Tried?
+## W8 - Why Can't Data Scientists Remember What They Tried?
 
 *Hunting for answers in 300 versions of a Jupyter notebook*
 

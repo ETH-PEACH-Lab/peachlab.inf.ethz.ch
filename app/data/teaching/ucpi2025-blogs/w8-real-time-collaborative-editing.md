@@ -1,5 +1,5 @@
 
-## CoPrompt — The Next Step in (Collaborative) Programming?
+## W8 - CoPrompt: The Next Step in (Collaborative) Programming?
 
 ### Setting the Stage
 

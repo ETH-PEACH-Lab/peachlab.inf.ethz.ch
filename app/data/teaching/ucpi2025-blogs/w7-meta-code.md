@@ -1,4 +1,4 @@
-## Meta Code
+## W7 - Meta Code
 
 Clear and informative tutorials are a great starting point for learning a new programming language or API. *Creating* such tutorials means combining several elements in a manner that helps learners understand new concepts. Keeping track of everything is tricky. 
 

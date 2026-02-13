@@ -1,4 +1,4 @@
-## W4 Visual Debugging
+## W4 - Visual Debugging
 
 Debugging is a very common and unavoidable task for programmers. We typically use logging when dealing with software runtime analysis, explaining failures and crashes, and investigating user behaviors.In everyday development, we often face this situation: the program runs without errors, but the results are not what we expected. So we start adding print statements, setting breakpoints, tracking variables and so on. These methods are simple and effective, but interpreting the log output displayed in the console or terminal is often challenging. For example, log statements within loops can generate massive amounts of log information. Furthermore, log output is organized linearly based on the order of program execution, making it difficult to connect log statements in different locations. Programmers often adopt strategies, such as using spacing and special characters, give logs timestamps and contexts and so on. However, in order to better solve the pain points in debugging, more and more papers point to visual debugging.
 
