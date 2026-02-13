@@ -1,4 +1,4 @@
-## W6 – Programming by Demonstration
+## Programming by Demonstration
 
 ### Introduction
 

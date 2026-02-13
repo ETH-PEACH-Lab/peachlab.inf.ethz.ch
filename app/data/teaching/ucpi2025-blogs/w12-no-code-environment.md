@@ -1,4 +1,4 @@
-## W12 - Scratch: Programming for All
+## Scratch: Programming for All
 
 For decades, learning to program meant wrestling with syntax errors, cryptic compiler messages, and abstract problems far removed from everyday experience. For many learners, especially children, this could be very discouraging. In 2007, the MIT Media Lab released Scratch, a visual programming environment designed to make programming feel more like playing, creating, and sharing.
 

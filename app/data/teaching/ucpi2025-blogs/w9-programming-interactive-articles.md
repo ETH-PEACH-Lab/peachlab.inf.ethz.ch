@@ -1,4 +1,4 @@
-## W9 - Interactive Articles
+## Interactive Articles
 
 **When reading turns into exploration and exploration turns into understanding**
 

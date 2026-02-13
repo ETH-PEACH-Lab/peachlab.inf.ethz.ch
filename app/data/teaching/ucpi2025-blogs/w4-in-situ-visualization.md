@@ -1,4 +1,4 @@
-## W4 - In Situ Visualization
+## In Situ Visualization
 
 ### Seeing Programs While They Run: In Situ Visualizations for Program Understanding
 

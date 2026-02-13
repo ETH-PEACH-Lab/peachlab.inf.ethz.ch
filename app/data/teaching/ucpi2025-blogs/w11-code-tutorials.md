@@ -1,4 +1,4 @@
-# W11 - Code Tutorials
+# Code Tutorials
 **Author:** Alexandre Ballenghien
 
 *(Blog post content coming soon)*

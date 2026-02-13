@@ -1,4 +1,4 @@
-## W11 - Code Clustering
+## Code Clustering
 
 Programming is becoming explosively more popular, with new tools and rapid advances in AI enabling more people than ever to build software. As a result, introductory programming courses have spread beyond computer science programs into many other disciplines and even earlier levels of education. As demand grows and classes become larger, it has become increasingly more difficult for instructors to have a good overview of students' progress, both individually and as a whole. Traditional teaching strategies, such as live coding demonstrations or in-class problem-solving, offer only limited insight. Some students actively participate and receive feedback, while others remain unnoticed, despite actually facing difficulties. 
 

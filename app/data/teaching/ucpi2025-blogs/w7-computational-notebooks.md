@@ -1,4 +1,4 @@
-## W7 - Computational Notebooks
+## Computational Notebooks
 
 ### Blending Prose and Code
 Standalone code can be messy and uncouth, a wall of text without explanation or understanding. The original programmer can have difficulty deciphering minimalist function and variable names as time passes. The problem compounds the more complex the program grows, and modifying and debugging become near impossible.

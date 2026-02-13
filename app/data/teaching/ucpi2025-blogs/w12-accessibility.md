@@ -1,4 +1,4 @@
-## W12 - TangibleGrid and Accessibility
+## TangibleGrid and Accessibility
 
   
   

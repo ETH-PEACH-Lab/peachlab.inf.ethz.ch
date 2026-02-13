@@ -1,4 +1,4 @@
-## W5 - Task Decomposition: ChainForge
+## Task Decomposition: ChainForge
 
 ### Introduction
 

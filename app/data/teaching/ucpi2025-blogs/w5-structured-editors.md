@@ -1,4 +1,4 @@
-## W5 - Structured Editors
+## Structured Editors
 
 ### What _is_ structured editing?
 

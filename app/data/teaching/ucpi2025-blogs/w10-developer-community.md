@@ -1,4 +1,4 @@
-## W10 - Developer Community
+## Developer Community
 
 The developer communitiy consist of multiple communities of practice, defined as “groups of people informally bound together by shared expertise and passion for a joint enterprise.” [2] Research has long examined how these communities can function effectively and support skill development. 
 

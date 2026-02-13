@@ -1,4 +1,4 @@
-## W10 - Building Worlds with Prompts
+## Building Worlds with Prompts
 
 Have you ever tried to describe an intricate fantasy landscape to someone and found yourself running out of words? Now imagine trying to communicate that vision to an AI: sketching a little here, adjusting a region there, refining your prompt with each iteration. That's the promise of **WorldSmith**, a tool that sits at the intersection of creative coding, generative AI, and human-computer interaction [1].
 
