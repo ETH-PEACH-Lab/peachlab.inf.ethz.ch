@@ -58,6 +58,18 @@ export default async function BlogPostPage({ params }) {
             remarkPlugins={[remarkGfm]} 
             rehypePlugins={[rehypeRaw]}
             components={{
+              h2: ({node, children, ...props}) => {
+                // Check if this is the first h2 (main title)
+                const isFirstH2 = node.position?.start?.line <= 5;
+                return (
+                  <>
+                    <h2 {...props}>{children}</h2>
+                    {isFirstH2 && currentBlog && (
+                      <p className="blog-byline">by {authorName}</p>
+                    )}
+                  </>
+                );
+              },
               img: ({node, ...props}) => {
                 let src = props.src;
                 if (src) {

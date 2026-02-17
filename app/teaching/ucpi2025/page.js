@@ -75,7 +75,6 @@ export default function UCPI2025() {
                 </ReactMarkdown>
 
                 {/* Student Blogs Grid */}
-                <h3 id="student-blogs">Student Blogs</h3>
                 <div className="blog-grid">
                     {blogData.map((blog) => (
                         <a 
