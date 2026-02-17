@@ -116,10 +116,19 @@
 
 .custom-blog-styles h2 {
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.3;
+}
+
+/* Byline directly under the main title */
+.custom-blog-styles .blog-byline {
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+  color: #888;
+  font-size: 0.95rem;
+  font-style: italic;
 }
 
 .custom-blog-styles h2 + p em {
