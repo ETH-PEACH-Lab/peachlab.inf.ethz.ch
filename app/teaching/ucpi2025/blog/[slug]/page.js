@@ -83,7 +83,7 @@ export default async function BlogPostPage({ params }) {
                   else if (!src.startsWith("http") && (!src.startsWith("/") || src.startsWith("./"))) {
                      // Handle ./ prefix if present
                     const relativePath = src.startsWith("./") ? src.substring(1) : `/${src}`;
-                    src = `${basePath}/assets/teaching/ucpi2025-blogs${relativePath}`;
+                    src = `${basePath}/assets/teaching/ucpi-blog-2025/blogs${relativePath}`;
                   }
                 }
                 
