@@ -4,69 +4,115 @@ import ReactMarkdown from 'react-markdown';
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import { Tabs } from "@geist-ui/core";
 // eslint-disable-next-line import/no-webpack-loader-syntax
-import teachingMd from '!raw-loader!@/data/teaching/ucpi2025.md';
-import "./style.css"
-import Toc from './Toc.js'
+import aboutMd from '!raw-loader!@/data/teaching/ucpi2025/about.md';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import gradingMd from '!raw-loader!@/data/teaching/ucpi2025/grading.md';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import syllabusMd from '!raw-loader!@/data/teaching/ucpi2025/syllabus.md';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import readinglistMd from '!raw-loader!@/data/teaching/ucpi2025/readinglist.md';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import blogMd from '!raw-loader!@/data/teaching/ucpi2025/blog.md';
 import { blogData } from "./blogData";
+import "./style.css";
 
 
 export default function UCPI2025() {
-    const [tocOpen, setTocOpen] = useState(false);
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    const [activeTab, setActiveTab] = useState("about");
+    const renderContent = () => {
+        switch (activeTab) {
+            case "about":
+                return (
+                    <div>
+                        <ReactMarkdown
+                            rehypePlugins={[rehypeSlug, rehypeRaw]}
+                            remarkPlugins={[remarkGfm]}
+                        >
+                            {aboutMd}
+                        </ReactMarkdown>
+                    </div>
+                );
+            case "syllabus":
+                return (
+                    <div>
+                        <ReactMarkdown
+                            rehypePlugins={[rehypeSlug, rehypeRaw]}
+                            remarkPlugins={[remarkGfm]}
+                        >
+                            {syllabusMd}
+                        </ReactMarkdown>
+                    </div>
+                );
+            case "reading-list":
+                return (
+                    <div>
+                        <ReactMarkdown
+                            rehypePlugins={[rehypeSlug, rehypeRaw]}
+                            remarkPlugins={[remarkGfm]}
+                        >
+                            {readinglistMd}
+                        </ReactMarkdown>
+                    </div>
+                );
+            case "blogs":
+                return (
+                    <div>
+                        <div className="blog-grid">
+                            {blogData.map((blog) => (
+                                <a
+                                    key={blog.slug}
+                                    href={`${basePath}/teaching/ucpi2025/blog/${blog.slug}/`}
+                                    className="blog-card"
+                                >
+                                    <h4>{blog.week}: {blog.title}</h4>
+                                    <div className="author">{blog.author}</div>
+                                    <div className="desc">{blog.desc}</div>
+                                </a>
+                            ))}
+                        </div>
+
+                        <ReactMarkdown
+                            rehypePlugins={[rehypeSlug, rehypeRaw]}
+                            remarkPlugins={[remarkGfm]}
+                        >
+                            {blogMd}
+                        </ReactMarkdown>
+                    </div>);
+            case "grading":
+                return (
+                    <div>
+                        <ReactMarkdown
+                            rehypePlugins={[rehypeSlug, rehypeRaw]}
+                            remarkPlugins={[remarkGfm]}
+                        >
+                            {gradingMd}
+                        </ReactMarkdown>
+                    </div>
+                );
+            default:
+                return null;
+        }
+    };
 
 
     return (
         <div className="ucpi-layout">
-            <div className="ucpi-sidebar">
-            {/* TOC Drawer Button (visible on mobile) */}
-            <button
-                className="toc-drawer-btn"
-                onClick={() => setTocOpen(!tocOpen)}
-            >
-               {tocOpen? "×" : "☰"} 
-            </button>
-            {/* TOC Sidebar/Drawer */}
-            <nav className={`toc${tocOpen ? " toc-drawer-open" : ""}`} onClick={() => setTocOpen(false)}>
-                <Toc markdownText={teachingMd} />
-            </nav>
-            </div>
-            <main className="ucpi-main">
-                <ReactMarkdown
-                    rehypePlugins={[rehypeSlug, rehypeRaw]}
-                    remarkPlugins={[remarkGfm]}
-                    components={{
-                        a: ({node, href, children, ...props}) => {
-                            // Check if it's a relative link to a blog post
-                            if (href && href.startsWith("blog/")) {
-                                return (
-                                    <a href={`${basePath}/teaching/ucpi2025/${href}/`} {...props} className={props.className}>
-                                        {children}
-                                    </a>
-                                );
-                            }
-                            return <a href={href} {...props}>{children}</a>;
-                        }
-                    }}
-                >
-                    {teachingMd}
-                </ReactMarkdown>
-
-                {/* Student Blogs Grid */}
-                <div className="blog-grid">
-                    {blogData.map((blog) => (
-                        <a 
-                            key={blog.slug} 
-                            href={`${basePath}/teaching/ucpi2025/blog/${blog.slug}/`} 
-                            className="blog-card"
-                        >
-                            <h4>{blog.week}: {blog.title}</h4>
-                            <div className="author">{blog.author}</div>
-                            <div className="desc">{blog.desc}</div>
-                        </a>
-                    ))}
+            <div style={{ width: "100%", margin: "0 auto", padding: "2rem 1rem" }}>
+                <h1>Seminar on User-Centered Programming Interfaces, 2025</h1>
+                <Tabs value={activeTab} onChange={setActiveTab} style={{ marginBottom: "2rem" }}>
+                    <Tabs.Item label="About" value="about" />
+                    <Tabs.Item label="Syllabus" value="syllabus" />
+                    <Tabs.Item label="Reading List" value="reading-list" />
+                    <Tabs.Item label="Final Blog Post" value="blogs" />
+                    <Tabs.Item label="Grading" value="grading" />
+                </Tabs>
+                <div className="ucpi-main" style={{ minHeight: "200px" }}>
+                    {renderContent()}
                 </div>
-            </main>
+            </div>
         </div>
     );
 }
