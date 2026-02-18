@@ -33,7 +33,7 @@ export default function Diet2026Page() {
                             {aboutMd}
                         </ReactMarkdown>
 
-                        <h3 style={{ marginTop: "2rem" }}>Teaching Team</h3>
+                        <h4 style={{ marginTop: "2rem" }}>Teaching Team</h4>
                         <p>Please post questions on Moodle if you can, so others can see them and share in the discussion. If you have questions which are not of general interest, please don’t hesitate to contact us directly.</p>
 
                         <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', marginTop: '1rem' }}>
@@ -42,7 +42,7 @@ export default function Diet2026Page() {
                             <MemberCardMini slug="ywu" />
                         </div>
 
-                        <h3 style={{ marginTop: "2rem" }}>Grading</h3>
+                        <h4 style={{ marginTop: "2rem" }}>Grading</h4>
                         <p>The grading consists of individual components (40%) and group project components (60%).</p>
                         <ul>
                             <li><strong>Individual Components (40%)</strong>
@@ -95,14 +95,16 @@ export default function Diet2026Page() {
     };
 
     return (
-        <div style={{ width: "100%", margin: "0 auto", padding: "2rem 1rem" }}>
-            <h1>Design in Educational Technology 2026</h1>
-            <Tabs value={activeTab} onChange={setActiveTab} style={{ marginBottom: "2rem" }}>
-                <Tabs.Item label="About" value="about" />
-                <Tabs.Item label="Syllabus" value="syllabus" />
-                <Tabs.Item label="Individual Blog" value="blog" />
-                <Tabs.Item label="Course Project" value="project" />
-            </Tabs>
+        <div className="diet2026-page">
+            <h2>Design in Educational Technology 2026</h2>
+            <div>
+                <Tabs value={activeTab} onChange={setActiveTab} style={{ marginBottom: "2rem" }}>
+                    <Tabs.Item label="About" value="about" />
+                    <Tabs.Item label="Syllabus" value="syllabus" />
+                    <Tabs.Item label="Individual Blog" value="blog" />
+                    <Tabs.Item label="Course Project" value="project" />
+                </Tabs>
+            </div>
             <div style={{ minHeight: "200px" }}>
                 {renderContent()}
             </div>
@@ -130,20 +132,22 @@ const SyllabusTable = () => {
     ];
 
     return (
-        <Table
-            data={data}
-            rowClassName={(rowData) =>
-                rowData.isNoClass
-                    ? 'no-class-row'
-                    : rowData.isProject
-                        ? 'project-row'
-                        : ''
-            }
-        >
-            <Table.Column prop="week" label="Week" render={(value) => <span>{value}</span>} />
-            <Table.Column prop="date" label="Date" render={(value) => <span>{value}</span>} />
-            <Table.Column prop="topic" label="Topic" render={(value) => <strong>{value}</strong>} />
-            <Table.Column prop="remarks" label="Remarks" render={(value) => <span>{value}</span>} />
-        </Table>
+        <div className="diet2026-table-wrapper">
+            <Table
+                data={data}
+                rowClassName={(rowData) =>
+                    rowData.isNoClass
+                        ? 'no-class-row'
+                        : rowData.isProject
+                            ? 'project-row'
+                            : ''
+                }
+            >
+                <Table.Column prop="week" label="Week" render={(value) => <span>{value}</span>} />
+                <Table.Column prop="date" label="Date" render={(value) => <span>{value}</span>} />
+                <Table.Column prop="topic" label="Topic" render={(value) => <strong>{value}</strong>} />
+                <Table.Column prop="remarks" label="Remarks" render={(value) => <span>{value}</span>} />
+            </Table>
+        </div>
     );
 };

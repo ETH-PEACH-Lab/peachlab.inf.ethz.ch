@@ -4,6 +4,7 @@ import { useState } from "react";
 import pubs from "@/data/pubs.json";
 import { Collapse, Grid, Checkbox, Input } from "@geist-ui/core";
 import PubCard from "./PubCard";
+import "./style.css";
 
 export default function Publications() {
     const [paperOnly, setPaperOnly] = useState(true);
@@ -36,10 +37,9 @@ export default function Publications() {
 
     return (
         <div>
-            {/* use flex layout to align heading and controls; make full width */}
-            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', width: '100%'}}>
-                <h2 style={{borderBottom: 'none', margin: 0}}>Publications</h2>
-                <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+            <div className="publications-header-row">
+                <h2>Publications</h2>
+                <div className="publications-header-controls">
                     <Checkbox
                         checked={paperOnly}
                         onChange={(e) => setPaperOnly(e.target.checked)}
@@ -50,7 +50,6 @@ export default function Publications() {
                         placeholder="Search publications"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        style={{width: '200px', flex: '0 0 200px'}}
                     />
             </div>
             </div>

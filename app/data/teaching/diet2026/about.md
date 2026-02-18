@@ -6,7 +6,7 @@ Through weekly lectures, we’ll learn foundational learning theories that tell 
 
 Beyond the theory, students will work in teams for a semester-long hackathon to address real-world challenges using user-centered design methods, creating their own interactive learning tools and proposing evaluation plans.
 
-### Course Information
+#### Course Information
 
 - **Course Catalogue:** [ETH Zurich Course Catalogue](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=199016&semkez=2026S&lang=en)
 - **Lecture Session:** Friday 14:15-16:00, [LFW C4](https://ethz.ch/en/utils/location.html?building=LFW&floor=C&room=4&lang=en)

@@ -59,7 +59,7 @@ export default function Navbar() {
             </div>
 
             {/* Navigation Links */}
-            <div className="tabs">
+            <div className="mytabs">
               <Tabs
                 value={currentTab}
                 leftSpace={0}

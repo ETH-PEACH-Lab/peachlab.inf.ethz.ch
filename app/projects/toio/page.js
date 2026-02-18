@@ -12,12 +12,12 @@ export default function ToioPage() {
     return (
         <div className={`container ${isDarkMode ? 'dark-mode' : ''}`}>
             {/* Title */}
-            <header className="header">
-                <h1 className="title">
+            <header className="toio-header">
+                <h1 className="toio-title">
                     Pokémon AI Adventure
                 </h1>
                 
-                <div className="meta">
+                <div className="toio-meta">
                     <p>Project Leader: 
                         <Link href="#" target="_blank" className="link">Zihan Li</Link>
                     </p>
