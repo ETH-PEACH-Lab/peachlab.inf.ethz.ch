@@ -1,16 +1,15 @@
-"use client"
+"use client";
 
-import { Button, Link } from "@geist-ui/core";
-import Image from "next/image";
+import { Link } from "@geist-ui/core";
 import { useThemeSwitcher } from "../../components/Providers";
 import "./style.css";
 
 export default function ToioPage() {
-    const { themeType, setThemeType } = useThemeSwitcher();
+    const { themeType } = useThemeSwitcher();
     const isDarkMode = themeType === "custom-dark";
     
     return (
-        <div className={`container ${isDarkMode ? 'dark-mode' : ''}`}>
+        <div className={`toio-container ${isDarkMode ? "dark-mode" : ""}`}>
             {/* Title */}
             <header className="toio-header">
                 <h1 className="toio-title">
@@ -36,8 +35,8 @@ export default function ToioPage() {
                     </Link>
                 </div> */}
             {/* Abstract */}
-            <section className="section abstract">
-                <p className="abstract-text">
+            <section className="toio-section toio-abstract">
+                <p className="toio-abstract-text">
                     Pokémon AI Adventure is a tangible toolkit that teaches foundational AI literacy to children aged 9-15. Our primary research goal is to bridge the conceptual gap between rule-based logic and data-driven machine learning. Through a playful, hands-on journey, children act the role as a "Pokémon Trainer," using physical components to build, test, and compare different AI models. This process allows them to experientially learn how different AIs "think" and make decisions to solve challenges in the world of Pokémon.
                 </p>
             </section>
@@ -56,17 +55,17 @@ export default function ToioPage() {
 
 
             {/* A Quest on Rules and Data */}
-            <section className="section">
-                <h2 className="section-title">A Quest on Rules and Data</h2>
-                <div className="quest-content">
-                    <div className="quest-image">
+            <section className="toio-section">
+                <h2 className="toio-section-title">A Quest on Rules and Data</h2>
+                <div className="toio-quest-content">
+                    <div className="toio-quest-image">
                         <img
                             src="/assets/toio/gameboard.png"
                             alt="Game Board"
-                            className="board-image"
+                            className="toio-board-image"
                         />
                     </div>
-                    <div className="quest-text">
+                    <div className="toio-quest-text">
                         <p>
                             Pokémon AI Adventure invites players into the world of Novara—a planet composed of diverse environments, each inhabited by different Pokémon.
                         </p>
@@ -85,11 +84,11 @@ export default function ToioPage() {
             </section>
 
             {/* Meet RuleBot & DataBot */}
-            <section className="section">
-                <h2 className="section-title">Meet RuleBot & DataBot</h2>
-                <div className="bots-container">
-                    <div className="bot-card">
-                        <div className="bot-icon">
+            <section className="toio-section">
+                <h2 className="toio-section-title">Meet RuleBot & DataBot</h2>
+                <div className="toio-bots-container">
+                    <div className="toio-bot-card">
+                        <div className="toio-bot-icon">
                             <img src="/assets/toio/rulebot.png" alt="RuleBot" />
                         </div>
                         <h3>Meet RuleBot: Rule-Based AI</h3>
@@ -103,8 +102,8 @@ export default function ToioPage() {
                         </ul>
                     </div>
                     
-                    <div className="bot-card">
-                        <div className="bot-icon">
+                    <div className="toio-bot-card">
+                        <div className="toio-bot-icon">
                             <img src="/assets/toio/databot.png" alt="DataBot" />
                         </div>
                         <h3>Meet DataBot: Data-Driven AI</h3>
@@ -121,13 +120,13 @@ export default function ToioPage() {
             </section>
 
             {/* Lab Zone */}
-            <section className="section">
-                <h2 className="section-title">Lab Zone</h2>
+            <section className="toio-section">
+                <h2 className="toio-section-title">Lab Zone</h2>
                 
-                <div className="lab-subsection">
+                <div className="toio-lab-subsection">
                     <h3>Clue Cards & Package Cards: Teaching the AI</h3>
-                    <div className="lab-content">
-                        <div className="lab-text">
+                    <div className="toio-lab-content">
+                        <div className="toio-lab-text">
                             <p>These cards are the primary way players shape AI behavior:</p>
                             <ul>
                                 <li><strong>Clue Cards</strong> define explicit features and rules for RuleBot.</li>
@@ -137,20 +136,20 @@ export default function ToioPage() {
                                 Scanning different combinations changes how each AI understands Pokémon. Every scan represents a design decision, and every decision has consequences.
                             </p>
                         </div>
-                        <div className="lab-image">
+                        <div className="toio-lab-image">
                             <img
                                 src="/assets/toio/cardset.png"
                                 alt="Clue and Package Cards"
-                                className="cards-image"
+                                className="toio-cards-image"
                             />
                         </div>
                     </div>
                 </div>
 
-                <div className="lab-subsection">
+                <div className="toio-lab-subsection">
                     <h3>Light Board: Visualizing the AI Model</h3>
-                    <div className="lab-content">
-                        <div className="lab-text">
+                    <div className="toio-lab-content">
+                        <div className="toio-lab-text">
                             <p>
                                 The Light Board represents the "brain" of the AI.
                             </p>
@@ -162,11 +161,11 @@ export default function ToioPage() {
                                 This makes AI reasoning visible and inspectable, allowing players to see how their choices reshape the internal model.
                             </p>
                         </div>
-                        <div className="lab-image">
+                        <div className="toio-lab-image">
                             <img
                                 src="/assets/toio/lightboard.png"
                                 alt="Light Board"
-                                className="lightboard-image"
+                                className="toio-lightboard-image"
                             />
                         </div>
                     </div>
@@ -174,13 +173,13 @@ export default function ToioPage() {
             </section>
 
             {/* Play Zone */}
-            <section className="section">
-                <h2 className="section-title">Play Zone</h2>
+            <section className="toio-section">
+                <h2 className="toio-section-title">Play Zone</h2>
                 
-                <div className="play-subsection">
+                <div className="toio-play-subsection">
                     <h3>Wild Pokémon Encounter: Testing the Model</h3>
-                    <div className="play-content">
-                        <div className="play-text">
+                    <div className="toio-play-content">
+                        <div className="toio-play-text">
                             <p>
                                 A wild Pokémon appears—and the AI must make a decision.
                             </p>
@@ -198,20 +197,20 @@ export default function ToioPage() {
                                 Each outcome reveals something about how the model was built.
                             </p>
                         </div>
-                        <div className="play-image">
+                        <div className="toio-play-image">
                             <img
                                 src="/assets/toio/play.png"
                                 alt="Wild Pokémon Encounter"
-                                className="encounter-image"
+                                className="toio-encounter-image"
                             />
                         </div>
                     </div>
                 </div>
 
-                <div className="play-subsection">
+                <div className="toio-play-subsection">
                     <h3>Prediction Results: Reflecting on Outcomes</h3>
-                    <div className="play-content">
-                        <div className="play-text">
+                    <div className="toio-play-content">
+                        <div className="toio-play-text">
                             <p>
                                 The Results Panel displays the AI's final prediction. Players can:
                             </p>
@@ -224,11 +223,11 @@ export default function ToioPage() {
                                 <li>Or something important that was missing?</li>
                             </ul>
                         </div>
-                        <div className="play-image">
+                        <div className="toio-play-image">
                             <img
                                 src="/assets/toio/prediction.png"
                                 alt="Prediction Results Panel"
-                                className="results-image"
+                                className="toio-results-image"
                             />
                         </div>
                     </div>

@@ -99,13 +99,8 @@
   }
   .ucpi-layout {
     flex-direction: column;
-    max-width: 90vw;
+    max-width: 80vw;
     padding: 0rem !important
-  }
-
-  .ucpi-main{
-    max-width: calc(100% - 40px);
-    padding: 0rem !important;
   }
 
   .toc {

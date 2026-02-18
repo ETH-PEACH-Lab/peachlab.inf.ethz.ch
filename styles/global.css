@@ -2,7 +2,22 @@ body {
     /* font-family: sans-serif; */
     margin: 0;
     padding: 0;
+}
+
+.main {
+  flex: 1;
+  max-width: 55rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .main {
+    padding: 1.5rem 1rem;
   }
+}
 
 body, p, h1, h2, h3, h4, a {
     font-family: var(--font-custom), sans-serif !important;

@@ -14,7 +14,7 @@ export default function Teaching() {
       <ReactMarkdown
         components={{
           a: ({ node, ...props }) => (
-            <a {...props} target="_blank" rel="noopener noreferrer">
+            <a {...props}>
               {props.children}
             </a>
           ),

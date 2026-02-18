@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header />
           <Navbar />
-          <div className="main" style={{ flex: 1, maxWidth: "55rem", margin: "0 auto", padding: "2rem" }}>
+          <div className="main">
             {children}
           </div>
           <Footnote />

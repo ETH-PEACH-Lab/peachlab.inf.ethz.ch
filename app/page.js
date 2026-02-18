@@ -1,41 +1,44 @@
-"use client"
-import ReactMarkdown from 'react-markdown';
+"use client";
+
+import ReactMarkdown from "react-markdown";
+import Link from "next/link";
 // eslint-disable-next-line import/no-webpack-loader-syntax
-import introMd from '!raw-loader!./data/intro.md';
+import introMd from "!raw-loader!./data/intro.md";
 import news from "@/data/news.json";
-import ResearchMini from '@/research/ResearchMini';
+import ResearchMini from "@/research/ResearchMini";
 import { Card } from "@geist-ui/core";
 import Image from "@/components/Image";
 
-
 import "./style.css";
+
+const markdownComponents = {
+  a: ({ node, ...props }) => (
+    <a {...props} target="_blank" rel="noopener noreferrer">
+      {props.children}
+    </a>
+  ),
+};
 
 
 export default function Home() {
   return (
     <div className="home-container">
       <div className="home-teaser-img">
-        <Image src='/assets/landing/datar6.jpg' alt="Teaser" />
+        <Image src="/assets/landing/datar6.jpg" alt="Teaser" />
       </div>
 
       <ReactMarkdown
-        components={{
-          a: ({ node, ...props }) => (
-            <a {...props} target="_blank" rel="noopener noreferrer">
-              {props.children}
-            </a>
-          ),
-        }}
+        components={markdownComponents}
       >
         {introMd}
       </ReactMarkdown>
       <div className="home-buttons">
-        <a href="/research" className="home-btn">
+        <Link href="/research" className="home-btn">
           Check Our Work
-        </a>
-        <a href="/team" className="home-btn">
+        </Link>
+        <Link href="/team" className="home-btn">
           Meet the Team
-        </a>
+        </Link>
       </div>
       {/* News Section */}
       <Card className="news-card">
@@ -44,14 +47,14 @@ export default function Home() {
           {news.slice(0, 5).map((item, index) => (
             <li key={index} className="news-list-item">
               <strong>{item.time}: </strong>
-              <p dangerouslySetInnerHTML={{ __html: item.title }} style={{ display: "inline" }} />
+              <span dangerouslySetInnerHTML={{ __html: item.title }} />
             </li>
           ))}
         </ul>
         <div className="news-link">
-          <a href="/news" className="news-link-a">
+          <Link href="/news" className="news-link-a">
             See all news &rarr;
-          </a>
+          </Link>
         </div>
       </Card>
 
@@ -59,9 +62,9 @@ export default function Home() {
       <h3 className="featured-title">Featured Research</h3>
       <ResearchMini />
       <div className="featured-link">
-        <a href="/research" className="featured-link-a">
+        <Link href="/research" className="featured-link-a">
           Read more &rarr;
-        </a>
+        </Link>
       </div>
     </div>
   );

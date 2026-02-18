@@ -95,7 +95,7 @@ export default function Diet2026Page() {
     };
 
     return (
-        <div className="diet2026-page">
+        <div>
             <h2>Design in Educational Technology 2026</h2>
             <div>
                 <Tabs value={activeTab} onChange={setActiveTab} style={{ marginBottom: "2rem" }}>

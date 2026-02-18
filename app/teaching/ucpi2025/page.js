@@ -99,8 +99,7 @@ export default function UCPI2025() {
 
 
     return (
-        <div className="ucpi-layout">
-            <div style={{ width: "100%", margin: "0 auto", padding: "2rem 1rem" }}>
+        <div>
                 <h2>Seminar on User-Centered Programming Interfaces, 2025</h2>
                 <Tabs value={activeTab} onChange={setActiveTab} style={{ marginBottom: "2rem" }}>
                     <Tabs.Item label="About" value="about" />
@@ -109,10 +108,9 @@ export default function UCPI2025() {
                     <Tabs.Item label="Final Blog Post" value="blogs" />
                     <Tabs.Item label="Grading" value="grading" />
                 </Tabs>
-                <div className="ucpi-main" style={{ minHeight: "200px" }}>
+                <div className="ucpi-main">
                     {renderContent()}
                 </div>
-            </div>
         </div>
     );
 }
