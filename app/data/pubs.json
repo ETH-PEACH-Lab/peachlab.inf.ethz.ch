@@ -110,6 +110,22 @@
     "is_featured": false
   },
   {
+    "venue": "CHI 2026 Companion",
+    "id": "CHI2026companion",
+    "slug": "hh-to-ha-workshop",
+    "year": "2026",
+    "title": "From Human-Human Collaboration to Human-Agent Collaboration: A Vision, Design Philosophy, and an Empirical Framework for Achieving Successful Partnerships Between Humans and LLM Agents",
+    "authors": "Bingsheng Yao, Chaoran Chen, April Yi Wang, Sherry Tongshuang Wu, Toby Jia-jun Li, Dakuo Wang",
+    "venue_full": "Workshop at the ACM Conference on Human Factors in Computing Systems (CHI 2026 Companion)",
+    "abstract": "The emergence of Large Language Model (LLM) agents enables us to build agent-based intelligent systems that move beyond the role of a \"tool\" to become genuine collaborators with humans, thereby realizing a novel human-agent collaboration paradigm. Our vision is that LLM agents should resemble remote human collaborators, which allows HCI researchers to ground the future exploration in decades of research on trust, awareness, and common ground in remote human collaboration, while also revealing the unique opportunities and challenges that emerge when one or more partners are AI agents. This workshop establishes a foundational research agenda for the new era by posing the question: How can the rich understanding of remote human collaboration inspire and inform the design and study of human-agent collaboration? We will bring together an interdisciplinary group from HCI, CSCW, and AI to explore this critical transition. The 180-minute workshop will be highly interactive, featuring a keynote speaker, a series of invited lightning talks, and an exploratory group design session where participants will storyboard novel paradigms of human-agent partnership. Our goal is to enlighten the research community by cultivating a shared vocabulary and producing a research agenda that charts the future of collaborative agents.",
+    "preprint_link": "https://arxiv.org/abs/2602.05987",
+    "project_link": "https://chi26workshop-human-agent-collaboration.hailab.io/",
+    "teaser": "/assets/teaser/placeholder.png",
+    "is_journal": false,
+    "is_featured": false,
+    "is_poster": true
+  },
+  {
     "venue": "IUI 2026",
     "id": "iui2026a",
     "slug": "stepmind",
@@ -181,6 +197,7 @@
     "abstract": "Boolean algebra is foundational to programming, yet the terse textual syntax of boolean expressions does not map clearly onto the way that students reason about logical conditions. To help bridge this gap, we introduce Boolean Canvas, a direct‑manipulation interface that lets learners construct visual boolean diagrams while the corresponding Python code is generated in real time. We report on a within‑subjects study with 29 tertiary‑level students who solved boolean‑logic tasks in Python with and without Boolean Canvas. Task success, NASA‑TLX cognitive load, system enjoyment, and perceived usability were recorded. Results show that Boolean Canvas performs on par with a traditional code editor across objective and self‑reported measures. We reflect on the design and study outcomes, identifying which features supported learning, which did not, and why, and offer evidence‑bounded recommendations for instructors and tool builders.",
     "teaser": "/assets/teaser/venn.png",
     "teaser_full": "/assets/teaser/venn_full.png",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3770762.3772643",
     "is_journal": false,
     "is_featured": false
   },
@@ -294,6 +311,21 @@
     "is_featured": true
   },
   {
+    "venue": "ITiCSE 2025",
+    "id": "ITiCSE2025b",
+    "slug": "gpt4readability",
+    "year": "2025",
+    "title": "Can GPT4 Generate Effective Feedback on Code Readability?",
+    "authors": "Xiaotian Su, Yajie Song, Marcus Messer, Jaromir Savelka, Maria Cutumisu, April Yi Wang",
+    "venue_full": "In Proceedings of the 30th ACM Conference on Innovation and Technology in Computer Science Education V. 2 (ITiCSE 2025 Poster)",
+    "abstract": "Effective feedback is often timely and consistent but, with large cohorts, this is not always achievable. This study explored the potential of GPT4 to generate feedback on code readability for students enrolled in a CS1 Java course. We developed rubrics based on three readability criteria: naming, commenting, and formatting. We defined feedback criteria and incorporated them into GPT4 prompts to guide feedback generation. Results were mixed: while some feedback messages closely aligned with the rubrics, offering valuable insights, others fell short in providing corrective guidance. This highlights the potential and limitations of using LLMs to generate feedback on code readability. Future research could refine these methods to improve feedback consistency and quality.",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3724389.3730771",
+    "teaser": "/assets/teaser/placeholder.png",
+    "is_journal": false,
+    "is_featured": false,
+    "is_poster": true
+  },
+  {
     "venue": "CHI 2025",
     "id": "CHI2025c",
     "slug": "dbox",
@@ -339,6 +371,36 @@
     "is_featured": true
   },
   {
+    "venue": "L@S Demo 2025",
+    "id": "coducate",
+    "slug": "coducate",
+    "year": "2025",
+    "title": "Coducate: Reducing Cognitive Load in Instructor-Led Live Coding at Scale",
+    "authors": "Lukas Mast, Xiaotian Su, April Yi Wang",
+    "venue_full": "In Proceedings of the Twelfth ACM Conference on Learning @ Scale (L@S '25 Demo)",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3698205.3733943",
+    "abstract": "Live coding is a powerful teaching technique in programming education that helps students connect theory to practice by observing the coding process in real-time. However, instructors face significant cognitive load challenges when simultaneously coding, explaining, debugging, and managing classroom interactions. This paper introduces Coducate, a code editor extension specifically designed to streamline instructor-led live coding sessions. Coducate aims to reduce the cognitive load of instructors by automating routine tasks while increasing student participation through collaborative coding features.",
+    "teaser": "/assets/teaser/placeholder.png",
+    "is_journal": false,
+    "is_featured": false,
+    "is_poster": true
+  },
+  {
+    "venue": "CHI EA 2025",
+    "id": "livecoding",
+    "slug": "livecoding",
+    "year": "2025",
+    "title": "The Stress of Improvisation: Instructors' Perspectives on Live Coding in Programming Classes",
+    "authors": "Xiaotian Su, April Yi Wang",
+    "venue_full": "In Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI '25 Late Breaking Work)",
+    "paper_link": "https://dl.acm.org/doi/full/10.1145/3706599.3719993",
+    "abstract": "Live coding is a pedagogical technique in which an instructor writes and executes code in front of students to impart skills like incremental development and debugging. Although live coding offers many benefits, instructors face many challenges in the classroom, like cognitive challenges and psychological stress, most of which have yet to be formally studied. To understand the obstacles faced by instructors in CS classes, we conducted (1) a formative interview with five teaching assistants in exercise sessions and (2) a contextual inquiry study with four lecturers for large-scale classes. We found that the improvisational and unpredictable nature of live coding makes it difficult for instructors to manage their time and keep students engaged, resulting in more mental stress than presenting static slides. We discussed opportunities for augmenting existing IDEs and presentation setups to help enhance live coding experience.",
+    "teaser": "/assets/teaser/placeholder.png",
+    "is_journal": false,
+    "is_featured": false,
+    "is_poster": true
+  },
+  {
     "venue": "MSR 2025",
     "id": "MSR2025",
     "slug": "logs",
@@ -379,6 +441,62 @@
     "paper_link": "https://arxiv.org/pdf/2405.14107",
     "is_journal": false,
     "is_featured": true
+  },
+  {
+    "venue": "VL/HCC 2024",
+    "id": "VLHCC2024",
+    "slug": "datar-semiunplugged",
+    "year": "2024",
+    "title": "datAR: A Semi-Unplugged Approach to Teach Data Literacy Through Everyday Objects",
+    "authors": "Lilian Lopez, Kiara Chau, Zeyu Xiong, April Yi Wang",
+    "venue_full": "Showpiece at the IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC 2024 Showpiece)",
+    "teaser": "/assets/teaser/placeholder.png",
+    "is_journal": false,
+    "is_featured": false,
+    "is_poster": true
+  },
+  {
+    "venue": "L@S 2024",
+    "id": "LAS2024",
+    "slug": "competilearn",
+    "year": "2024",
+    "title": "CompetiLearn: A Retrieval-Augmented System for Complementing Learnersourcing and AI for Data Science Learners",
+    "authors": "Junling Wang, April Yi Wang",
+    "venue_full": "Workshop on Learnersourcing: Student-generated Content @  Scale, at ACM Learning @ Scale Conference (L@S 2024 Workshop)",
+    "teaser": "/assets/teaser/placeholder.png",
+    "is_journal": false,
+    "is_featured": false,
+    "is_poster": true
+  },
+  {
+    "venue": "CHI 2024 Companion",
+    "id": "CHI2024companion",
+    "slug": "human-notebook-interactions",
+    "year": "2024",
+    "title": "Human-Notebook Interactions: The CHI of Computational Notebooks",
+    "authors": "Jesse Harden, April Yi Wang, Rebecca Faust, Katherine E Isaacs, Nurit Kirshenbaum, John Wenskovitch, Jian Zhao, Chris North",
+    "venue_full": "In Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '24) Workshop",
+    "teaser": "/assets/teaser/placeholder.png",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3613905.3636318",
+    "project_link": "https://humannotebookinteractions.github.io/",
+    "is_journal": false,
+    "is_featured": false,
+    "is_poster": true
+  },
+  {
+    "venue": "ICSE 2024",
+    "id": "ICSE2024ide",
+    "slug": "ide-workshop",
+    "year": "2024",
+    "title": "“Don’t Step on My Toes”: Resolving Editing Conflicts in Real-Time Collaboration in Computational Notebooks",
+    "authors": "April Y. Wang, Zihan Wu, Christopher Brooks, Steve Oney",
+    "venue_full": "In Proceedings of the 1st ACM/IEEE Workshop on Integrated Development Environments (IDE '24)",
+    "abstract": "Real-time collaborative editing in computational notebooks can improve the efficiency of teamwork for data scientists. However, working together through synchronous editing of notebooks introduces new challenges. Data scientists may inadvertently interfere with each others' work by altering the shared codebase and runtime state if they do not set up a social protocol for working together and monitoring their collaborators' progress. In this paper, we propose a real-time collaborative editing model for resolving conflict edits in computational notebooks that introduces three levels of edit protection to help collaborators avoid introducing errors to both the program source code and changes to the runtime state.",
+    "teaser": "/assets/teaser/placeholder.png",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3643796.3648453",
+    "is_journal": false,
+    "is_featured": false,
+    "is_poster": true
   },
   {
     "venue": "CHI 2023&nbsp;<i class='fas fa-award'></i>",

@@ -19,7 +19,7 @@ export default function Team() {
             <h3>Affiliated Members</h3>
             <ul style={{ marginBottom: "20px", borderBottom: "1px solid #eaeaea" }}>
                 {members.map((member, index) => {
-                    if (member.status === "collaborator")
+                    if (member.status === "affiliated")
                         return <li key={index}><a href={member.link} target="_blank" rel="noopener noreferrer">{member.name}</a>, <span dangerouslySetInnerHTML={{ __html: member.title }} />
                         </li>
                 })}

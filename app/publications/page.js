@@ -1,10 +1,14 @@
 "use client"
 
+import { useState } from "react";
 import pubs from "@/data/pubs.json";
-import { Collapse, Grid } from "@geist-ui/core";
+import { Collapse, Grid, Checkbox, Input } from "@geist-ui/core";
 import PubCard from "./PubCard";
 
 export default function Publications() {
+    const [paperOnly, setPaperOnly] = useState(true);
+    const [search, setSearch] = useState("");
+
     const categorizeByYear = (publications) => {
         return publications.reduce((acc, pub) => {
             if (!acc[pub.year]) {
@@ -14,28 +18,64 @@ export default function Publications() {
             return acc;
         }, {});
     };
-    const categorizedPubs = categorizeByYear(pubs);
+
+    // apply filter based on checkbox state; when paperOnly is true we
+    // drop any publication where `is_poster` is false or missing
+    let filteredPubs = paperOnly
+        ? pubs.filter((pub) => !pub.is_poster)
+        : pubs;
+    // further restrict by search query on title (case-insensitive)
+    if (search.trim()) {
+        const q = search.toLowerCase();
+        filteredPubs = filteredPubs.filter((pub) =>
+            pub.title.toLowerCase().includes(q)
+        );
+    }
+
+    const categorizedPubs = categorizeByYear(filteredPubs);
 
     return (
         <div>
-            <h2 style={{borderBottom: 'none'}}>Publications</h2>
-            {Object.keys(categorizedPubs)
-                .sort((a, b) => b - a) // Sort years in descending order
-                .map((year) => (
-                    <div key={year}>
-                        <Collapse.Group>
-                            <Collapse title={year} initialVisible>
-                                <Grid.Container>
-                                    {categorizedPubs[year].map((pub, index) => (
-                                        <Grid xs={24} sm={24} key={index}>
-                                            <PubCard pub={pub} />
-                                        </Grid>
-                                    ))}
-                                </Grid.Container>
-                            </Collapse></Collapse.Group>
-                    </div>
-                ))
-            }
+            {/* use flex layout to align heading and controls; make full width */}
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', width: '100%'}}>
+                <h2 style={{borderBottom: 'none', margin: 0}}>Publications</h2>
+                <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+                    <Checkbox
+                        checked={paperOnly}
+                        onChange={(e) => setPaperOnly(e.target.checked)}
+                    >
+                        Paper Only
+                    </Checkbox>
+                    <Input
+                        placeholder="Search publications"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        style={{width: '200px', flex: '0 0 200px'}}
+                    />
+            </div>
+            </div>
+            {Object.keys(categorizedPubs).length === 0 ? (
+                <div style={{marginTop: '1rem', fontStyle: 'italic', minHeight: '200px', textAlign: 'center', width: '800px'}}>
+                    No publications found.
+                </div>
+            ) : (
+                Object.keys(categorizedPubs)
+                    .sort((a, b) => b - a) // Sort years in descending order
+                    .map((year) => (
+                        <div key={year}>
+                            <Collapse.Group>
+                                <Collapse title={year} initialVisible>
+                                    <Grid.Container>
+                                        {categorizedPubs[year].map((pub, index) => (
+                                            <Grid xs={24} sm={24} key={index}>
+                                                <PubCard pub={pub} />
+                                            </Grid>
+                                        ))}
+                                    </Grid.Container>
+                                </Collapse></Collapse.Group>
+                        </div>
+                    ))
+            )}
         </div>
     );
 }

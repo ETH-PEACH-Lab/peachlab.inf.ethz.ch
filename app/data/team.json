@@ -1,6 +1,7 @@
 [
   {
-    "name": "Prof. Dr. April Wang",
+    "name": "April Wang",
+    "slug": "awang",
     "status": "current",
     "title": "Assistant Professor",
     "affiliation": "ETH Zürich",
@@ -23,7 +24,8 @@
     "avatar": "/assets/manuela.jpg"
   },
   {
-    "name": "Dr. Lahari Goswami",
+    "name": "Lahari Goswami",
+    "slug": "lgoswami",
     "status": "current",
     "title": "Postdoc",
     "affiliation": "ETH Zürich",
@@ -33,7 +35,8 @@
     "link": "https://laharigoswami.com/"
   },
   {
-    "name": "Dr. Heejin Do",
+    "name": "Heejin Do",
+    "slug": "hdo",
     "status": "current",
     "title": "Postdoc",
     "topics": "Automated Essay Assessment",
@@ -54,6 +57,7 @@
   },
   {
     "name": "Xiaotian Su",
+    "slug": "xsu",
     "status": "current",
     "title": "Doctoral Student",
     "affiliation": "ETH Zürich",
@@ -99,7 +103,7 @@
   },
   {
     "name": "Thrisha Ramesh",
-    "status": "collaborator",
+    "status": "affiliated",
     "title": "Remote Student Collaborator from University of Washington",
     "link": "https://www.linkedin.com/in/thrisha-ramesh-2060521b2/"
   },
@@ -132,6 +136,7 @@
   {
     "name": "Junling Wang",
     "status": "current",
+    "slug": "jwang",
     "title": "Doctoral Student",
     "topics": "Multimodal Retrieval and Generation",
     "hobby": "🏓",
@@ -145,6 +150,7 @@
   {
     "name": "Yang Wu",
     "status": "current",
+    "slug": "ywu",
     "title": "Doctoral Student",
     "topics": "Visual-based Tutoring System",
     "affiliation": "ETH EPFL JDPLS",
@@ -198,7 +204,7 @@
   },
   {
     "name": "Yoshee Jain",
-    "status": "collaborator",
+    "status": "affiliated",
     "title": "Remote Student Collaborator from UIUC",
     "affiliation": "UIUC",
     "hobby": "⛰️",
@@ -262,5 +268,17 @@
     "avatar": "https://shuaima.cc/personal_webpage_files/Me.jpg",
     "link": "https://shuaima.cc/",
     "email": "shuai.ma@connect.ust.hk"
+  },
+  {
+    "name": "Mrinmaya Sachan",
+    "status": "collaborator",
+    "slug": "msachan",
+    "title": "Assistant Professor",
+    "affiliation": "ETH Zürich",
+    "link": "https://lre.inf.ethz.ch/",
+    "office": "CAB",
+    "email": "mrinmaya@inf.ethz.ch",
+    "avatar": "https://lre.inf.ethz.ch/images/teampic/Mrinmaya.jpg",
+    "topics": "Multimodal AI"
   }
 ]

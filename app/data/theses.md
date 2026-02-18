@@ -7,6 +7,7 @@ If you have taken the user-centered programming interfaces course, or the design
 
 
 ### Past Thesis Highlights
+- Joel Bucher, ETH Computer Science MSc, GitAcademy: An Interactive Learning Platform for Git, led to CHI 2026 publication [Git Takes Two: Split-View Awareness for Collaborative Learning of Distributed Workflows in Git](https://peachlab.inf.ethz.ch/projects/gittwo/)
 - Kristijan Zafirovski, ETH Computer Science Bachelor, [AgoraSim: AI-Driven Social Media Simulator for Education](https://kikozaf.github.io/AgoraSimWebsite/)
 - Lukas Mast, ETH Computer Science Bachelor, [Coducate: A Code Editor Extension to Streamline Instructor-Led Live Coding](https://madbeamer.github.io/coducate-project-page/), led to the software [Coducate available in VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=coducate.coducate); presented as L@S 2025 Demonstration
 - Shu Wang, ETH Data Science MSc, [Merlin: A Markup Language for Algorithm Animations](https://eth-peach-lab.github.io/merlin-about/), led to a PLATEAU 2025 workshop paper "Merlin: A Markup Language for Algorithm Animations"
