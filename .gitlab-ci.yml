@@ -23,11 +23,6 @@ build:
     expire_in: 1 week
     paths: [out/]
   before_script:
-    # Install git inside the node:alpine image so we can fetch submodules
-    - apk add --no-cache git openssh
-    # Initialize the ucpi-blog-2025 submodule explicitly
-    - git submodule sync public/assets/teaching/ucpi-blog-2025 || true
-    - git submodule update --init public/assets/teaching/ucpi-blog-2025
     - npm ci
   script:
     - npm run build
