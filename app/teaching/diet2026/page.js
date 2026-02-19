@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Tabs, Text, Link, Table } from "@geist-ui/core";
+import { Tabs, Table } from "@geist-ui/core";
 import MemberCardMini from "@/team/MemberCardMini";
 import "./style.css";
 import ReactMarkdown from "react-markdown";

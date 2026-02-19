@@ -63,9 +63,9 @@ const InteractiveChart = () => {
       .text('Cognitive Effort')
       .attr('x', x(0.75))
       .attr('y', effortY(d3.easeCubicInOut(0.75)) - 10)
-      .attr('fill', effortColor)
-      .style('font-size', '16px')
-  }, []);
+        .attr('fill', effortColor)
+        .style('font-size', '16px')
+      }, [curve, effortY, usabilityY, x]);
 
   useEffect(() => {
     const handleMouseMove = (event) => {

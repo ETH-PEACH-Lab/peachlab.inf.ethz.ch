@@ -1,7 +1,5 @@
 "use client"
 
-import { Button, Link, Grid } from "@geist-ui/core";
-import Image from "next/image";
 import MemberCardMini from "../../team/MemberCardMini";
 import "./style.css";
 

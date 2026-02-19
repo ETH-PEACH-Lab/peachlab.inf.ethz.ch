@@ -50,7 +50,7 @@ export default function Navbar() {
 
             <div className="logo">
               <Link href="/"><Image
-                src={themeType == "custom-dark" ? `${basePath}/assets/logo-dark.png` : `${basePath}/assets/logo-light.png`}
+                src={themeType === "custom-dark" ? `${basePath}/assets/logo-dark.png` : `${basePath}/assets/logo-light.png`}
                 height="30px"
                 alt="PEACH Lab Logo"
                 draggable={false}
