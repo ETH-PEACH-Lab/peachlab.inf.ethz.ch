@@ -6,7 +6,7 @@
 
 #### Assignment Overview
 
-In this assignment, you will create an [explorable explanation](https://explorabl.es/) — an interactive blog post designed to teach a Computer Science concept or mechanism through exploration, interaction, and experimentation.
+In this assignment, you will create an [explorable explanation](https://explorabl.es/) — an interactive essay designed to teach a Computer Science concept or mechanism through exploration, interaction, and experimentation.
 
 Instead of passively reading explanations, your audience should learn by interacting with your blog. Your goal is to help readers build understanding by manipulating ideas, observing outcomes, and developing intuition about how a system works.
 

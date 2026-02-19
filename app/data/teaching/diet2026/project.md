@@ -4,7 +4,13 @@
 
 **Submission:** A link to the project website
 
+You will work in groups of **3–5** students.
+
 In this project, you will design, build, and evaluate an educational tool that helps a specific audience understand an aspect of AI literacy. Your goal is to create something that could realistically be used in a classroom, workshop, or outreach setting.
+
+Throughout the semester, we will schedule check-in points during exercise sessions to help groups stay on track and receive feedback on their problem definition, prototype, and evaluation plan. 
+These check-ins are not graded; only the final submission will be assessed.
+More detailed instructions about the check-ins will be provided on Moodle.
 
 #### Project Overview
 AI literacy is the ability to understand how AI systems work, use them effectively, critically evaluate their outputs, and make responsible decisions when AI influences learning, work, creativity, and everyday life.
@@ -42,8 +48,8 @@ Below are examples of different formats and approaches to AI literacy. You do **
 	- Choose a clearly defined user group (no "everyone").  
 	- Justify why AI literacy matters for them.
 2. **Define Learning Objectives**  
-	- Focus on one or two specific AI literacy concepts.  
-	- Write clear, measurable learning goals.
+	- Focus on one or two specific AI literacy concepts, grounded in established AI literacy frameworks (e.g., https://ailiteracyframework.org/).  
+	- Define clear, measurable learning goals.
 3. **Ground in Literature**  
 	- Identify related work (e.g., tools above or research papers).  
 	- Explain how your project builds on or differs from prior approaches.
