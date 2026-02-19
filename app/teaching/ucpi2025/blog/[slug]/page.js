@@ -27,27 +27,45 @@ export default async function BlogPostPage({ params }) {
   const authorName = currentBlog ? currentBlog.author : "a student";
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
+  // Build sidebar items grouped by week so each week label appears once
+  const sidebarItems = [];
+  let currentWeekLabel = null;
+
+  blogData.forEach((blog) => {
+    if (blog.week !== currentWeekLabel) {
+      currentWeekLabel = blog.week;
+      sidebarItems.push(
+        <li key={`week-${currentWeekLabel}`} className="blog-nav-week-item">
+          <div className="blog-nav-week-label">{currentWeekLabel}</div>
+        </li>
+      );
+    }
+
+    sidebarItems.push(
+      <li key={blog.slug} className="blog-nav-item">
+        <a
+          href={`${basePath}/teaching/ucpi2025/blog/${blog.slug}/`}
+          className={`blog-nav-link ${slug === blog.slug ? "active" : ""}`}
+        >
+          {blog.title}
+        </a>
+      </li>
+    );
+  });
+
   return (
-    <div className="blog-container">
-      {/* Sidebar Navigation */}
-      <aside className="blog-sidebar">
-        <div style={{ marginBottom: "20px" }}>
+    <div>
+    <div style={{ marginBottom: "20px" }}>
           <a href={`${basePath}/teaching/ucpi2025/`} style={{ color: "#666", textDecoration: "none", fontSize: "0.9rem", display: "flex", alignItems: "center" }}>
             <span style={{ marginRight: "6px" }}>←</span> Back to Seminar
           </a>
         </div>
+    <div className="blog-container">
+      {/* Sidebar Navigation */}
+      <aside className="blog-sidebar">
+  
         <ul className="blog-nav-list">
-          {blogData.map((blog) => (
-            <li key={blog.slug} className="blog-nav-item">
-              <a 
-                href={`${basePath}/teaching/ucpi2025/blog/${blog.slug}/`} 
-                className={`blog-nav-link ${slug === blog.slug ? "active" : ""}`}
-              >
-                <span className="blog-nav-week">{blog.week}</span>
-                {blog.title}
-              </a>
-            </li>
-          ))}
+          {sidebarItems}
         </ul>
       </aside>
 
@@ -115,6 +133,7 @@ export default async function BlogPostPage({ params }) {
           </ClientNote>
         </div>
       </main>
+    </div>
     </div>
   );
 }

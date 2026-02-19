@@ -16,7 +16,7 @@ export default function Footnote() {
         <p>Switzerland</p>
         </div> */}
         <Text small style={{display: "block"}}>Programming, Education, and Computer-Human Interaction</Text>
-        <Text small style={{display: "block"}}>© 2025 ETH Zürich</Text>
+        <Text small style={{display: "block"}}>© 2026 ETH Zürich</Text>
     </footer>
     )
 }

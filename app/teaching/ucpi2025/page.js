@@ -67,7 +67,7 @@ export default function UCPI2025() {
                                     href={`${basePath}/teaching/ucpi2025/blog/${blog.slug}/`}
                                     className="blog-card"
                                 >
-                                    <h4>{blog.week}: {blog.title}</h4>
+                                    <h4>{blog.title}</h4>
                                     <div className="author">{blog.author}</div>
                                     <div className="desc">{blog.desc}</div>
                                 </a>
