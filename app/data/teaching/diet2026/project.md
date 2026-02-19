@@ -29,7 +29,7 @@ Below are examples of different formats and approaches to AI literacy. You do **
 - **Play-Based AI Learning**  
 	- Google AI Quest: https://research.google/ai-quests/intl/en_gb
 - **Collaborative AI Literacy**  
-	- Co-ML (Tiffany Tseng): https://dl.acm.org/doi/abs/10.1145/3585088.3589356
+	- Co-ML: https://dl.acm.org/doi/abs/10.1145/3585088.3589356
 - **Tangible AI Education**  
 	- Tangible robot learning: https://www.youtube.com/shorts/-P9LEHMH-A4
 - **Embodied AI Education**  
