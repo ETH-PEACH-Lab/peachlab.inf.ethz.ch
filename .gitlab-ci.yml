@@ -23,6 +23,8 @@ build:
     expire_in: 1 week
     paths: [out/]
   before_script:
+    # Install git inside the node:alpine image so we can fetch submodules
+    - apk add --no-cache git openssh
     - git submodule sync --recursive
     - git submodule update --init --recursive
     - npm ci
