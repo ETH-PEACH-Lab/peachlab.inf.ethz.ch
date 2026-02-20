@@ -49,7 +49,7 @@ StepMIND draws from familiar paradigms like spreadsheet-based manipulation and b
 To demonstrate the framework, we built STAGE, an AI-assisted data visualization system based on StepMIND. In STAGE, users can enter a natural language question, view a step-by-step explanation of how the visualization was generated, interactively adjust filters, aggregations, and chart types, and switch seamlessly between explanations, visual controls, and query code. For example, if a user asks for “popular product categories” but later realizes the chart should show total sales instead of counts, they can modify the SELECT/GROUP BY step—without rewriting the entire prompt.
 
 <div style="text-align:center; border:1px solid #e5e7eb; padding:12px; border-radius:8px; width:fit-content; margin:20px auto;">
-   <a href="https://stage.peachlab-cntr1.inf.ethz.ch/" style="color:#0073e6; text-decoration:underline;" target="_blank" rel="noopener noreferrer"><strong>Try STAGE</strong></a>
+   <a href="https://stage.peachhub.inf.ethz.ch/" style="color:#0073e6; text-decoration:underline;" target="_blank" rel="noopener noreferrer"><strong>Try STAGE</strong></a>
 </div>
 <figure style="margin:0 auto; width:fit-content; text-align:center; padding: 12px 0;">
   <div style="display:flex; justify-content:center;">
