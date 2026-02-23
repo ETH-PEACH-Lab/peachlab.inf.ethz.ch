@@ -117,15 +117,15 @@ const SyllabusTable = () => {
         { week: 'W1', date: 'Feb 20', topic: 'Course Overview', remarks: '', isNoClass: false, isProject: false },
         { week: 'W2', date: 'Feb 27', topic: 'Learner-Centered Design', remarks: 'Team formation due', isNoClass: false, isProject: false },
         { week: 'W3', date: 'March 6', topic: 'The Science of Learning', remarks: '', isNoClass: false, isProject: false },
-        { week: 'W4', date: 'March 13', topic: 'Multimedia Learning', remarks: '', isNoClass: false, isProject: false },
-        { week: 'W5', date: 'March 20', topic: 'Assessment of Learning', remarks: '', isNoClass: false, isProject: false },
-        { week: 'W6', date: 'March 27', topic: 'Learning Motivation & Self-Regulation', remarks: '', isNoClass: false, isProject: false },
+        { week: 'W4', date: 'March 13', topic: 'Multimedia Learning', remarks: 'Guest: <a href="https://people.inf.ethz.ch/sverrirt/">Dr. Sverrir Thorgeirsson</a>', isNoClass: false, isProject: false },
+        { week: 'W5', date: 'March 20', topic: 'Assessment of Learning', remarks: 'Guest: <a href="https://doheejin.github.io/about_me/">Dr. Heejin Do</a>', isNoClass: false, isProject: false },
+        { week: 'W6', date: 'March 27', topic: 'Learning Motivation & Self-Regulation', remarks: 'Guest: <a href="https://laharigoswami.com/">Dr. Lahari Goswami</a>', isNoClass: false, isProject: false },
         { week: 'W7', date: 'April 3', topic: 'Good Friday - no class', remarks: 'Individual blog due', isNoClass: true, isProject: false },
         { week: 'W8', date: 'April 10', topic: 'Week after Easter - no class', remarks: '', isNoClass: true, isProject: false },
-        { week: 'W9', date: 'April 17', topic: 'Intelligent Tutoring Systems', remarks: '', isNoClass: false, isProject: false },
+        { week: 'W9', date: 'April 17', topic: 'Intelligent Tutoring Systems', remarks: 'Guest: <a href="https://lre.inf.ethz.ch/">Prof. Mrinmaya Sachan</a>', isNoClass: false, isProject: false },
         { week: 'W10', date: 'April 24', topic: 'Project Check-in', remarks: 'Prepare project updates', isNoClass: false, isProject: true },
-        { week: 'W11', date: 'May 1', topic: 'Embodied and Tangible Learning', remarks: '', isNoClass: false, isProject: false },
-        { week: 'W12', date: 'May 8', topic: 'Collaborative and Social Learning', remarks: '', isNoClass: false, isProject: false },
+        { week: 'W11', date: 'May 1', topic: 'Embodied and Tangible Learning', remarks: 'Guest: <a href="https://patricialvesoliveira.com/">Prof. Patrícia Alves-Oliveira</a>', isNoClass: false, isProject: false },
+        { week: 'W12', date: 'May 8', topic: 'Collaborative and Social Learning', remarks: 'Guest: <a href="https://belearn.swiss/en/research-practice/projects/arguemate/">Dr. Chenyang Wang</a>', isNoClass: false, isProject: false },
         { week: 'W13', date: 'May 15', topic: 'Learning at Scale', remarks: '', isNoClass: false, isProject: false },
         { week: 'W14', date: 'May 22', topic: 'Project Demo Day', remarks: 'Final presentations', isNoClass: false, isProject: true },
         { week: 'W15', date: 'May 29', topic: 'No course', remarks: 'Final deliverable due', isNoClass: true, isProject: false },
@@ -146,7 +146,7 @@ const SyllabusTable = () => {
                 <Table.Column prop="week" label="Week" render={(value) => <span>{value}</span>} />
                 <Table.Column prop="date" label="Date" render={(value) => <span>{value}</span>} />
                 <Table.Column prop="topic" label="Topic" render={(value) => <strong>{value}</strong>} />
-                <Table.Column prop="remarks" label="Remarks" render={(value) => <span>{value}</span>} />
+                <Table.Column prop="remarks" label="Remarks" render={(value) => <span dangerouslySetInnerHTML={{ __html: value }} />} />
             </Table>
         </div>
     );
