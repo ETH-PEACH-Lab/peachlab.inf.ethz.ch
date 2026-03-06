@@ -38,6 +38,7 @@
     "abstract": "Git is widely used for collaborative software development, but it can be challenging for newcomers. While most learning tools focus on individual workflows, Git is inherently collaborative. We present GitAcademy, a browser-based learning platform that embeds a full Git environment with a split-view collaborative mode: learners work on their own local repositories connected to a shared remote repository, while simultaneously seeing their partner's actions mirrored in real time. This design is not intended for everyday software development, but rather as a training simulator to build awareness of distributed states, coordination, and collaborative troubleshooting. In a within-subjects study with 13 pairs of learners, we found that the split-view interface enhanced social presence, supported peer teaching, and was consistently preferred over a single-view baseline, even though performance gains were mixed. We further discuss how split-view awareness can serve as a training-only scaffold for collaborative learning of Git and other distributed technical systems.",
     "teaser_full": "/assets/teaser/git_two.png",
     "teaser": "/assets/teaser/git_two_mini.png",
+    "preprint_link": "https://arxiv.org/html/2602.19714v1",
     "is_journal": false,
     "is_featured": false
   },
@@ -51,6 +52,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "Instructors are increasingly experimenting with AI chatbots for classroom support. To investigate how instructors adapt chatbots to their own contexts, we first analyzed existing resources that provide prompts for educational purposes. We identified ten common categories of customization, such as persona, guardrails, and personalization. We then conducted interviews with ten university STEM instructors and asked them to card-sort the categories into priorities. We found that instructors consistently prioritized the ability to customize chatbot behavior to align with course materials and pedagogical strategies and de-prioritized customizing persona/tone. However, their prioritization of other categories varied significantly by course size, discipline, and teaching style, even across courses taught by the same individual, highlighting that no single design can meet all contexts. These findings suggest that modular AI chatbots may provide a promising path forward. We offer design implications for educational developers building the next generation of customizable classroom AI systems.",
     "teaser": "/assets/teaser/bespokebots.jpg",
+    "preprint_link": "https://arxiv.org/abs/2603.00057",
     "is_journal": false,
     "is_featured": false
   },
@@ -130,7 +132,7 @@
     "slug": "vibescratch",
     "year": "2026",
     "title": "Exploring the Impacts and Challenges of Vibe Coding Paradigm to Children's Programming Learning and Practices",
-    "authors": "Janice Si, Donglin Li, Qiuning Wang, Alicia Liu, April Yi Wang, Xin Lin, Yujun Zhu, Xiaobo Zhou, Kanye Wang",
+    "authors": "Janice Si, Donglin Li, Qiuning Wang, Alicia Liu, Xin Lin, Yujun Zhu, Xiaobo Zhou, April Yi Wang, Kanye Ye Wang",
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "Recent advances in generative AI have introduced a new programming paradigm—vibe coding, a natural language–driven mode of AI collaboration. While promising for adults, little is known about how children engage with this approach, especially in block-based environments. To explore this gap, we conducted workshops with children of varying Scratch experience (n=41) and interviewed five Scratch teachers. Our study investigates how vibe coding impacts children’s programming learning and practice, and what challenges arise. Findings show that vibe coding has both positive and negative impacts across three key contexts of children’s programming experience: acquisition, application, and creation. Across the stages of vibe coding—goal articulation, information interpretation, and outcome evaluation—children encounter distinct challenges. By examining the mismatches between core assumptions of vibe coding and children’s needs, and analyzing its applicability across different contexts, we offer child-centered design implications for future vibe coding systems and GenAI tools.",
     "teaser": "/assets/teaser/vibescratch.jpg",
