@@ -128,7 +128,7 @@ const SyllabusTable = () => {
         { week: 'W12', date: 'May 8', topic: 'Collaborative and Social Learning', remarks: 'Guest: <a href="https://belearn.swiss/en/research-practice/projects/arguemate/">Dr. Chenyang Wang</a>', isNoClass: false, isProject: false },
         { week: 'W13', date: 'May 15', topic: 'Learning at Scale', remarks: 'Guest: <a href="https://www.juditmm.com/">Dr. Judit Martínez Moreno</a> from <a href="https://sparkli.ai/">Sparkli</a>', isNoClass: false, isProject: false },
         { week: 'W14', date: 'May 22', topic: 'Project Demo Day', remarks: 'Final presentations', isNoClass: false, isProject: true },
-        { week: 'W15', date: 'May 29', topic: 'No course', remarks: 'Final deliverable due', isNoClass: true, isProject: false },
+        { week: 'W15', date: 'May 29', topic: 'No class', remarks: 'Final deliverable due', isNoClass: true, isProject: false },
     ];
 
     return (
