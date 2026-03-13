@@ -187,6 +187,7 @@
     "abstract": "Designing user interfaces (UIs) is a critical step when launching products, building portfolios, or personalizing projects, yet end users without design expertise often struggle to articulate their intent and to trust design choices. Existing example-based tools either promote broad exploration, which can cause overwhelm and design drift, or require adapting a single example, risking design fixation. We present UI Remix, an interactive system that supports mobile UI design through example-driven exploration. Powered by a multimodal retrieval-augmented generation (MMRAG) model, UI Remix enables iterative search, selection, and adaptation of examples at both the global (whole interface) and local (component) level. To foster trust, it presents source transparency cues such as ratings, downloads, and developer information. In an empirical study with 24 end users, UI Remix significantly improved participants’ ability to achieve their design goals, facilitated effective iteration, and encouraged exploration of alternative designs. Participants also reported that source transparency cues enhanced their confidence in adapting examples. Our findings suggest new directions for AI-assisted, example-driven systems that empower end users to design with greater control, trust, and openness to exploration.",
     "teaser": "/assets/teaser/uiremix.jpg",
     "preprint_link":"https://arxiv.org/pdf/2601.18759",
+    "project_link": "https://uiremix.github.io/",
     "is_journal": false,
     "is_featured": false
   },
@@ -203,6 +204,7 @@
     "teaser": "/assets/teaser/chatcommunity.png",
     "teaser_full": "/assets/teaser/chatcommunity_full.png",
     "preprint_link":"https://arxiv.org/abs/2601.18697",
+    "project_link": "https://chatcommunity2.github.io/",
     "is_journal": false,
     "is_featured": false
   },
