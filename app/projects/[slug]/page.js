@@ -3,10 +3,14 @@ import { blogImports } from "./blogImports";
 import ProjectView from "./ProjectView";
 import Image from "@/components/Image";
 
+// Slugs that have dedicated static pages (not using this dynamic route)
+const staticPageSlugs = ["toio", "multimodal-tutor"];
 
 export const dynamicParams = false;
 export async function generateStaticParams() {
-  return pubs.map((p) => ({ slug: p.slug }));
+  return pubs
+    .filter((p) => !staticPageSlugs.includes(p.slug))
+    .map((p) => ({ slug: p.slug }));
 }
 
 export default async function ProjectPage({ params }) {
