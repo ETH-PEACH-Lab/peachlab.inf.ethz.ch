@@ -17,9 +17,7 @@ export default function ToioPage() {
                 </h1>
                 
                 <div className="toio-meta">
-                    <p>Project Leader: 
-                        <Link href="#" target="_blank" className="link">Zihan Li</Link>
-                    </p>
+                    <p>Project Team: Zihan Li, Lahari Goswami, and April Wang</p>
                     {/* <p>Supervised by: 
                         <Link href="https://aprilwang.me" target="_blank" className="link">Prof. Dr. April Yi Wang</Link>
                     </p> */}
@@ -231,6 +229,20 @@ export default function ToioPage() {
                             />
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Publications */}
+            <section className="toio-section">
+                <h2 className="toio-section-title">Publications</h2>
+                <div className="toio-publication">
+                    <p className="toio-pub-links">
+                        📄 <Link href="#" target="_blank" className="toio-pub-link disabled">Paper (coming soon)</Link>
+                        ｜ 📹 <Link href="#" target="_blank" className="toio-pub-link disabled">Video (coming soon)</Link>
+                    </p>
+                    <p className="toio-pub-citation">
+                        <strong>Citation</strong>: Li, Z., Goswami, L., Feng, Y., Williams, K., &amp; Wang, A. Y. (2026). "Rules or Data? Gotta Catch 'Em All!": A Tangible Game for Youth AI Literacy. In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026 Interactive Demo).
+                    </p>
                 </div>
             </section>
 

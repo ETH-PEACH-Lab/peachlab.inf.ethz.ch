@@ -286,6 +286,33 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Publications Section */
+.toio-publication {
+    background-color: #f3f4f6;
+    padding: 8px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.toio-pub-links {
+    margin: 6px 0;
+}
+
+.toio-pub-link {
+    color: #0073e6 !important;
+    text-decoration: underline !important;
+}
+
+.toio-pub-link.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.toio-pub-citation {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .toio-container {
@@ -366,5 +393,14 @@
 .dark-mode .toio-encounter-image,
 .dark-mode .toio-results-image {
     border: 1px solid #444;
+}
+
+.dark-mode .toio-publication {
+    background-color: #2a2a2a;
+    border: 1px solid #333;
+}
+
+.dark-mode .toio-pub-citation {
+    color: #d0d0d0;
 }
 

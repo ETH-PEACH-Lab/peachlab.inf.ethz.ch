@@ -14,19 +14,18 @@ We encourage outstanding candidates to explore the following doctoral opportunit
 
 - [Doctoral Positions (for master graduates)](https://inf.ethz.ch/doctorate/doctoral-study-program.html)
 - [Direct Doctorate in CS (for bachelor graduates)](https://inf.ethz.ch/doctorate/direct-doctorate-computer-science.html)
-- [ETH Zurich - EPFL Joint Doctoral Program in the Learning Sciences](https://lse.ethz.ch/doctoral-program-in-learning-sciences.html)
+- [ETH Zurich - EPFL Joint Doctoral Program in the Learning Sciences](https://www.epfl.ch/education/phd/jdpls-learning-sciences/)
 - [Max Planck ETH Center for Learning Systems Doctoral Fellowship](https://learning-systems.org/)
 - [ETH AI Center Doctoral Fellowship](https://ai.ethz.ch/research/phd-and-postdoc-programs/phd-fellowships.html)
 
 #### Doctoral Positions (for master graduates)
 <div style="border: 1px solid #9fc5f4; background-color: #f2f6ff; padding: 5px 30px; border-radius: 4px; margin-bottom: 20px">
-  <p><strong>Updated November 2025</strong></p>
+  <p><strong>Updated March 2026</strong></p>
   <p>
-    Our lab currently has multiple openings for doctoral positions.
-    Please refer to the details in the following link and submit your application through this page:
-    <a href="https://jobs.ethz.ch/job/view/JOPG_ethz_OqnIo9oIOhdv38BDHq" target="_blank" rel="noopener noreferrer">
-      https://jobs.ethz.ch/job/view/JOPG_ethz_OqnIo9oIOhdv38BDHq
-    </a>.
+    We have completed hiring for our current doctoral positions and are not accepting applications at this time.
+  </p>
+  <p>
+    Please check back for future openings.
   </p>
 </div>
 
@@ -50,14 +49,13 @@ Due to limited capacity, we prioritize ETH Zürich students for project opportun
 However, we welcome exceptionally motivated visiting students who have secured external fellowships (e.g., [ETH SSRF](https://inf.ethz.ch/studies/summer-research-fellowship.html), [ETH Project Mobility](https://ethz.ch/en/studies/non-degree-courses/project.html)).
 
 <div style="border: 1px solid #9fc5f4; background-color: #f2f6ff; padding: 5px 30px; border-radius: 4px; margin-bottom: 20px">
-  <p><strong>Updated November 2025</strong></p>
-  <p>
-    Our lab currently has an opening for a full-time research internship.
-    Please refer to the details in the following link and submit your application through this page:
-    <a href="https://www.jobs.ethz.ch/job/view/JOPG_ethz_CjHblrAcNQKO6Q9pBI" target="_blank" rel="noopener noreferrer">
-      https://www.jobs.ethz.ch/job/view/JOPG_ethz_CjHblrAcNQKO6Q9pBI
-    </a>.
-  </p>
+<p><strong>Updated March 2026</strong></p>
+<p>
+  We have completed hiring for our current research internship positions and are not accepting applications at this time.
+</p>
+<p>
+  Please check back for future opportunities.
+</p>
 </div>
 
 ![zurich](/assets/zurich.jpg)
