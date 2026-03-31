@@ -1,11 +1,24 @@
 [
   {
+    "venue": "AIED 2026",
+    "id": "aied2026",
+    "slug": "stagetutor",
+    "year": "2026",
+    "title": "Learner-Stage-Aware AI Tutor Improves Learning Processes: Initial Evidence from a Field Experiment",
+    "authors": "Maria Poiaganova, Tino Endres, Cesarina Criscione, April Yi Wang, and Radu Tănase",
+    "venue_full": "In Proceedings of the International Conference on Artificial Intelligence in Education (AIED 2026)",
+    "abstract": "Acquisition of cognitive skills depends on building problem-solving schemas. These schemas develop most effectively when instructional support aligns with learners’ current level of expertise. Novices benefit from worked-out examples that make the solution rationale explicit, whereas more advanced learners benefit from prompts that elicit self-explanations, allowing them to complete solution steps on their own. Tutors based on LLMs provide scalable, dialog-based assistance that can deliver such instructional support. However, there is scarce evidence on how personalizing tutoring based on initial skill stage with LLMs affects learning processes. In this study, we investigate the effects of personalizing instructional support by stage-aware scaffolding in LLM-based tutors on learners’ chatbot usage, reasoning behavior, and mental effort. To this end, we developed an LLM-based tutor grounded in the cognitive skill acquisition theory. It uses worked-out examples with scaffolds for novices and fades this support out for more advanced learners. We used a randomized controlled experiment in a master’s-level programming course to compare the stage-aware tutor with a baseline tutor. Learners were randomly assigned to one of the two tutor groups. Results indicate that learners using the skill-stage-aware tutor (vs. baseline) sent more messages and were active across more days, and their interactions were more likely to reflect deep rather than shallow engagement. Furthermore, learners who used the skill-stage-aware tutor invested higher mental effort in their schema construction. The results indicate that theory-grounded personalization to learners' initial skill stages can provide process-level scaffolding during self-study and shape learner–tutor dialogue toward cognitively productive activity.",
+    "teaser": "/assets/teaser/placeholder.png",
+    "is_journal": false,
+    "is_featured": false
+  },
+  {
     "venue": "CHI 2026 Interactive Demo",
     "id": "chi2026f",
     "slug": "toio",
     "year": "2026",
     "title": "\"Rules or Data? Gotta Catch 'Em All!\": A Tangible Game for Youth AI Literacy",
-    "authors": "Zihan Li, Lahari Goswami, Yuqing Feng, Kristin Williams, April Yi Wang",
+    "authors": "Zihan Li, Lahari Goswami, Yuqing Feng, Kristin Williams, and April Yi Wang",
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026 Interactive Demo)",
     "abstract": "Adolescents often learn about AI through single-model demonstrations, such as training a classifier, which can blur how rule-based and data-driven systems differ and why those differences matter for errors, bias, and trust. We present Pokémon AI Adventure, a tangible, narrative-driven learning game in which students build and compare two robot partners: RuleBot, which follows feature-based rules, and DataBot, which learns from examples. To complete zone challenges and capture Pokémon, students assemble rule sets by selecting and ordering physical Clue Cards, and curate training datasets using Package Cards while managing noise, imbalance, and missing Pokémon types. Through these activities, the game supports learning about how rules and data shape model behavior, how accuracy and bias arise from human choices, and how to develop more reasoned trust in different AI systems.",
     "teaser": "/assets/teaser/toio.jpg",

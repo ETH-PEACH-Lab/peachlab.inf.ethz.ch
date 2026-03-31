@@ -193,13 +193,26 @@
   },
   {
     "name": "Zihan Li",
-    "status": "left",
+    "status": "affiliated",
     "topics": "Tangible Educational Game",
-    "title": "Student Research Assistant",
+    "title": "Student Collaborator from ETH Zürich",
     "affiliation": "ETH Zürich",
     "hobby": "⛰️",
     "office": "CAB F66",
     "email": "zihali@student.ethz.ch",
+    "link": "https://www.linkedin.com/in/zihan-li-965031341/",
+    "avatar": "/assets/zihan.png"
+  },
+    {
+    "name": "Venkata Akhila Rani Obilisetty",
+    "status": "affiliated",
+    "title": "Student Collaborator from University of Zürich",
+    "topics": "Social Learning",
+    "affiliation": "University of Zürich",
+    "hobby": "⛰️",
+    "office": "CAB F66",
+    "link": "https://www.linkedin.com/in/akhila-obilisetty/",
+    "email": "venkata.obilisetty@mtec.ethz.ch",
     "avatar": "/assets/zihan.png"
   },
   {
@@ -209,7 +222,7 @@
     "affiliation": "UIUC",
     "hobby": "⛰️",
     "office": "CAB F66",
-    "email": "zihali@student.ethz.ch",
+    "email": "yoshee.jain@uiuc.edu",
     "link": "https://yosheejain.com/",
     "avatar": "/assets/zihan.png"
   },
