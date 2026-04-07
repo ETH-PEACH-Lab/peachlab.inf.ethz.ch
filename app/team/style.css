@@ -1,0 +1,12 @@
+.sponsor-logo {
+    max-width: 150px;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.sponsor-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}

@@ -5,6 +5,7 @@ import { Grid } from "@geist-ui/core";
 import members from "@/data/team.json";
 import MemberCard from "./MemberCard";
 import ImageCarousel from "@/components/ImageCarousel";
+import "./style.css";
 
 const currentMembers = members.filter((m) => m.status === "current");
 const affiliatedMembers = members.filter((m) => m.status === "affiliated");
@@ -72,22 +73,22 @@ export default function Team() {
                     marginBottom: "20px"
                 }}>
                     <a href="https://research.adobe.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/sponsors/Adobe.png" alt="Adobe Research" style={{ height: "50px" }} />
+                        <img src="/assets/sponsors/Adobe.png" alt="Adobe Research" className="sponsor-logo" />
                     </a>
                     <a href="https://www.snf.ch/" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/sponsors/snsf.png" alt="Swiss National Science Foundation" style={{ height: "50px" }} />
+                        <img src="/assets/sponsors/snsf.png" alt="Swiss National Science Foundation" className="sponsor-logo" />
                     </a>
                     <a href="https://www.dieter-schwarz-stiftung.de/" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/sponsors/dieter-schwarz.png" alt="Dieter Schwarz Foundation" style={{ height: "50px" }} />
+                        <img src="/assets/sponsors/dieter-schwarz.png" alt="Dieter Schwarz Foundation" className="sponsor-logo" />
                     </a>
                     <a href="https://ethz-foundation.ch/en/" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/sponsors/eth-foundation.png" alt="ETH Foundation" style={{ height: "50px" }} />
+                        <img src="/assets/sponsors/eth-foundation.png" alt="ETH Foundation" className="sponsor-logo" />
                     </a>
                     <a href="https://www.swiss-ai.org/" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/sponsors/swiss-ai.jpg" alt="Swiss AI" style={{ height: "50px" }} />
+                        <img src="/assets/sponsors/swiss-ai.jpg" alt="Swiss AI" className="sponsor-logo" />
                     </a>
                     <a href="https://ai.ethz.ch/" target="_blank" rel="noopener noreferrer">
-                        <img src="/assets/sponsors/ai-center.png" alt="ETH AI Center" style={{ height: "50px" }} />
+                        <img src="/assets/sponsors/ai-center.png" alt="ETH AI Center" className="sponsor-logo" />
                     </a>
                 </div>
             </section>
@@ -95,11 +96,11 @@ export default function Team() {
             <section style={{ marginBottom: "20px", borderBottom: "1px solid #eaeaea", paddingBottom: "20px" }}>
                 <h3>Outreach</h3>
                 <p>
-                    We collaborate with local schools and coding camps to both study and actively support STEM outreach, testing and refining our educational interventions in real-world settings, including
-                    <a href="https://www.edelweiss-school.ch/" target="_blank" rel="noopener noreferrer">Edelweiss School</a>,
-                    <a href="https://ingch.ch/en/" target="_blank" rel="noopener noreferrer">IngCH</a>,
-                    and our
-                    <a href="https://inf.ethz.ch/communication-services/schools-universities.html" target="_blank" rel="noopener noreferrer">department's communication team</a>.
+                    We collaborate with local schools and coding camps to both study and actively support STEM outreach, testing and refining our educational interventions in real-world settings, including 
+                    <a href="https://www.edelweiss-school.ch/" target="_blank" rel="noopener noreferrer"> Edelweiss International School</a>, 
+                    <a href="https://ingch.ch/en/" target="_blank" rel="noopener noreferrer"> IngCH MINT</a>, 
+                    and our 
+                    <a href="https://inf.ethz.ch/communication-services/schools-universities.html" target="_blank" rel="noopener noreferrer"> department's communication team</a>.
                     We welcome educators, schools, and organizations interested in STEM outreach to reach out to us for potential collaboration and support.
                 </p>            </section>
 
