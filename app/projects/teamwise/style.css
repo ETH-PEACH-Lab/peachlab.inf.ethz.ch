@@ -1,0 +1,712 @@
+.teamwise-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.teamwise-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.teamwise-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .teamwise-container {
+    padding: 20px 15px;
+  }
+
+  .teamwise-title {
+    font-size: 2rem;
+  }
+}
+
+.teamwise-meta {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+.teamwise-section {
+  margin-bottom: 60px;
+}
+
+.teamwise-abstract {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 60px;
+}
+
+.teamwise-abstract-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .teamwise-meta {
+    font-size: 1rem;
+  }
+
+  .teamwise-abstract {
+    padding: 25px;
+  }
+}
+
+.teamwise-video-section {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.teamwise-video-frame {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background: #000;
+}
+
+.teamwise-video-frame iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.teamwise-video-thumbnail {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.42) 100%),
+    url("/assets/teamwise/teamwise.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.teamwise-play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 86px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+  border-radius: 14px;
+  background: rgba(255, 0, 0, 0.92);
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.teamwise-play-button::before {
+  content: "";
+  position: absolute;
+  left: 36px;
+  top: 18px;
+  border-left: 18px solid #fff;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+.teamwise-video-thumbnail:hover .teamwise-play-button {
+  transform: translate(-50%, -50%) scale(1.06);
+  background: rgb(255, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .teamwise-play-button {
+    width: 72px;
+    height: 52px;
+  }
+
+  .teamwise-play-button::before {
+    left: 30px;
+    top: 15px;
+    border-left-width: 16px;
+    border-top-width: 11px;
+    border-bottom-width: 11px;
+  }
+}
+
+.teamwise-problem-section {
+  margin-top: 10px;
+}
+
+.teamwise-section-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.teamwise-section-divider {
+  height: 1px;
+  background: #d8d8d8;
+  margin: 0 auto 34px;
+  width: 100%;
+}
+
+.teamwise-problem-content {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  align-items: center;
+  gap: 42px;
+}
+
+.teamwise-problem-image {
+  text-align: center;
+}
+
+.teamwise-problem-photo {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.teamwise-problem-text {
+  text-align: left;
+}
+
+.teamwise-problem-text p {
+  margin: 0 0 20px;
+  color: #3a3a3a;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .teamwise-section-title {
+    font-size: 1.6rem;
+  }
+
+  .teamwise-section-divider {
+    margin-bottom: 22px;
+  }
+
+  .teamwise-problem-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .teamwise-problem-photo {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+
+.teamwise-problem-subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
+  margin: 0 0 28px 0;
+  color: #222;
+}
+
+.teamwise-problem-subheading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 24px 0 12px 0;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .teamwise-problem-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+.teamwise-solution-section {
+  margin-bottom: 60px;
+}
+
+.teamwise-solution-subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
+  margin: 0 0 20px 0;
+  color: #222;
+}
+
+.teamwise-solution-text {
+  text-align: left;
+}
+
+.teamwise-solution-text p {
+  margin: 0 0 20px;
+  color: #3a3a3a;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.teamwise-solution-subheading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 24px 0 12px 0;
+  color: #222;
+}
+
+.teamwise-solution-list {
+  list-style-type: disc;
+  padding-left: 24px;
+  margin: 14px 0 0 0;
+}
+
+.teamwise-solution-list li {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #3a3a3a;
+}
+
+@media (max-width: 768px) {
+  .teamwise-solution-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+.teamwise-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 28px;
+  width: 100%;
+}
+
+.teamwise-feature-card {
+  padding: 24px 20px;
+  background: #f9f9f9;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.teamwise-feature-card:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.teamwise-feature-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+@media (max-width: 1024px) {
+  .teamwise-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .teamwise-features-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .teamwise-feature-card {
+    padding: 18px 16px;
+  }
+
+  .teamwise-feature-card p {
+    font-size: 0.9rem;
+  }
+}
+
+.teamwise-focus-section {
+  margin-top: 8px;
+}
+
+.teamwise-focus-panel {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fafbfc;
+  padding: 16px;
+}
+
+.teamwise-rq-inline {
+  margin: 0 0 10px;
+  font-size: 1.03rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+}
+
+.teamwise-rq-tag {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #fce7f3;
+  color: #9d174d;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+
+.teamwise-br-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.teamwise-br-group h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #374151;
+  text-align: left;
+}
+
+.teamwise-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.teamwise-chip-row span {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.teamwise-chip-row-benefits span {
+  background: #e9f2fb;
+  color: #174a7a;
+}
+
+.teamwise-chip-row-risks span {
+  background: #fff3dd;
+  color: #7a4b00;
+}
+
+.teamwise-focus-caption {
+  margin: 14px 0 0;
+  color: #3a3a3a;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.teamwise-pipeline-section {
+  margin-top: 4px;
+}
+
+.teamwise-pipeline-intro {
+  margin: 0 0 14px;
+  text-align: center;
+  color: #2f2f2f;
+  font-size: 1.03rem;
+  line-height: 1.6;
+}
+
+.teamwise-pipeline-image-wrap {
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.teamwise-pipeline-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.teamwise-pipeline-flow {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 12px;
+  background: #f8f8f8;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.teamwise-pipeline-step {
+  min-width: 140px;
+  text-align: center;
+}
+
+.teamwise-pipeline-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 8px;
+}
+
+.teamwise-pipeline-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.teamwise-pipeline-step h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1f2937;
+}
+
+.teamwise-pipeline-step p {
+  margin: 4px 0 0;
+  font-size: 0.84rem;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.teamwise-pipeline-arrow {
+  color: #7a9ab2;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .teamwise-br-columns {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .teamwise-pipeline-image-wrap {
+    padding: 8px;
+  }
+
+  .teamwise-pipeline-flow {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .teamwise-pipeline-arrow {
+    transform: rotate(90deg);
+    justify-self: center;
+  }
+
+  .teamwise-pipeline-step {
+    min-width: 0;
+  }
+}
+
+.teamwise-video-section {
+  margin-top: 20px;
+  margin-bottom: 40px; /* add this */
+  width: 100%;
+}
+
+.teamwise-publications-section {
+  margin-top: 12px;
+}
+
+.teamwise-publications-card {
+  background: #f3f4f6;
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.teamwise-publications-links {
+  margin: 0 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  color: #4b5563;
+  line-height: 1.4;
+}
+
+.teamwise-publication-link-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.teamwise-publication-link-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.teamwise-publication-link {
+  color: #3b82f6;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.teamwise-publication-link.disabled {
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.teamwise-publication-divider {
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+.teamwise-publication-citation {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #1f2937;
+}
+
+@media (max-width: 768px) {
+  .teamwise-publications-card {
+    padding: 16px;
+  }
+
+  .teamwise-publications-links {
+    gap: 8px;
+  }
+
+  .teamwise-publication-citation {
+    font-size: 0.98rem;
+  }
+}
+
+.teamwise-study-section {
+  margin-top: 8px;
+}
+
+.teamwise-study-subtitle {
+  margin: 0 0 12px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.teamwise-study-text {
+  margin: 0 0 16px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #333;
+}
+
+.teamwise-condition-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0 0 18px;
+}
+
+.teamwise-condition-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.teamwise-condition-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #e9f2fb;
+  color: #174a7a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.teamwise-condition-card h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.teamwise-next-step {
+  margin: 0 0 22px;
+  padding: 13px 15px;
+  border-radius: 10px;
+  border: 1px solid #cfe0ee;
+  background: #eef6fc;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #1f2937;
+}
+
+.teamwise-study-list {
+  margin: 0 0 18px;
+  padding-left: 26px;
+}
+
+.teamwise-study-list li {
+  margin: 8px 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #1f2937;
+}
+
+.teamwise-study-quotes li {
+  font-style: italic;
+}
+
+.teamwise-testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 6px 0 24px;
+}
+
+.teamwise-testimonial-card {
+  margin: 0;
+  padding: 16px 18px;
+  border-left: 4px solid #9eb7c9;
+  border-radius: 10px;
+  background: #f7f9fb;
+}
+
+.teamwise-testimonial-card p {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  font-style: italic;
+  color: #1f2937;
+}
+
+@media (max-width: 768px) {
+  .teamwise-study-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .teamwise-study-text,
+  .teamwise-study-list li {
+    font-size: 1rem;
+  }
+
+  .teamwise-condition-cards,
+  .teamwise-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .teamwise-condition-card h4 {
+    font-size: 1.05rem;
+  }
+
+  .teamwise-next-step {
+    font-size: 0.95rem;
+  }
+}
