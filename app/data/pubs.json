@@ -22,6 +22,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026 Interactive Demo)",
     "abstract": "Adolescents often learn about AI through single-model demonstrations, such as training a classifier, which can blur how rule-based and data-driven systems differ and why those differences matter for errors, bias, and trust. We present Pokémon AI Adventure, a tangible, narrative-driven learning game in which students build and compare two robot partners: RuleBot, which follows feature-based rules, and DataBot, which learns from examples. To complete zone challenges and capture Pokémon, students assemble rule sets by selecting and ordering physical Clue Cards, and curate training datasets using Package Cards while managing noise, imbalance, and missing Pokémon types. Through these activities, the game supports learning about how rules and data shape model behavior, how accuracy and bias arise from human choices, and how to develop more reasoned trust in different AI systems.",
     "teaser": "/assets/teaser/toio.jpg",
+    "pdf_link": "/assets/paper/CHI26_Pokemon.pdf",
     "is_journal": false,
     "is_featured": false,
     "is_poster": true
@@ -36,6 +37,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026 Poster)",
     "abstract": "AI-mediated facilitation has emerged as a scalable approach to supporting onboarding and coordination in newly formed remote teams, but existing systems are predominantly text-based. To address the lack of understanding of how video-based, virtually embodied AI facilitators shape team experiences, including both increased engagement and potential discomfort due to heightened human-likeness, we present TeamWise, a research prototype that joins video meetings as an on-screen avatar. TeamWise leads teams through a scripted facilitation flow of low-stakes activities that foster rapport, mutual awareness, and shared identity. We conducted a formative study of the visually embodied version of TeamWise to iterate on the facilitator’s design and interaction flow. In addition, we report on the design and protocol of a planned full-scale study comparing visual and voice-based AI onboarding to examine how and when embodiment influences early team interactions.",
     "teaser": "/assets/teaser/teamwise.png",
+    "pdf_link": "/assets/paper/CHI26_TeamWise_Poster.pdf",
     "is_journal": false,
     "is_featured": false,
     "is_poster": true

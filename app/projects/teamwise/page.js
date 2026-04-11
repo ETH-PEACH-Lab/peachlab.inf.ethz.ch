@@ -285,8 +285,8 @@ export default function TeamwisePage() {
               >
                 📄
               </span>
-              <a href="#" className="teamwise-publication-link disabled">
-                Paper (coming soon)
+              <a href="/assets/paper/CHI26_TeamWise_Poster.pdf" className="teamwise-publication-link">
+                Paper
               </a>
             </span>
 
