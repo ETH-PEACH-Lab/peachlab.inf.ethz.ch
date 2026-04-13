@@ -4,7 +4,7 @@ import ProjectView from "./ProjectView";
 import Image from "@/components/Image";
 
 // Slugs that have dedicated static pages (not using this dynamic route)
-const staticPageSlugs = ["toio", "multimodal-tutor"];
+const staticPageSlugs = ["toio", "multimodal-tutor", "teamwise"];
 
 export const dynamicParams = false;
 export async function generateStaticParams() {
