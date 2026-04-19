@@ -1,5 +1,18 @@
 [
   {
+    "venue": "L@S 2026",
+    "id": "las2026",
+    "slug": "stagetutor",
+    "year": "2026",
+    "title": "When Should Teachers Control AI Generation for Mathematics Visuals?",
+    "authors": "Zhengxu Li*, Junling Wang*, and April Yi Wang",
+    "venue_full": "In Proceedings of the ACM Conference on Learning @ Scale (L@S 2026)",
+    "abstract": "Generative AI has the potential to help teachers rapidly create classroom-ready visual materials, particularly in mathematics where diagrams and visual representations must be pedagogically meaningful and instructionally correct. However, current generative tools primarily support prompting and post-hoc editing, leaving open a key question for correctness-sensitive educational authoring: when in the generation pipeline should teachers exert control? In this paper, we investigate how the timing of human control in AI-assisted generation shapes teachers’ visual authoring practices in correctness-sensitive tasks. We introduce a design space of three stages of control: pre-generation control, where users specify intent solely through natural language prompts before generation; mid-generation control, where users inspect and confirm an explicit layout structure before the system completes generation; and post-generation control, where users directly modify AI-generated visuals after generation through object-level edits.  In a within-subject, mixed-methods study with 24 primary mathematics teachers, post-generation control was rated higher on predictability and correctness, while other subjective measures showed no reliable differences. Qualitative findings explain these differences by revealing workflow trade-offs: highly automated, pre-generation control supports rapid ideation but reduces perceived agency and predictability; mid-generation control improves structural alignment at the cost of additional effort; and post-generation control preserves user agency through low-cost, direct verification and correction. Together, these results suggest that in correctness-sensitive educational tasks, effective generative tools should align system behavior with teacher intent and support stage-dependent workflows that combine automation with direct manipulation.",
+    "teaser": "/assets/teaser/placeholder.png",
+    "is_journal": false,
+    "is_featured": false
+  },
+  {
     "venue": "AIED 2026",
     "id": "aied2026",
     "slug": "stagetutor",
