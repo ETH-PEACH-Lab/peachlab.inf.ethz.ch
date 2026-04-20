@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Tabs, Table } from "@geist-ui/core";
 import MemberCardMini from "@/team/MemberCardMini";
 import "./style.css";
@@ -67,37 +67,6 @@ function getTagStyle(tag) {
 
 export default function Diet2026Page() {
     const [activeTab, setActiveTab] = useState("about");
-    const [blogPreviews, setBlogPreviews] = useState({});
-
-    useEffect(() => {
-        let cancelled = false;
-
-        const fetchPreviews = async () => {
-            const entries = await Promise.all(
-                DIET_BLOGS.map(async ({ url }) => {
-                    const fallbackImage = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200`;
-                    try {
-                        const res = await fetch(`/api/link-preview?url=${encodeURIComponent(url)}`);
-                        if (!res.ok) return [url, { image: fallbackImage, description: "" }];
-                        const data = await res.json();
-                        return [url, { image: data.image || fallbackImage, description: data.description || "" }];
-                    } catch {
-                        return [url, { image: fallbackImage, description: "" }];
-                    }
-                })
-            );
-
-            if (!cancelled) {
-                setBlogPreviews(Object.fromEntries(entries));
-            }
-        };
-
-        fetchPreviews();
-
-        return () => {
-            cancelled = true;
-        };
-    }, []);
 
     const renderContent = () => {
         switch (activeTab) {
@@ -175,8 +144,7 @@ export default function Diet2026Page() {
 
                         <div className="diet-final-gallery" size="small">
                             {DIET_BLOGS.map(({ name, title, tag, url, cover }) => {
-                                const preview = blogPreviews[url] || {};
-                                const thumbnail = cover || preview.image || `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200`;
+                                const thumbnail = cover || `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200`;
                                 return (
                                     <a key={url} href={url} target="_blank" rel="noopener noreferrer" className="diet-final-entry-link">
                                         <div className="diet-final-entry">

@@ -162,7 +162,6 @@ export default function TeamwisePage() {
           {/* <span className="teamwise-rq-tag">RQ</span> */}
           RQ: How does visual embodiment shape team interaction?
         </h3>
-        <h3 className="teamwise-rq-inline"></h3>
         <div className="teamwise-focus-panel">
           <div className="teamwise-br-columns">
             <div className="teamwise-br-group">
