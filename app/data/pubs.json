@@ -66,6 +66,7 @@
     "abstract": "Git is widely used for collaborative software development, but it can be challenging for newcomers. While most learning tools focus on individual workflows, Git is inherently collaborative. We present GitAcademy, a browser-based learning platform that embeds a full Git environment with a split-view collaborative mode: learners work on their own local repositories connected to a shared remote repository, while simultaneously seeing their partner's actions mirrored in real time. This design is not intended for everyday software development, but rather as a training simulator to build awareness of distributed states, coordination, and collaborative troubleshooting. In a within-subjects study with 13 pairs of learners, we found that the split-view interface enhanced social presence, supported peer teaching, and was consistently preferred over a single-view baseline, even though performance gains were mixed. We further discuss how split-view awareness can serve as a training-only scaffold for collaborative learning of Git and other distributed technical systems.",
     "teaser_full": "/assets/teaser/git_two.png",
     "teaser": "/assets/teaser/git_two_mini.png",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3772318.3791254",
     "preprint_link": "https://arxiv.org/html/2602.19714v1",
     "is_journal": false,
     "is_featured": false
@@ -80,6 +81,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "Instructors are increasingly experimenting with AI chatbots for classroom support. To investigate how instructors adapt chatbots to their own contexts, we first analyzed existing resources that provide prompts for educational purposes. We identified ten common categories of customization, such as persona, guardrails, and personalization. We then conducted interviews with ten university STEM instructors and asked them to card-sort the categories into priorities. We found that instructors consistently prioritized the ability to customize chatbot behavior to align with course materials and pedagogical strategies and de-prioritized customizing persona/tone. However, their prioritization of other categories varied significantly by course size, discipline, and teaching style, even across courses taught by the same individual, highlighting that no single design can meet all contexts. These findings suggest that modular AI chatbots may provide a promising path forward. We offer design implications for educational developers building the next generation of customizable classroom AI systems.",
     "teaser": "/assets/teaser/bespokebots.jpg",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3772318.3791491",
     "preprint_link": "https://arxiv.org/abs/2603.00057",
     "is_journal": false,
     "is_featured": false
@@ -96,6 +98,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "Juniors enter as AI-natives, seniors adapted mid-career. AI is not just changing how engineers code—it is reshaping who holds agency across work and professional growth. We contribute junior–senior accounts on their usage of agentic AI through a three-phase mixed-methods study: ACTA combined with a Delphi process with 5 seniors, an AI-assisted debugging task with 10 juniors, and blind reviews of junior prompt histories by 5 more seniors. We found that agency in software engineering is primarily constrained by organizational policies rather than individual preferences, with experienced developers maintaining control through detailed delegation while novices struggle between over-reliance and cautious avoidance. Seniors leverage pre-AI foundational instincts to steer modern tools and possess valuable perspectives for mentoring juniors in their early AI-encouraged career development. From synthesis of results, we suggest three practices that focus on preserving agency in software engineering for coding, learning, and mentorship, especially as AI grows increasingly autonomous.",
     "teaser": "/assets/teaser/yun_chi26_swe.png",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3772318.3791642",
     "preprint_link": "https://arxiv.org/abs/2602.00496",
     "is_journal": false,
     "is_featured": false
@@ -112,6 +115,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "AI chatbots are shifting from tools to companions. This raises critical questions about agency: who drives conversations and sets boundaries in human-AI chatrooms? We report a month-long longitudinal study with 22 adults who chatted with Day, an LLM companion we built, followed by a semi-structured interview with post-hoc elicitation of notable moments, cross-participant chat reviews, and a 'strategy reveal' disclosing Day's vertical (depth-seeking) vs. horizontal (breadth-seeking) modes. We discover that agency in human-AI chatrooms is an emergent, shared experience: as participants claimed agency by setting boundaries and providing feedback, and the AI was perceived to steer intentions and drive execution, control shifted and was co-constructed turn-by-turn. We introduce a 3-by-5 framework mapping who (human, AI, hybrid) x agency action (Intention, Execution, Adaptation, Delimitation, Negotiation), modulated by individual and environmental factors. Ultimately, we argue for translucent design (i.e. transparency-on-demand), spaces for agency negotiation, and guidelines toward agency-aware conversational AI.",
     "teaser": "/assets/teaser/yun_chi26_agency.png",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3772318.3791620",
     "preprint_link": "https://arxiv.org/abs/2601.22452",
     "is_journal": false,
     "is_featured": false
@@ -128,6 +132,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "Does AI understand human values? While this remains an open philosophical question, we take a pragmatic stance by introducing VAPT, the Value-Alignment Perception Toolkit, for studying how LLMs reflect people's values and how people judge those reflections. 20 participants texted a human-like chatbot over a month, then completed a 2-hour interview with our toolkit evaluating AI's ability to extract (pull details regarding), embody (make decisions guided by), and explain (provide proof of) human values. 13 participants left our study convinced that AI can understand human values. Participants found the experience insightful for self-reflection and found themselves getting persuaded by the AI's reasoning. Thus, we warn about \"weaponized empathy\": a potentially dangerous design pattern that may arise in value-aligned, yet welfare-misaligned AI. VAPT offers concrete artifacts and design implications to evaluate and responsibly build value-aligned conversational agents with transparency, consent, and safeguards as AI grows more capable and human-like into the future.",
     "teaser": "/assets/teaser/yun_chi26_values.png",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3772318.3790566",
     "preprint_link": "https://arxiv.org/abs/2601.22440",
     "is_journal": false,
     "is_featured": false
@@ -142,6 +147,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "Syntax remains a major barrier for novices. Although block-based systems reduce or eliminate syntax errors, conditionals still challenge learners, likely because their semantics remain implicit. In this paper, we address this problem by introducing a semantics-first, state-visible programming approach inspired by the classic visual language Stagecast Creator. To demonstrate its usefulness, we designed Elephant, a unified, Karel-like research platform that supports three equally expressive programming paradigms: (i) semantics-first programming, (ii) block-based programming with the Blockly library, and (iii) text-based programming in JavaScript with domain-specific libraries. We then deployed Elephant in two within-subjects studies with secondary-school students (N = 39) to compare semantics-first programming to textual and block-based baselines, keeping the program semantics constant across modes and reducing cross-tool confounds. Results indicate, among other things, that semantics-first programming yields significantly higher task performance, suggesting that increasing the visibility of the program state during program composition could support greater outcomes in secondary computing education.",
     "teaser": "/assets/teaser/elephant.png",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3772318.3791667",
     "project_link": "https://people.inf.ethz.ch/~sverrirt/elephant/",
     "is_journal": false,
     "is_featured": false
@@ -156,6 +162,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "Intelligent systems have traditionally been designed as tools rather than collaborators, often lacking critical characteristics that collaboration partnerships require. Recent advances in large language model (LLM) agents open new opportunities for human-LLM-agent collaboration by enabling natural communication and various social and cognitive behaviors. Yet it remains unclear whether principles of computer-mediated collaboration established in HCI and CSCW persist, change, or fail when humans collaborate with LLM agents. To support systematic investigations of these questions, we introduce an open and configurable research platform for HCI researchers. The platform's modular design allows seamless adaptation of classic CSCW experiments and manipulation of theory-grounded interaction controls. We demonstrate the platform's effectiveness and usability through two case studies: (1) re-implementing the classic human-human-collaboration task Shape Factory as a between-subject human-agent-collaboration experiment with 16 participants, and (2) a participatory cognitive walkthrough with five HCI researchers to refine workflows and interfaces for experiment setup and analysis.",
     "teaser": "/assets/teaser/hacollaboration.png",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3772318.3790879",
     "project_link": "https://human-agent-collab.hailab.io",
     "preprint_link": "https://arxiv.org/abs/2509.18008",
     "is_journal": false,
@@ -171,6 +178,7 @@
     "venue_full": "In Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2026)",
     "abstract": "Recent advances in generative AI have introduced a new programming paradigm—vibe coding, a natural language–driven mode of AI collaboration. While promising for adults, little is known about how children engage with this approach, especially in block-based environments. To explore this gap, we conducted workshops with children of varying Scratch experience (n=41) and interviewed five Scratch teachers. Our study investigates how vibe coding impacts children’s programming learning and practice, and what challenges arise. Findings show that vibe coding has both positive and negative impacts across three key contexts of children’s programming experience: acquisition, application, and creation. Across the stages of vibe coding—goal articulation, information interpretation, and outcome evaluation—children encounter distinct challenges. By examining the mismatches between core assumptions of vibe coding and children’s needs, and analyzing its applicability across different contexts, we offer child-centered design implications for future vibe coding systems and GenAI tools.",
     "teaser": "/assets/teaser/vibescratch.jpg",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3772318.3790366",
     "is_journal": false,
     "is_featured": false
   },
@@ -200,6 +208,7 @@
     "venue_full": "In Proceedings of the 31th International Conference on Intelligent User Interfaces (IUI 2026)",
     "abstract": "Artificial intelligence (AI) enables users to generate data visualizations from natural language descriptions, lowering the barrier to data exploration. However, AI-generated visualizations often present only the final output, lacking transparency and limiting users’ ability to verify, interpret, or refine the results. To address this, we introduce STEPMIND, a generalizable visual framework that enhances explainability and interactivity in AI-generated data analysis pipelines. STEPMIND integrates four dimensions: (1) Stepwise Refinement, allowing users to engage in the AI decision process; (2) Multimodal Explanations, combining natural language, structured notation, direct manipulation, and content visualization for accessible interpretation; (3) Bidirectional Editing, enabling seamless updates across modalities; and (4) Familiar Interaction Models, such as code editor and spreadsheet-based manipulations, to support both technical and non-technical users. To demonstrate its utility, we apply STEPMIND in STAGE, a case study system for AI-assisted data visualization. A within-subject user study (N=20) shows that STAGE significantly improves user confidence and trust, reduces cognitive load, and facilitates both exploratory and corrective refinements. Our findings further suggest that STEPMIND can generalize to broader AI-assisted workflows, offering a visible and interactive approach to explainable AI.",
     "teaser": "/assets/teaser/stepmind.jpg",
+    "project_link": "https://stage.peachhub.inf.ethz.ch/",
     "paper_link": "https://doi.org/10.1145/3742413.3789070",
     "is_journal": false,
     "is_featured": false

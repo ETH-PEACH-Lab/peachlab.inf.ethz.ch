@@ -181,6 +181,22 @@
     "avatar": "/assets/lukas.jpg"
   },
   {
+    "name": "Oğuz Arslan",
+    "status": "current",
+    "title": "Research Assistant",
+    "topics": "Spatial Computing",
+    "affiliation": "ETH Zürich",
+    "avatar": "/assets/Oğuz_Arslan.png"
+  },
+  {
+    "name": "Alexandre Ballenghien",
+    "status": "current",
+    "title": "Research Assistant",
+    "topics": "Scratch Programming",
+    "affiliation": "ETH Zürich",
+    "avatar": "/assets/Alexandre_Ballenghien.png"
+  },
+  {
     "name": "Kristijan Zafirovski",
     "status": "hidden",
     "topics": "Agent-based Simulation",
