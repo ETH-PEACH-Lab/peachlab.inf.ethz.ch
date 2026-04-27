@@ -19,45 +19,61 @@ import projectMd from '!raw-loader!@/data/teaching/diet2026/project.md';
 import aboutMd from '!raw-loader!@/data/teaching/diet2026/about.md';
 
 const DIET_BLOGS = [
-    { name: 'Aaron Zeller', title: 'How Data Becomes Information', tag: 'statistics', url: 'https://interactive-blog-statistics.onrender.com' },
-    { name: 'Akankshya Ingale', title: 'What really happens when you send a message online?', tag: 'Network', url: 'https://akankshya.com/DesignInEdTech-IndividualBlog/' },
-    { name: 'Albert Cerfeda', title: 'How image representation matters: pixels, frequencies, and perception', tag: 'Computer Vision', url: 'https://det.crfda.com', cover: '/assets/teaching/diet-blog-2026/Albert_Cerfeda.png' },
-    { name: 'Alessia Lanini', title: 'Hadoop Distributed File Systems', tag: 'Systems', url: 'https://aleni01.github.io/DiET_teaching_blog_hdfs/' },
-    { name: 'Alexandra Trofimova', title: 'Ray Tracing Concepts', tag: 'Computer Graphics', url: 'https://alextrofi.github.io/diet-interactive-blog/' },
-    { name: 'Aloha Churchill', title: 'What time is it?', tag: 'Systems', url: 'https://aloha-churchill.github.io/clock-synchronization/' },
-    { name: 'Inés Araujo Canas', title: 'The Leak', tag: 'Security', url: 'https://ines-araujo.github.io/' },
-    { name: 'Krishna Le Moing', title: 'CPU Pipelining', tag: 'CPU Pipeline', url: 'https://krishna3960.github.io/Pipelining_Blog/' },
-    { name: 'Leroy Borgeaud dit Avocat', title: 'Convolution Layers', tag: 'Computer Vision', url: 'https://eth-leroy.github.io/' },
-    { name: 'Nagyung Kim', title: 'Seeing in Pixels', tag: 'Computer Vision', url: 'https://nkim7.github.io/edutech-blog/' },
-    { name: 'Nicolas Stucki', title: 'Peeling the Onion', tag: 'Tor’s onion routing', url: 'https://nyckii.github.io/individual-blog/' },
-    { name: 'Rui Wang', title: 'Seeing the World Through Attention', tag: 'Transformer', url: 'https://batfacewayne.github.io/DIET-VIT/' },
-    { name: 'Sara Jun', title: "Let's learn all about DNS!", tag: 'DNS', url: 'https://joiningjun.wixsite.com/my-site-2' },
-    { name: 'Sergejs Zahovskis', title: 'Enter the matrix: How Computers Count', tag: 'binary', url: 'https://0shean.github.io/binary-world-blog/' },
-    { name: 'Shreyas Parida', title: 'How Does The Internet Find A Website?', tag: 'DNS resolution', url: 'https://shreyasfc.github.io/', cover: '/assets/teaching/diet-blog-2026/Shreyas_Parida.png' },
-    { name: 'Sophia Kacem', title: 'Cryptex', tag: 'Diffie-Hellman', url: 'https://soso420.github.io/blog-Diffie-Hellman.github.io/character-select.html' },
-    { name: 'Wanglei Shen', title: 'EyeTrack Explorer', tag: 'gaze patterns', url: 'https://belown.github.io/individual_blog/' },
-    { name: 'Xiaozihan Wang', title: 'The Online Minimization Knapsack Problem & an O(log Δ)-Competitive Algorithm', tag: 'Knapsack Problem', url: 'https://minimal-backpack-problem-blog.vercel.app/' },
-    { name: 'Zihan Li', title: 'The Meaning Machine: How Search Engines Read Your Mind', tag: 'Word Vector', url: 'https://nickoverxx11-create.github.io/demo/' },
+    { name: 'Aaron Zeller', title: 'How Data Becomes Information', tag: 'Data Science', consent: true, url: 'https://interactive-blog-statistics.onrender.com' },
+    { name: 'Akankshya Ingale', title: 'What really happens when you send a message online?', tag: 'Networking', consent: true, url: 'https://akankshya.com/DesignInEdTech-IndividualBlog/' },
+    { name: 'Albert Cerfeda', title: 'How image representation matters: pixels, frequencies, and perception', tag: 'Computer Vision', consent: false, url: 'https://det.crfda.com', cover: '/assets/teaching/diet-blog-2026/Albert_Cerfeda.png' },
+    { name: 'Alessia Lanini', title: 'Hadoop Distributed File Systems', tag: 'Systems', consent: true, url: 'https://aleni01.github.io/DiET_teaching_blog_hdfs/' },
+    { name: 'Alexandra Trofimova', title: 'Ray Tracing Concepts', tag: 'Ray Tracing', consent: true, url: 'https://alextrofi.github.io/diet-interactive-blog/' },
+    { name: 'Aloha Churchill', title: 'What time is it?', tag: 'Systems', consent: true, url: 'https://aloha-churchill.github.io/clock-synchronization/' },
+    { name: 'Inés Araujo Canas', title: 'The Leak', tag: 'Security', consent: true, url: 'https://ines-araujo.github.io/' },
+    { name: 'Krishna Le Moing', title: 'CPU Pipelining', tag: 'Systems', consent: true, url: 'https://krishna3960.github.io/Pipelining_Blog/' },
+    { name: 'Leroy Borgeaud dit Avocat', title: 'Convolution Layers', tag: 'Computer Vision', consent: true, url: 'https://eth-leroy.github.io/' },
+    { name: 'Nagyung Kim', title: 'Seeing in Pixels', tag: 'Computer Vision', consent: true, url: 'https://nkim7.github.io/edutech-blog/' },
+    { name: 'Nicolas Stucki', title: 'Peeling the Onion', tag: 'Networking', consent: true, url: 'https://nyckii.github.io/individual-blog/' },
+    { name: 'Rui Wang', title: 'Seeing the World Through Attention', tag: 'Computer Vision', consent: false, url: 'https://batfacewayne.github.io/DIET-VIT/' },
+    { name: 'Sara Jun', title: "Let's learn all about DNS!", tag: 'Networking', consent: false, url: 'https://joiningjun.wixsite.com/my-site-2' },
+    { name: 'Sergejs Zahovskis', title: 'Enter the matrix: How Computers Count', tag: 'Systems', consent: true, url: 'https://0shean.github.io/binary-world-blog/' },
+    { name: 'Shreyas Parida', title: 'How Does The Internet Find A Website?', tag: 'Networking', consent: false, url: 'https://shreyasfc.github.io/', cover: '/assets/teaching/diet-blog-2026/Shreyas_Parida.png' },
+    { name: 'Sophia Kacem', title: 'Cryptex', tag: 'Security', consent: false, url: 'https://soso420.github.io/blog-Diffie-Hellman.github.io/character-select.html' },
+    { name: 'Wanglei Shen', title: 'EyeTrack Explorer', tag: 'Eye Tracking', consent: true, url: 'https://belown.github.io/individual_blog/' },
+    { name: 'Xiaozihan Wang', title: 'The Online Minimization Knapsack Problem & an O(log Δ)-Competitive Algorithm', tag: 'Math', consent: true, url: 'https://minimal-backpack-problem-blog.vercel.app/' },
+    { name: 'Zihan Li', title: 'The Meaning Machine: How Search Engines Read Your Mind', tag: 'NLP', consent: true, url: 'https://nickoverxx11-create.github.io/demo/' },
 ];
 
-const TAG_COLOR_PALETTE = [
-    { background: '#fef3c7', border: '#fcd34d', color: '#92400e' },
-    { background: '#dbeafe', border: '#93c5fd', color: '#1e3a8a' },
-    { background: '#dcfce7', border: '#86efac', color: '#166534' },
-    { background: '#fce7f3', border: '#f9a8d4', color: '#9d174d' },
-    { background: '#ede9fe', border: '#c4b5fd', color: '#5b21b6' },
-    { background: '#e0f2fe', border: '#7dd3fc', color: '#0c4a6e' },
-    { background: '#ffedd5', border: '#fdba74', color: '#9a3412' },
-    { background: '#ecfccb', border: '#bef264', color: '#3f6212' },
+const TAG_COLOR_MAP = {
+    'data science': { background: '#fde68a', border: '#f59e0b', color: '#78350f' },
+    networking: { background: '#bfdbfe', border: '#3b82f6', color: '#1e3a8a' },
+    'computer vision': { background: '#fecdd3', border: '#f43f5e', color: '#881337' },
+    systems: { background: '#bbf7d0', border: '#22c55e', color: '#14532d' },
+    'ray tracing': { background: '#ddd6fe', border: '#8b5cf6', color: '#4c1d95' },
+    security: { background: '#fed7aa', border: '#f97316', color: '#7c2d12' },
+    'eye tracking': { background: '#a5f3fc', border: '#06b6d4', color: '#164e63' },
+    math: { background: '#fbcfe8', border: '#ec4899', color: '#831843' },
+    nlp: { background: '#d9f99d', border: '#84cc16', color: '#365314' },
+};
+
+const TAG_FALLBACK_PALETTE = [
+    { background: '#fef3c7', border: '#f59e0b', color: '#78350f' },
+    { background: '#dbeafe', border: '#3b82f6', color: '#1e3a8a' },
+    { background: '#dcfce7', border: '#22c55e', color: '#14532d' },
+    { background: '#fce7f3', border: '#ec4899', color: '#831843' },
+    { background: '#ede9fe', border: '#8b5cf6', color: '#4c1d95' },
+    { background: '#e0f2fe', border: '#06b6d4', color: '#164e63' },
+    { background: '#ffedd5', border: '#f97316', color: '#7c2d12' },
+    { background: '#ecfccb', border: '#84cc16', color: '#365314' },
 ];
 
 function getTagStyle(tag) {
-    const key = (tag || '').toLowerCase();
+    const key = (tag || '').trim().toLowerCase();
+    if (TAG_COLOR_MAP[key]) {
+        return TAG_COLOR_MAP[key];
+    }
+
     let hash = 0;
     for (let i = 0; i < key.length; i += 1) {
         hash = (hash * 31 + key.charCodeAt(i)) >>> 0;
     }
-    const picked = TAG_COLOR_PALETTE[hash % TAG_COLOR_PALETTE.length];
+    const picked = TAG_FALLBACK_PALETTE[hash % TAG_FALLBACK_PALETTE.length];
     return {
         background: picked.background,
         borderColor: picked.border,
@@ -65,8 +81,17 @@ function getTagStyle(tag) {
     };
 }
 
+function formatTagLabel(tag) {
+    if (!tag) {
+        return '';
+    }
+    return tag.charAt(0).toUpperCase() + tag.slice(1);
+}
+
 export default function Diet2026Page() {
     const [activeTab, setActiveTab] = useState("about");
+    const [selectedTag, setSelectedTag] = useState("all");
+    const finalBlogTags = Array.from(new Set(DIET_BLOGS.map(({ tag }) => tag)));
 
     const renderContent = () => {
         switch (activeTab) {
@@ -137,32 +162,100 @@ export default function Diet2026Page() {
                     </div>
                 );
             case "final":
+                const visibleBlogs = selectedTag === "all"
+                    ? DIET_BLOGS
+                    : DIET_BLOGS.filter(({ tag }) => tag === selectedTag);
+
                 return (
                     <div>
                         <h3 style={{ marginTop: 0 }}>Final Blog Posts</h3>
-                        <p style={{ color: '#666', marginTop: '0.25rem' }}>Explore the final interactive blogs created by students. Click an entry to open the full post.</p>
+                        <p style={{ color: '#666', marginTop: '0.25rem' }}>Congratulations on finishing your final blogs! Browse by topic below. (P.S. Open posts were shared with permission, locked posts are private, and the posts are listed in no particular order.)</p>
+
+                        <div className="diet-final-filter-nav" role="tablist" aria-label="Filter by topic tag">
+                            <button
+                                type="button"
+                                className={`diet-final-filter-pill${selectedTag === 'all' ? ' active' : ''}`}
+                                onClick={() => setSelectedTag('all')}
+                            >
+                                All
+                            </button>
+                            {finalBlogTags.map((tag) => (
+                                <button
+                                    key={tag}
+                                    type="button"
+                                    className={`diet-final-filter-pill${selectedTag === tag ? ' active' : ''}`}
+                                    style={getTagStyle(tag)}
+                                    onClick={() => setSelectedTag(tag)}
+                                >
+                                    {formatTagLabel(tag)}
+                                </button>
+                            ))}
+                        </div>
 
                         <div className="diet-final-gallery" size="small">
-                            {DIET_BLOGS.map(({ name, title, tag, url, cover }) => {
+                            {visibleBlogs.map(({ name, title, tag, consent, url, cover }) => {
                                 const thumbnail = cover || `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200`;
+                                const card = (
+                                    <div className={`diet-final-entry${!consent ? ' diet-final-entry-locked' : ''}`}>
+                                        <img src={thumbnail} alt={`${name} cover`} className="diet-final-thumb" />
+                                        <div className="diet-final-meta">
+                                            <div className="diet-final-title-row">
+                                                <div className="diet-final-name">{title}</div>
+                                                <span className="diet-final-tag" style={getTagStyle(tag)}>{formatTagLabel(tag)}</span>
+                                            </div>
+                                            <div className="diet-final-author">Author: {name}</div>
+                                        </div>
+                                        {!consent && (
+                                            <div className="diet-final-overlay" aria-hidden="true">
+                                                <span className="diet-final-lock" />
+                                            </div>
+                                        )}
+                                    </div>
+                                );
+
+                                if (!consent) {
+                                    return (
+                                        <div key={url} className="diet-final-entry-link diet-final-entry-link-disabled" aria-disabled="true">
+                                            {card}
+                                        </div>
+                                    );
+                                }
+
                                 return (
                                     <a key={url} href={url} target="_blank" rel="noopener noreferrer" className="diet-final-entry-link">
-                                        <div className="diet-final-entry">
-                                            <img src={thumbnail} alt={`${name} cover`} className="diet-final-thumb" />
-                                            <div className="diet-final-meta">
-                                                <div className="diet-final-title-row">
-                                                    <div className="diet-final-name">{title}</div>
-                                                    <span className="diet-final-tag" style={getTagStyle(tag)}>{tag}</span>
-                                                </div>
-                                                <div className="diet-final-author">Author: {name}</div>
-                                            </div>
-                                        </div>
+                                        {card}
                                     </a>
                                 );
                             })}
                         </div>
 
                         <style jsx>{`
+                            .diet-final-filter-nav {
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 8px;
+                                margin: 12px 0 14px;
+                            }
+                            .diet-final-filter-pill {
+                                font-size: 12px;
+                                line-height: 1;
+                                padding: 7px 10px;
+                                border-radius: 999px;
+                                border: 1px solid #d1d5db;
+                                background: #f9fafb;
+                                color: #374151;
+                                font-weight: 600;
+                                cursor: pointer;
+                                transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease;
+                            }
+                            .diet-final-filter-pill:hover {
+                                transform: translateY(-1px);
+                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+                            }
+                            .diet-final-filter-pill.active {
+                                border-color: #111827;
+                                box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.08);
+                            }
                             .diet-final-gallery {
                                 display: grid;
                                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -178,6 +271,7 @@ export default function Diet2026Page() {
                                 display: flex;
                                 flex-direction: column;
                                 align-items: start;
+                                position: relative;
                                 border: 1px solid #ececec;
                                 border-radius: 10px;
                                 overflow: hidden;
@@ -188,6 +282,17 @@ export default function Diet2026Page() {
                                 transform: translateY(-2px);
                                 border-color: #d6d6d6;
                                 box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+                            }
+                            .diet-final-entry-link-disabled {
+                                cursor: not-allowed;
+                            }
+                            .diet-final-entry-link-disabled:hover .diet-final-entry {
+                                transform: none;
+                                border-color: #ececec;
+                                box-shadow: none;
+                            }
+                            .diet-final-entry-locked {
+                                filter: grayscale(0.35);
                             }
                             .diet-final-thumb {
                                 width: 100%;
@@ -227,6 +332,43 @@ export default function Diet2026Page() {
                                 border-radius: 999px;
                                 border: 1px solid transparent;
                                 font-weight: 600;
+                            }
+                            .diet-final-overlay {
+                                position: absolute;
+                                inset: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: rgba(243, 244, 246, 0.62);
+                            }
+                            .diet-final-lock {
+                                position: relative;
+                                width: 18px;
+                                height: 14px;
+                                border-radius: 3px;
+                                background: #6b7280;
+                            }
+                            .diet-final-lock::before {
+                                content: '';
+                                position: absolute;
+                                left: 3px;
+                                top: -10px;
+                                width: 12px;
+                                height: 10px;
+                                border: 3px solid #6b7280;
+                                border-bottom: 0;
+                                border-radius: 8px 8px 0 0;
+                                box-sizing: border-box;
+                            }
+                            .diet-final-lock::after {
+                                content: '';
+                                position: absolute;
+                                left: 8px;
+                                top: 5px;
+                                width: 2px;
+                                height: 4px;
+                                border-radius: 1px;
+                                background: #d1d5db;
                             }
                             .diet-final-author {
                                 font-size: 13px;
