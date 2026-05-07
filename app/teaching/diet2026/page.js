@@ -19,7 +19,7 @@ import projectMd from '!raw-loader!@/data/teaching/diet2026/project.md';
 import aboutMd from '!raw-loader!@/data/teaching/diet2026/about.md';
 
 const DIET_BLOGS = [
-    { name: 'Aaron Zeller', title: 'How Data Becomes Information', tag: 'Data Science', consent: true, url: 'https://interactive-blog-statistics.onrender.com' },
+    { name: 'Aaron Zeller', title: 'How Data Becomes Information', tag: 'Data Science', consent: true, url: 'https://aaron-zeller.github.io/statistics-blog.io/' },
     { name: 'Akankshya Ingale', title: 'What really happens when you send a message online?', tag: 'Networking', consent: true, url: 'https://akankshya.com/DesignInEdTech-IndividualBlog/' },
     { name: 'Albert Cerfeda', title: 'How image representation matters: pixels, frequencies, and perception', tag: 'Computer Vision', consent: false, url: 'https://det.crfda.com', cover: '/assets/teaching/diet-blog-2026/Albert_Cerfeda.png' },
     { name: 'Alessia Lanini', title: 'Hadoop Distributed File Systems', tag: 'Systems', consent: true, url: 'https://aleni01.github.io/DiET_teaching_blog_hdfs/' },
