@@ -23,20 +23,20 @@ const DIET_BLOGS = [
     { name: 'Akankshya Ingale', title: 'What really happens when you send a message online?', tag: 'Networking', consent: true, url: 'https://akankshya.com/DesignInEdTech-IndividualBlog/' },
     { name: 'Albert Cerfeda', title: 'How image representation matters: pixels, frequencies, and perception', tag: 'Computer Vision', consent: false, url: 'https://det.crfda.com', cover: '/assets/teaching/diet-blog-2026/Albert_Cerfeda.png' },
     { name: 'Alessia Lanini', title: 'Hadoop Distributed File Systems', tag: 'Systems', consent: true, url: 'https://aleni01.github.io/DiET_teaching_blog_hdfs/' },
-    { name: 'Alexandra Trofimova', title: 'Ray Tracing Concepts', tag: 'Ray Tracing', consent: true, url: 'https://alextrofi.github.io/diet-interactive-blog/' },
+    { name: 'Alexandra Trofimova', title: 'Ray Tracing Concepts', tag: 'Computer Vision', consent: true, url: 'https://alextrofi.github.io/diet-interactive-blog/' },
     { name: 'Aloha Churchill', title: 'What time is it?', tag: 'Systems', consent: true, url: 'https://aloha-churchill.github.io/clock-synchronization/' },
     { name: 'Inés Araujo Canas', title: 'The Leak', tag: 'Security', consent: true, url: 'https://ines-araujo.github.io/' },
     { name: 'Krishna Le Moing', title: 'CPU Pipelining', tag: 'Systems', consent: true, url: 'https://krishna3960.github.io/Pipelining_Blog/' },
     { name: 'Leroy Borgeaud dit Avocat', title: 'Convolution Layers', tag: 'Computer Vision', consent: true, url: 'https://eth-leroy.github.io/' },
     { name: 'Nagyung Kim', title: 'Seeing in Pixels', tag: 'Computer Vision', consent: true, url: 'https://nkim7.github.io/edutech-blog/' },
-    { name: 'Nicolas Stucki', title: 'Peeling the Onion', tag: 'Networking', consent: true, url: 'https://nyckii.github.io/individual-blog/' },
+    { name: 'Nicolas Stucki', title: 'Peeling the Onion', tag: 'Networking', consent: true, url: 'https://nyckii.github.io/individual-blog/', award: 'best' },
     { name: 'Rui Wang', title: 'Seeing the World Through Attention', tag: 'Computer Vision', consent: true, url: 'https://batfacewayne.github.io/DIET-VIT/' },
     { name: 'Sara Jun', title: "Let's learn all about DNS!", tag: 'Networking', consent: false, url: 'https://joiningjun.wixsite.com/my-site-2' },
     { name: 'Sergejs Zahovskis', title: 'Enter the matrix: How Computers Count', tag: 'Systems', consent: true, url: 'https://0shean.github.io/binary-world-blog/' },
     { name: 'Shreyas Parida', title: 'How Does The Internet Find A Website?', tag: 'Networking', consent: false, url: 'https://shreyasfc.github.io/', cover: '/assets/teaching/diet-blog-2026/Shreyas_Parida.png' },
     { name: 'Sophia Kacem', title: 'Cryptex', tag: 'Security', consent: true, url: 'https://soso420.github.io/blog-Diffie-Hellman.github.io/character-select.html' },
-    { name: 'Wanglei Shen', title: 'EyeTrack Explorer', tag: 'Eye Tracking', consent: true, url: 'https://belown.github.io/individual_blog/' },
-    { name: 'Xiaozihan Wang', title: 'The Online Minimization Knapsack Problem & an O(log Δ)-Competitive Algorithm', tag: 'Math', consent: true, url: 'https://minimal-backpack-problem-blog.vercel.app/' },
+    { name: 'Wanglei Shen', title: 'EyeTrack Explorer', tag: 'Sensing', consent: true, url: 'https://belown.github.io/individual_blog/', award: 'honorable' },
+    { name: 'Xiaozihan Wang', title: 'The Online Minimization Knapsack Problem & an O(log Δ)-Competitive Algorithm', tag: 'Algorithms', consent: true, url: 'https://minimal-backpack-problem-blog.vercel.app/', award: 'honorable' },
     { name: 'Zihan Li', title: 'The Meaning Machine: How Search Engines Read Your Mind', tag: 'NLP', consent: true, url: 'https://nickoverxx11-create.github.io/demo/' },
 ];
 
@@ -45,7 +45,7 @@ const TAG_COLOR_MAP = {
     networking: { background: '#bfdbfe', border: '#3b82f6', color: '#1e3a8a' },
     'computer vision': { background: '#fecdd3', border: '#f43f5e', color: '#881337' },
     systems: { background: '#bbf7d0', border: '#22c55e', color: '#14532d' },
-    'ray tracing': { background: '#ddd6fe', border: '#8b5cf6', color: '#4c1d95' },
+    'sensing': { background: '#ddd6fe', border: '#8b5cf6', color: '#4c1d95' },
     security: { background: '#fed7aa', border: '#f97316', color: '#7c2d12' },
     'eye tracking': { background: '#a5f3fc', border: '#06b6d4', color: '#164e63' },
     math: { background: '#fbcfe8', border: '#ec4899', color: '#831843' },
@@ -193,11 +193,23 @@ export default function Diet2026Page() {
                         </div>
 
                         <div className="diet-final-gallery" size="small">
-                            {visibleBlogs.map(({ name, title, tag, consent, url, cover }) => {
+                            {visibleBlogs.map(({ name, title, tag, consent, url, cover, award }) => {
                                 const thumbnail = cover || `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200`;
+                                const awardLabel = award === 'best' ? 'Best Blog Award' : award === 'honorable' ? 'Honorable Mention' : null;
+                                const awardIcon = award === 'best' ? '🏆' : award === 'honorable' ? '🎖️' : null;
                                 const card = (
                                     <div className={`diet-final-entry${!consent ? ' diet-final-entry-locked' : ''}`}>
                                         <img src={thumbnail} alt={`${name} cover`} className="diet-final-thumb" />
+                                        {award && (
+                                            <span
+                                                className={`diet-final-award diet-final-award-${award}`}
+                                                title={awardLabel}
+                                                aria-label={awardLabel}
+                                            >
+                                                <span className="diet-final-award-icon" aria-hidden="true">{awardIcon}</span>
+                                                <span className="diet-final-award-label">{awardLabel}</span>
+                                            </span>
+                                        )}
                                         <div className="diet-final-meta">
                                             <div className="diet-final-title-row">
                                                 <div className="diet-final-name">{title}</div>
@@ -300,6 +312,36 @@ export default function Diet2026Page() {
                                 object-fit: cover;
                                 background: #f5f5f5;
                                 border-bottom: 1px solid #ededed;
+                            }
+                            .diet-final-award {
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                                display: inline-flex;
+                                align-items: center;
+                                gap: 5px;
+                                padding: 5px 10px;
+                                border-radius: 999px;
+                                font-size: 11px;
+                                font-weight: 700;
+                                line-height: 1;
+                                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+                                backdrop-filter: blur(4px);
+                                z-index: 1;
+                            }
+                            .diet-final-award-best {
+                                background: linear-gradient(135deg, #fde68a 0%, #f59e0b 100%);
+                                color: #78350f;
+                                border: 1px solid #d97706;
+                            }
+                            .diet-final-award-honorable {
+                                background: linear-gradient(135deg, #e5e7eb 0%, #9ca3af 100%);
+                                color: #1f2937;
+                                border: 1px solid #6b7280;
+                            }
+                            .diet-final-award-icon {
+                                font-size: 13px;
+                                line-height: 1;
                             }
                             .diet-final-meta {
                                 width: 100%;
