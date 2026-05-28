@@ -197,6 +197,14 @@
     "avatar": "/assets/Alexandre_Ballenghien.png"
   },
   {
+    "name": "Laura Weschke",
+    "status": "current",
+    "title": "Research Assistant",
+    "topics": "EEG and Eye-tracking",
+    "affiliation": "ETH Zürich",
+    "avatar": "/assets/laura.jpeg"
+  },
+  {
     "name": "Kristijan Zafirovski",
     "status": "hidden",
     "topics": "Agent-based Simulation",
