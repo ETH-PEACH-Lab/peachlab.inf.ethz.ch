@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { Tabs, Table } from "@geist-ui/core";
 import MemberCardMini from "@/team/MemberCardMini";
-import "./style.css";
+import "../style.css";
 import ReactMarkdown from "react-markdown";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
@@ -88,10 +89,25 @@ function formatTagLabel(tag) {
     return tag.charAt(0).toUpperCase() + tag.slice(1);
 }
 
-export default function Diet2026Page() {
-    const [activeTab, setActiveTab] = useState("about");
+const VALID_TABS = ["about", "syllabus", "blog", "final", "project"];
+
+export default function Diet2026Client({ tab }) {
+    const router = useRouter();
+    const initialTab = VALID_TABS.includes(tab) ? tab : "about";
+    const [activeTab, setActiveTab] = useState(initialTab);
     const [selectedTag, setSelectedTag] = useState("all");
     const finalBlogTags = Array.from(new Set(DIET_BLOGS.map(({ tag }) => tag)));
+
+    useEffect(() => {
+        const next = VALID_TABS.includes(tab) ? tab : "about";
+        setActiveTab(next);
+    }, [tab]);
+
+    const handleTabChange = (value) => {
+        setActiveTab(value);
+        const path = value === "about" ? "/teaching/diet2026" : `/teaching/diet2026/${value}`;
+        router.replace(path, { scroll: false });
+    };
 
     const renderContent = () => {
         switch (activeTab) {
@@ -435,7 +451,7 @@ export default function Diet2026Page() {
         <div>
             <h2>Design in Educational Technology 2026</h2>
             <div>
-                <Tabs value={activeTab} onChange={setActiveTab} style={{ marginBottom: "2rem" }}>
+                <Tabs value={activeTab} onChange={handleTabChange} style={{ marginBottom: "2rem" }}>
                     <Tabs.Item label="About" value="about" />
                     <Tabs.Item label="Syllabus" value="syllabus" />
                     <Tabs.Item label="Individual Blog" value="blog" />
