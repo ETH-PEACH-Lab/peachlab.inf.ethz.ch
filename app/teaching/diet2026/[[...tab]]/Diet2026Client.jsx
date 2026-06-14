@@ -41,6 +41,41 @@ const DIET_BLOGS = [
     { name: 'Zihan Li', title: 'The Meaning Machine: How Search Engines Read Your Mind', tag: 'NLP', consent: true, url: 'https://nickoverxx11-create.github.io/demo/' },
 ];
 
+const DIET_GROUP_PROJECTS = [
+    {
+        group: 1,
+        title: 'ColorCode',
+        tag: 'AI Security',
+        desc: 'COLORCODE focuses on the security and safety of usage of AI, namely on data privacy, hallucinations, evidence checking, tool choice, and human oversight.',
+        url: 'https://colorcode-ai.ch/#/about',
+        members: ['Aaron Zeller', 'Aloha Churchill', 'Sergejs Zahovskis', 'Sara Jun', 'Nil'],
+    },
+    {
+        group: 2,
+        title: 'Bias Arcade',
+        tag: 'AI Bias',
+        desc: 'Bias Arcade is a collection of short interactive experiences and resources designed to help users understand bias in AI models.',
+        url: 'https://ai-literacy-website.vercel.app/',
+        members: ['Nicolas Stucki', 'Leroy Borgeaud dit Avocat', 'Xiaozihan Wang', 'Akankshya Ingale', 'Nagyung Kim'],
+    },
+    {
+        group: 3,
+        title: 'Omen',
+        tag: 'AI Bias',
+        desc: 'Omen is an interactive teaching prototype about how AI bias enters a system before anyone sees the final verdict.',
+        url: 'https://belown.github.io/DIET/about',
+        members: ['Wanglei Shen', 'Rui Wang', 'Zihan Li', 'Sophia Kacem', 'Inés Araujo Cañas'],
+    },
+    {
+        group: 4,
+        title: 'VibeX Expansion',
+        tag: 'Sustainable AI',
+        desc: 'VibeX Expansion is an educational game experience that explores the hidden environmental and societal costs of AI usage.',
+        url: 'https://krishna3960.github.io/EducationTechnology/',
+        members: ['Shreyas Parida', 'Alessia Lanini', 'Alexandra Trofimova', 'Albert Cerfeda', 'Krishna Le Moing'],
+    },
+];
+
 const TAG_COLOR_MAP = {
     'data science': { background: '#fde68a', border: '#f59e0b', color: '#78350f' },
     networking: { background: '#bfdbfe', border: '#3b82f6', color: '#1e3a8a' },
@@ -89,7 +124,7 @@ function formatTagLabel(tag) {
     return tag.charAt(0).toUpperCase() + tag.slice(1);
 }
 
-const VALID_TABS = ["about", "syllabus", "blog", "final", "project"];
+const VALID_TABS = ["about", "syllabus", "blog", "final", "group-project", "project"];
 
 export default function Diet2026Client({ tab }) {
     const router = useRouter();
@@ -175,6 +210,124 @@ export default function Diet2026Client({ tab }) {
                         >
                             {projectMd}
                         </ReactMarkdown>
+                    </div>
+                );
+            case "group-project":
+                return (
+                    <div>
+                        <h3 style={{ marginTop: 0 }}>Final Group Projects</h3>
+                        <p style={{ color: '#666', marginTop: '0.25rem' }}>Congratulations on finishing your final group projects! Browse the public project websites below.</p>
+
+                        <div className="diet-final-gallery">
+                            {DIET_GROUP_PROJECTS.map(({ title, tag, desc, url, members }) => {
+                                const thumbnail = `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200`;
+
+                                return (
+                                    <a key={url} href={url} target="_blank" rel="noopener noreferrer" className="diet-final-entry-link">
+                                        <div className="diet-final-entry">
+                                            <img src={thumbnail} alt={`${title} project cover`} className="diet-final-thumb" />
+                                            <div className="diet-final-meta">
+                                                <div className="diet-final-title-row">
+                                                    <div className="diet-final-name">{title}</div>
+                                                    <span className="diet-final-tag" style={getTagStyle(tag)}>{formatTagLabel(tag)}</span>
+                                                </div>
+                                                <div className="diet-final-author">{members.join(', ')}</div>
+                                                <div className="diet-final-desc">{desc}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                );
+                            })}
+                        </div>
+
+                        <style jsx>{`
+                            .diet-final-gallery {
+                                display: grid;
+                                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                                gap: 14px;
+                                margin: 18px 0 32px;
+                            }
+                            .diet-final-entry-link {
+                                display: block;
+                                height: 100%;
+                                text-decoration: none;
+                                color: inherit;
+                            }
+                            .diet-final-entry {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                height: 100%;
+                                position: relative;
+                                border: 1px solid #ececec;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                background: linear-gradient(180deg, #fff 0%, #fafafa 100%);
+                                transition: border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
+                            }
+                            .diet-final-entry-link:hover .diet-final-entry {
+                                transform: translateY(-2px);
+                                border-color: #d6d6d6;
+                                box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+                            }
+                            .diet-final-thumb {
+                                width: 100%;
+                                height: 180px;
+                                object-fit: cover;
+                                background: #f5f5f5;
+                                border-bottom: 1px solid #ededed;
+                            }
+                            .diet-final-meta {
+                                flex: 1;
+                                width: 100%;
+                                padding: 10px 12px 12px;
+                                min-width: 0;
+                            }
+                            .diet-final-title-row {
+                                display: flex;
+                                align-items: center;
+                                flex-wrap: nowrap;
+                                gap: 6px;
+                                margin-bottom: 4px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
+                            .diet-final-name {
+                                font-weight: 700;
+                                line-height: 1.35;
+                                margin-right: 4px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                min-width: 0;
+                            }
+                            .diet-final-tag {
+                                flex-shrink: 0;
+                                font-size: 11px;
+                                line-height: 1;
+                                padding: 5px 8px;
+                                border-radius: 999px;
+                                border: 1px solid transparent;
+                                font-weight: 600;
+                            }
+                            .diet-final-author {
+                                font-size: 13px;
+                                color: #555;
+                                line-height: 1.45;
+                            }
+                            .diet-final-desc {
+                                margin-top: 8px;
+                                font-size: 13px;
+                                color: #444;
+                                line-height: 1.5;
+                            }
+                            @media (max-width: 520px) {
+                                .diet-final-thumb {
+                                    width: 100%;
+                                    height: 160px;
+                                }
+                            }
+                        `}</style>
                     </div>
                 );
             case "final":
@@ -457,6 +610,7 @@ export default function Diet2026Client({ tab }) {
                     <Tabs.Item label="Individual Blog" value="blog" />
                     <Tabs.Item label="Final Blog Post" value="final" />
                     <Tabs.Item label="Course Project" value="project" />
+                    <Tabs.Item label="Final Group Project" value="group-project" />
                 </Tabs>
             </div>
             <div style={{ minHeight: "200px" }}>

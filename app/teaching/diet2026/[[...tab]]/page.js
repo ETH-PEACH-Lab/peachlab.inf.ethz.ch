@@ -1,6 +1,6 @@
 import Diet2026Client from "./Diet2026Client";
 
-const TAB_SLUGS = ["syllabus", "blog", "final", "project"];
+const TAB_SLUGS = ["syllabus", "blog", "final", "group-project", "project"];
 
 export function generateStaticParams() {
     return [
