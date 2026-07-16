@@ -85,7 +85,10 @@ h2{
   }
 
   .member-image > img {
-    height: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
   }
 
   footer > p {

@@ -27,9 +27,11 @@ export default function MemberCard({ member }) {
                         <Text type="secondary" small>
                             {title}
                         </Text>
-                        <Text type="secondary" small>
-                            {affiliation}
-                        </Text>
+                        {affiliation && (
+                            <Text type="secondary" small>
+                                {affiliation}
+                            </Text>
+                        )}
                         {topics && <Tag type="lite">{topics}</Tag>}
                     </div>
                 </div>

@@ -84,12 +84,6 @@
     "link": "https://eunyoungko.com/"
   },
   {
-    "name": "Irene Hou",
-    "status": "left",
-    "title": "Academic Guest from UCSD",
-    "link": "https://houirene.github.io/"
-  },
-  {
     "name": "Ziming Wang",
     "status": "left",
     "title": "Academic Guest from Chalmers University",
@@ -169,18 +163,6 @@
     "link": "https://www.bhadayun.com/"
   },
   {
-    "name": "Lukas Mast",
-    "status": "current",
-    "title": "Student Research Engineer",
-    "topics": "Live Coding",
-    "affiliation": "ETH Zürich",
-    "link": "https://www.linkedin.com/in/lukas-mast/",
-    "hobby": "⛰️",
-    "office": "CAB F66",
-    "email": "lumast@ethz.ch",
-    "avatar": "/assets/lukas.jpg"
-  },
-  {
     "name": "Oğuz Arslan",
     "status": "current",
     "title": "Research Assistant",
@@ -189,20 +171,38 @@
     "avatar": "/assets/Oguz_Arslan.png"
   },
   {
-    "name": "Alexandre Ballenghien",
-    "status": "current",
-    "title": "Research Assistant",
-    "topics": "Scratch Programming",
-    "affiliation": "ETH Zürich",
-    "avatar": "/assets/Alexandre_Ballenghien.png"
-  },
-  {
     "name": "Laura Weschke",
     "status": "current",
     "title": "Research Assistant",
     "topics": "EEG and Eye-tracking",
     "affiliation": "ETH Zürich",
     "avatar": "/assets/laura.jpeg"
+  },
+  {
+    "name": "Irene Hou",
+    "status": "current",
+    "title": "Research Intern",
+    "affiliation": "UC San Diego",
+    "topics": "Human-Centered AI",
+    "link": "https://houirene.github.io/",
+    "avatar": "/assets/houirene.png"
+  },
+  {
+    "name": "Noor Salama",
+    "status": "current",
+    "title": "Summer Research Fellow",
+    "topics": "UI/UX Design",
+    "affiliation": "KTH Royal Institute of Technology",
+    "link": "https://app.9am.works/talent/noor-salama",
+    "avatar": "/assets/noor.png"
+  },
+  {
+    "name": "Prof. Steven Dow",
+    "status": "current",
+    "title": "Visiting Professor",
+    "affiliation": "UC San Diego",
+    "link": "https://spdow.ucsd.edu/about/",
+    "avatar": "/assets/Steven-Dow.jpeg"
   },
   {
     "name": "Kristijan Zafirovski",
