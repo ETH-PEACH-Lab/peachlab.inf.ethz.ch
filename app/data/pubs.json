@@ -4,11 +4,11 @@
     "id": "uist2026b",
     "slug": "sketchmind",
     "year": "2026",
-    "title": "Supporting Algorithmic Reasoning through Executable Sketching",
+    "title": "SketchMind: Toward Executable Pen-Based Sketching for Constructing Sorting Algorithms",
     "authors": "Yang Wu, Clément Pit-Claudel, April Yi Wang",
     "venue_full": "In Proceedings of the ACM Symposium on User Interface Software and Technology (UIST 2026)",
     "abstract": "Pen-and-paper tracing is commonly used to think through algorithms before writing code, allowing learners to step through concrete executions and explore possible solutions. However, this process does not readily support abstraction and as traces grow, they lose structure. Steps accumulate into long sequences and are often skipped or compressed, leading to incomplete or inconsistent reasoning. As a result, learners struggle to extract reusable algorithmic patterns or generalize beyond individual instances. We present SketchMind, a sketch-based programming system in which users construct executable traces through pen-based interactions. By performing operations directly on visual representations (e.g., arrays and variables) using pen strokes, users can construct and refine algorithms without writing code. SketchMind supports four key capabilities: (1) executable tracing, where actions are recorded and replayed as runnable steps; (2) reusable pens, which encapsulate trace segments into user-defined procedures; (3) progressive abstraction across values, indices, and symbolic parameters; and (4) cross-instance validation, which applies learned procedures to new inputs and generates minimal counterexamples.",
-    "teaser": "/assets/teaser/placeholder.png",
+    "teaser": "/assets/teaser/uist26_sketchmind.png",
     "is_journal": false,
     "is_featured": false
   },
