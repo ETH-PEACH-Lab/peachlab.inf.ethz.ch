@@ -263,6 +263,8 @@
     "venue": "CSCW 2026",
     "id": "cscw2026",
     "slug": "chatcommunity",
+    "award": "Best Paper Award",
+    "award_type": "best",
     "year": "2026",
     "title": "Bridging Instead of Replacing Online Coding Communities with AI through Community-Enriched Chatbot Designs",
     "authors": "Junling Wang, Lahari Goswami, Gustavo Umbelino, Kiara Chau, Mrinmaya Sachan, April Yi Wang",
