@@ -1,12 +1,18 @@
 ## Join Us
 
-We are seeking highly motivated and exceptionally qualified students to join our lab. 
-We especially welcome candidates with a strong engineering background who are passionate about educational technology, creative in their thinking, and self-motivated in their work.
-Experience in human–computer interaction, educational technology, or related field is strongly preferred.
+We welcome interest from exceptional students and researchers whose work aligns with PEACH Lab.
 
-### Shall I contact ahead of time?
+We use a **referral-based approach** for identifying prospective lab members rather than relying on unsolicited individual emails.
 
-We’ve received a large number of inquiries, so we’re unfortunately unable to respond to individual requests before reviewing applications. Please check this page for the latest updates on open positions.
+### How to Reach Us
+
+If you are interested in joining PEACH Lab, the most effective way to reach us is through a direct introduction from a faculty advisor or research mentor who knows your work well and can speak concretely about your research ability and potential. We strongly prefer introductions from mentors who know your work firsthand. They may contact us at [peachlab@inf.ethz.ch](mailto:peachlab@inf.ethz.ch).
+
+You may also send your materials directly to [peachlab@inf.ethz.ch](mailto:peachlab@inf.ethz.ch). We periodically review recruitment-related messages sent to this address, but due to the volume of inquiries, we are unable to respond to most individual emails. Please do not contact April directly regarding recruitment inquiries, as these emails are automatically filtered and may not be seen.
+
+For students who hope to join PEACH Lab in the future, we strongly encourage you to first work closely with HCI, human–AI interaction, computing education, or related faculty at your current institution. Building a strong research track record and earning the support of mentors who can later introduce or recommend you is one of the best ways to prepare for opportunities with our lab.
+
+We are particularly happy to hear from candidates who are considering fellowship-supported pathways to join PEACH Lab.
 
 ### Doctoral Positions
 
@@ -18,23 +24,10 @@ We encourage outstanding candidates to explore the following doctoral opportunit
 - [Max Planck ETH Center for Learning Systems Doctoral Fellowship](https://learning-systems.org/)
 - [ETH AI Center Doctoral Fellowship](https://ai.ethz.ch/research/phd-and-postdoc-programs/phd-fellowships.html)
 
-#### Doctoral Positions (for master graduates)
-<div style="border: 1px solid #9fc5f4; background-color: #f2f6ff; padding: 5px 30px; border-radius: 4px; margin-bottom: 20px">
-  <p><strong>Updated March 2026</strong></p>
-  <p>
-    We have completed hiring for our current doctoral positions and are not accepting applications at this time.
-  </p>
-  <p>
-    Please check back for future openings.
-  </p>
-</div>
-
-
 #### Direct Doctorate in CS (for bachelor graduates)
 ETH Zürich's Department of Computer Science offers a [Direct Doctorate Program](https://inf.ethz.ch/doctorate/direct-doctorate-computer-science.html) for exceptional undergraduate applicants. If you are interested, please apply directly.
 
 ### Postdoc Positions
-
 We welcome applications from highly qualified postdoctoral candidates with a focus on developing collaborative and educational programming tools. Successful candidates are expected to publish in top-tier venues such as CHI, UIST, CSCW, L@S, AIED, or similar. 
 Please reach out to us directly and consider applying for the following fellowships:
 
@@ -47,15 +40,5 @@ Please reach out to us directly and consider applying for the following fellowsh
 
 Due to limited capacity, we prioritize ETH Zürich students for project opportunities, often integrated into their bachelor's or master's theses. 
 However, we welcome exceptionally motivated visiting students who have secured external fellowships (e.g., [ETH SSRF](https://inf.ethz.ch/studies/summer-research-fellowship.html), [ETH Project Mobility](https://ethz.ch/en/studies/non-degree-courses/project.html)).
-
-<div style="border: 1px solid #9fc5f4; background-color: #f2f6ff; padding: 5px 30px; border-radius: 4px; margin-bottom: 20px">
-<p><strong>Updated March 2026</strong></p>
-<p>
-  We have completed hiring for our current research internship positions and are not accepting applications at this time.
-</p>
-<p>
-  Please check back for future opportunities.
-</p>
-</div>
 
 ![zurich](/assets/zurich.jpg)
