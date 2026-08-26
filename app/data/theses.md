@@ -3,7 +3,7 @@ We welcome undergraduates and master students at ETH Zürich to conduct their [t
 There's often an opportunity for students who have experience or interest in areas like software development, data science, or UX design to join in on projects.
 If you have taken the user-centered programming interfaces course, or the design in educational technology course, we welcome you to propose your own project topics.
 
-- [Available projects for Spring 2026](https://docs.google.com/presentation/d/1POCEgBVywHrTiChaqFD32XLn3vmrd2JUGUgeHUATIoQ/edit?usp=sharing)
+- [Available projects for Autumn 2026](https://docs.google.com/presentation/d/1POCEgBVywHrTiChaqFD32XLn3vmrd2JUGUgeHUATIoQ/edit?usp=sharing)
 
 
 ### Past Thesis Highlights
