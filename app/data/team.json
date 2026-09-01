@@ -46,6 +46,16 @@
     "link": "https://doheejin.github.io/about_me/"
   },
   {
+    "name": "Daniel Manesh",
+    "slug": "dmanesh",
+    "status": "current",
+    "title": "Postdoc",
+    "topics": "Live Coding",
+    "affiliation": "ETH Zürich",
+    "link": "https://danielmanesh.com/",
+    "avatar": "/assets/daniel"
+  },
+  {
     "name": "Gustavo Umbelino",
     "status": "left",
     "title": "Postdoc",
@@ -160,6 +170,16 @@
     "topics": "Embodied Interaction",
     "link": "https://zosia-hci.github.io/",
     "avatar": "/assets/zosia.jpg"
+  },
+  {
+    "name": "Oliver Huang",
+    "slug": "ohuang",
+    "status": "current",
+    "title": "Doctoral Student",
+    "topics": "Computational Thinking",
+    "affiliation": "ETH Zürich",
+    "avatar": "/assets/oliver.png",
+    "link": "https://www.oliver-huang.com/"
   },
   {
     "name": "Bhada Yun",
