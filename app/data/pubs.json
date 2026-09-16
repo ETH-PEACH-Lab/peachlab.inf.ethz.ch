@@ -1,5 +1,18 @@
 [
     {
+    "venue": "SIGCSE 2027",
+    "id": "sigcse2027a",
+    "slug": "plantracing",
+    "year": "2027",
+    "title": "A Plan-Tracing Interface for AI-Supported Algorithm Planning",
+    "authors": "Yoshee Jain, Heejin Do, Zihan Wu and April Yi Wang",
+    "venue_full": "In Proceedings of the 58th ACM Technical Symposium on Computer Science Education (SIGCSE 2027)",
+    "abstract": "Planning an algorithm in natural language allows learners to get formative feedback on their approach before coding. But these descriptions can be ambiguous, making it challenging for learners to translate them into code and for LLMs to provide feedback. To address these challenges, we introduce \textit{plan tracing}, in which learners manually simulate how the described algorithm would execute on a concrete input. We develop an interface that enables plan tracing and allows learners to receive AI feedback on their plans before writing code. We report on an exploratory between-subjects study with 20 participants who solved an algorithm design task, with or without the plan tracing interface. We observed how plan tracing shaped students' plans, the feedback they received, and their experiences using the interface. Students who performed plan tracing wrote plans with fewer code-like steps but more goal-driven descriptions. We did not detect a difference in the quality of the LLM feedback between conditions. Students used plan tracing to debug and verify their strategy, describing it as tedious but worthwhile when they were uncertain about their solution. We reflect on the design and use of our tool, identifying what worked, what didn't, and why, and offer recommendations for instructors and tool designers.",
+    "teaser": "/assets/teaser/placeholder.png",
+    "is_journal": false,
+    "is_featured": false
+  },
+  {
     "venue": "UIST 2026",
     "id": "uist2026b",
     "slug": "sketchmind",
