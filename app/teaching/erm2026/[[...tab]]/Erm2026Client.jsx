@@ -34,6 +34,7 @@ const LECTURES = [
     },
     {
         phase: 'Design',
+        date: '08.10',
         question: 'What study can answer your question?',
         colors: { background: '#ede9fe', border: '#8b5cf6', color: '#4c1d95' },
         details: [
@@ -46,6 +47,7 @@ const LECTURES = [
     },
     {
         phase: 'Measure',
+        date: '22.10',
         question: 'How will you measure it?',
         colors: { background: '#dcfce7', border: '#22c55e', color: '#14532d' },
         details: [
@@ -58,6 +60,7 @@ const LECTURES = [
     },
     {
         phase: 'Analyze',
+        date: '29.10',
         question: 'What does the data show?',
         colors: { background: '#fef3c7', border: '#f59e0b', color: '#78350f' },
         details: [
@@ -70,6 +73,7 @@ const LECTURES = [
     },
     {
         phase: 'Reason',
+        date: '19.11',
         question: 'What can you legitimately claim?',
         colors: { background: '#fce7f3', border: '#ec4899', color: '#831843' },
         details: [
@@ -82,6 +86,7 @@ const LECTURES = [
     },
     {
         phase: 'Communicate',
+        date: '26.11',
         question: 'How do you communicate your research results?',
         colors: { background: '#e0f2fe', border: '#06b6d4', color: '#164e63' },
         details: [
@@ -118,7 +123,7 @@ const SyllabusTable = () => {
             question,
             details,
         })),
-        { week: '7', date: 'TBD', topic: 'Student Presentations', question: '', details: [] },
+        { week: '7', date: '10.12', topic: 'Poster Session', question: 'Students present their proposed empirical study.', details: [] },
     ];
 
     return (
@@ -199,9 +204,8 @@ export default function Erm2026Client({ tab }) {
                 return (
                     <div>
                         <p>
-                            The course consists of six in-person, 2-hour lectures. The dates of the six
-                            lectures will be agreed upon with the enrolled students at the beginning of
-                            the course.
+                            The course consists of six in-person, 2-hour lectures and a concluding
+                            poster session.
                         </p>
                         <SyllabusTable />
                     </div>

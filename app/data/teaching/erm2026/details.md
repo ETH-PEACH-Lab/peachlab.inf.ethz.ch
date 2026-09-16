@@ -1,6 +1,6 @@
 #### Logistics
 - **Course Catalogue:** [ETH Zurich VVZ Catelogue](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=206443&semkez=2026W&lang=en)
-- **Dates:** TBD — agreed upon with the enrolled students at the beginning of the course
+- **Dates:** 24.09, 08.10, 22.10, 29.10, 19.11, 26.11, and 10.12 (poster session)
 - **Location:** CHN G46
 
 The course is held in six 2-hour sessions and a poster session. Students are allowed to miss one session without penalty. The course concludes with a poster presentation, where students present their proposed empirical study.

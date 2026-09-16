@@ -10,7 +10,7 @@ Throughout the course, students will develop and iteratively refine a proposal f
 
 ##### Exam
 
-Towards the end of the semester, we will organize a digital exam covering the core concepts and reasoning skills introduced in the course. Students are allowed to bring one A4 cheat sheet, printed or handwritten on both sides.
+Towards the end of the semester, we will organize a paper-based exam covering the core concepts and reasoning skills introduced in the course. Students are allowed to bring one A4 cheat sheet, printed or handwritten on both sides. The exam date is TBD.
 
 ##### Attendance
 
