@@ -5,7 +5,7 @@ We may make small adjustments based on the guest lecture.
 
 | W  | D     | Topic                                   | Presenters |
 |----|-------|-----------------------------------------|------------|
-| 1  | 9.17  | Course Logistics |            |
+| 1  | 9.17  | Course Logistics ([Slides](/assets/teaching/ucpi-blog-2026/blogs/slides/UCPI%20Course%20Overview%202026.pdf)) |            |
 | 2  | 9.24  | Topic Overview: Redefining Programming |            |
 | 3  | 10.1  | Break                                   |            |
 | 4  | 10.8  | Program Understanding                   |            |
