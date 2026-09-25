@@ -2,7 +2,8 @@
 - [Human Computer Interaction](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=202802&semkez=2026W&ansicht=LEHRVERANSTALTUNGEN&lang=de), Thu 10:15–12:00, HG E3, Fri 13:15–14:00, CAB G61
 - [Seminar on User-Centered Programming Interfaces](./ucpi2026), Thu 16:15-18:00, CAB G52
 - [Empirical Research Methods for Computer Science](./erm2026), six 2-hour sessions and a poster session, CHN G46
-- [Ethics and Scientific Integrity for Doctoral Students at D-INFK](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=203553&semkez=2026W&ansicht=LEHRVERANSTALTUNGEN&lang=de)
+- [Ethics and Scientific Integrity for Doctoral Students at D-INFK](https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=203553&semkez=2026W&ansicht=LEHRVERANSTALTUNGEN&lang=en)
+- [Extended Reality for Value Creation in Businesses](https://vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=205899&semkez=2026W&ansicht=LEHRVERANSTALTUNGEN&lang=en), Fri 8:00-12:00, online
 
 ### Spring Semester 2026
 - [Design in Educational Technology](./diet2026), Fri 14:15-16:00, [LFW C 4](https://ethz.ch/en/utils/location.html?building=LFW&floor=C&room=4&lang=en)
