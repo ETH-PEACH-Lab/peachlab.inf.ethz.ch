@@ -287,7 +287,7 @@
     "teaser": "/assets/teaser/chatcommunity.png",
     "teaser_full": "/assets/teaser/chatcommunity_full.png",
     "preprint_link":"https://arxiv.org/abs/2601.18697",
-    "project_link": "https://chatcommunity2.github.io/",
+    "project_link": "/projects/chatcommunity",
     "is_journal": false,
     "is_featured": false
   },
@@ -331,10 +331,10 @@
     "title": "Emotionally Aware Moderation: The Potential of Emotion Monitoring in Shaping Healthier Social Media Conversations",
     "authors": "Xiaotian Su, Naim Zierau, Soomin Kim, April Yi Wang, Thiemo Wambsganss",
     "venue_full": "In Proceedings of the ACM : Human-Computer Interaction, Computer-Supported Cooperative Work and Social Computing (CSCW 2025)",
-    "links": "<a>To Appear</a>",
     "abstract": "Proactive moderation on social media platforms can face criticism for fostering censorship and ignoring the root causes of incivility. We propose and evaluate emotion monitoring mechanisms that enhance users' emotional awareness and mitigate hate speech.",
     "teaser": "/assets/teaser/cscw2025.png",
     "preprint_link":"https://arxiv.org/abs/2507.21089",
+    "paper_link": "https://dl.acm.org/doi/10.1145/3757472",
     "is_journal": true,
     "is_featured": true
   },
@@ -533,6 +533,7 @@
     "abstract": "Developers often use temporary ad-hoc logs like print or console.log to debug code, but these logs are rarely studied due to their ephemeral nature. We analyzed 27GB of accidental commits removing 548K logs and live coding streams to uncover when, where, and why they're used—insights for better tools and debugging practices.",
     "teaser": "/assets/teaser/msr25.png",
     "preprint_link": "https://arxiv.org/abs/2501.09892",
+    "paper_link": "https://dl.acm.org/doi/abs/10.1109/MSR66628.2025.00017",
     "is_journal": false,
     "is_featured": true
   },
