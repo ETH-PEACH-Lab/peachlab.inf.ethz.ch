@@ -12,7 +12,7 @@ We may make small adjustments based on the guest lecture.
 | 5  | 10.15 | Code Editing                            |            |
 | 6  | 10.22 | End-User Programming                    |            |
 | 7  | 10.29 | Programming by Demonstration            |            |
-| 8  | 11.5  | **Guest Lecture** | Guest Speaker: [Dr. Mary Beth Kery](https://marybethkery.com/) from Apple |
+| 8  | 11.5  | **Guest Lecture**: Designing APIs and text-based programming interfaces | Guest Speaker: [Dr. Mary Beth Kery](https://marybethkery.com/) from Apple |
 | 9  | 11.12 | Debugging                               |            |
 | 10 | 11.19 | Managing Versions and Alternatives      |            |
 | 11 | 11.26 | Collaborative Programming               |            |

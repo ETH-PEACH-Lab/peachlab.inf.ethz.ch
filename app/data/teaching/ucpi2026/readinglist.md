@@ -1,3 +1,8 @@
+### Guest Lecture Pre-Reading
+Our guest speaker, [Dr. Mary Beth Kery](https://marybethkery.com/) from Apple, will use this paper as a starting point for discussion. Please read it ahead of time.
+- [API Designers in the Field](https://ieeexplore.ieee.org/abstract/document/8506523): Lauren Murphy, Mary Beth Kery, Oluwatosin Alliyu, Andrew Macvean, and Brad A. Myers. 2018. API Designers in the Field: Design Practices and Challenges for Creating Usable APIs. In 2018 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC '18), 249–258.
+
+### Student Presentation Papers
 Each topic pairs one paper from before the rise of LLMs with one from the LLM era. Each paper is presented by one student.
 
 #### W4 (10.8). Program Understanding
