@@ -29,9 +29,6 @@ Each topic pairs one paper from before the rise of LLMs with one from the LLM er
 ##### LLM-based
 - [Perpend](https://dl.acm.org/doi/pdf/10.1145/3772318.3791327): Angela Bi, Eric Rawn, Justin Lubin, and Sarah E. Chasins. 2026. Programming by Scaffolded Demonstration with Perpend. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26).
 
-#### W8 (11.5). Guest Lecture
-- TBD
-
 #### W9 (11.12). Managing Versions and Alternatives
 ##### Pre-LLM
 - [Code Gathering](https://dl.acm.org/doi/10.1145/3290605.3300500): Head, A., Hohman, F., Barik, T., Drucker, S. M., & DeLine, R. (2019, May). Managing messes in computational notebooks. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (pp. 1-12).
