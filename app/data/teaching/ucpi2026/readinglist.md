@@ -32,17 +32,17 @@ Each topic pairs one paper from before the rise of LLMs with one from the LLM er
 #### W8 (11.5). Guest Lecture
 - TBD
 
-#### W9 (11.12). Debugging
-##### Pre-LLM
-- [Log-it](https://dl.acm.org/doi/10.1145/3544548.3581403): Jiang, P., Sun, F., & Xia, H. (2023, April). Log-it: Supporting programming with interactive, contextual, structured, and visual logs. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (pp. 1-16).
-##### LLM-based
-- [AGDebugger](https://dl.acm.org/doi/10.1145/3706598.3713581): Epperson, W., Bansal, G., Dibia, V. C., Fourney, A., Gerrits, J., Zhu, E., & Amershi, S. (2025, April). Interactive debugging and steering of multi-agent AI systems. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (pp. 1-15).
-
-#### W10 (11.19). Managing Versions and Alternatives
+#### W9 (11.12). Managing Versions and Alternatives
 ##### Pre-LLM
 - [Code Gathering](https://dl.acm.org/doi/10.1145/3290605.3300500): Head, A., Hohman, F., Barik, T., Drucker, S. M., & DeLine, R. (2019, May). Managing messes in computational notebooks. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (pp. 1-12).
 ##### LLM-based
 - [Spellburst](https://doi.org/10.1145/3586183.3606719): Tyler Angert, Miroslav Suzara, Jenny Han, Christopher Pondoc, and Hariharan Subramonyam. 2023. Spellburst: A Node-based Interface for Exploratory Creative Coding with Natural Language Prompts. In Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (UIST '23). Association for Computing Machinery, New York, NY, USA, Article 100, 1–22.
+
+#### W10 (11.19). Debugging
+##### Pre-LLM
+- [Log-it](https://dl.acm.org/doi/10.1145/3544548.3581403): Jiang, P., Sun, F., & Xia, H. (2023, April). Log-it: Supporting programming with interactive, contextual, structured, and visual logs. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (pp. 1-16).
+##### LLM-based
+- [AGDebugger](https://dl.acm.org/doi/10.1145/3706598.3713581): Epperson, W., Bansal, G., Dibia, V. C., Fourney, A., Gerrits, J., Zhu, E., & Amershi, S. (2025, April). Interactive debugging and steering of multi-agent AI systems. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (pp. 1-15).
 
 #### W11 (11.26). Collaborative Programming
 ##### Pre-LLM
