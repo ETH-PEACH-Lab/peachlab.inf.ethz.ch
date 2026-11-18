@@ -123,7 +123,17 @@ const SyllabusTable = () => {
             question,
             details,
         })),
-        { week: '7', date: '10.12', topic: 'Poster Session', question: 'Students present their proposed empirical study.', details: [] },
+        { week: '7', date: '10.12', topic: 'Exam', question: 'Paper review exam (40 minutes).', details: [] },
+        {
+            week: '7-8',
+            date: '11.12 / 17.12',
+            topic: 'Poster Session',
+            question: 'Students present their proposed empirical study.',
+            details: [
+                'Session 1: Friday 11 Dec 2026, 9am–9:45am',
+                'Session 2: Thursday 17 Dec 2026, 1pm–1:45pm',
+            ],
+        },
     ];
 
     return (
