@@ -35,4 +35,4 @@ This is a targeted discussion rather than a literature review, so quality matter
 #### Submission
 
 * Due: **February 1, 2027**
-* Submit the blog post and interactive artifact as a PR to: TBD
+* Submit the blog post and interactive artifact as a PR to: https://github.com/ETH-PEACH-Lab/ucpi-blog-2026/tree/main
